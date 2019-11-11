@@ -1,9 +1,28 @@
 import React from "react"
-import Header from "../components/header"
+import { graphql } from "gatsby"
+import Layout from "../components/layout"
 
-export default () => (
-  <div style={{ color: `teal` }}>
-    <Header headerText="About Gatsby" />
-    <p>Such wow. Very React.</p>
-  </div>
-)
+// data: query result
+export default ({ data }) => {
+  console.log(data)
+  return (
+    <Layout>
+      <h1>About {data.site.siteMetadata.title}</h1>
+      <p>
+        We're the only site running on your computer dedicated to showing the
+        best photos and videos of pandas eating lots of food.
+      </p>
+    </Layout>
+  )
+}
+
+// Page queries live outside of the component definition — by convention at the end of a page component file — and are only available on page components.
+export const query = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`
