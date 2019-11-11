@@ -5,18 +5,17 @@ import { useStaticQuery, Link, graphql } from "gatsby"
 import { rhythm } from "../utils/typography"
 
 export default ({ children }) => {
-  console.log("ax", "hello")
-  const query = graphql`
-    query {
-      site {
-        siteMetadata {
-          title
+  const data = useStaticQuery(
+    graphql`
+      query TitleQuery {
+        site {
+          siteMetadata {
+            title
+          }
         }
       }
-    }
-  `
-  const data = useStaticQuery(query)
-  console.log("ax", { data })
+    `
+  )
   return (
     <div
       css={css`

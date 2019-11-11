@@ -1,6 +1,5 @@
 module.exports = {
   siteMetadata: {
-    // use siteMetadata to share data in site
     title: `Title from siteMetadata`,
   },
   plugins: [
