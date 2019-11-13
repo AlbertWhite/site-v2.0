@@ -21,6 +21,10 @@ There are many good practices about modern web development.
 - **source plugin**: gatsby-source-filesystem: source plugin can bring data into gatsby's data system.
 - **transformer plugin**: takes raw content from local file to be used inside app. For markdown: gatsby-transformer-remark.
 
+7. NodeJS
+We can write NodeJS function with Gatsby API. 
+Ex: onCreateNode, createPages
+
 Schema connections (edges) is the ability to query over collections of nodes of a type. 
 
 But this is easy to fix. When querying a connection of some type, you can pass a variety of arguments to the GraphQL query. You can sort and filter nodes, set how many nodes to skip, and choose the limit of how many nodes to retrieve. With this powerful set of operators, you can select any data you want—in the format you need.
