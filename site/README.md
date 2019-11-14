@@ -9,6 +9,7 @@
 - gatsby-image [Tuto](https://www.gatsbyjs.org/tutorial/gatsby-image-tutorial/)
 - gatsby-source-filesystem
 - gatsby-transformer-remark : parse markdown files
+- gatsby-remark-prismjs: highlight file
 
 ### Development environement
 
