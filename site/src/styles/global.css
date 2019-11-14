@@ -1,7 +1,9 @@
 html {
   background-color: white;
+  --app-max-width: 672px;
+  --app-main-color: #663399;
 }
 
 a {
-  color: #663399 !important;
+  color: var(--app-main-color, #663399) !important;
 }

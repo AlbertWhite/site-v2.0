@@ -1,18 +1,45 @@
 import React from "react"
 import styled from "styled-components"
+import Layout from "../components/layout"
+import { Link, graphql } from "gatsby"
 
-interface INameProps {
-  name: string
+export default ({ data }: any) => {
+  return (
+    <Layout>
+      {" "}
+      <div>
+        {data.allMarkdownRemark.edges.map(({ node }: any) => (
+          <div key={node.id}>
+            <Link to={node.fields.slug}>
+              <h3>
+                {node.frontmatter.title} <span>— {node.frontmatter.date}</span>
+              </h3>
+              <p>{node.excerpt}</p>
+            </Link>
+          </div>
+        ))}
+      </div>
+    </Layout>
+  )
 }
 
-const RedH1 = styled.h1`
-  color: red;
+export const query = graphql`
+  query {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      totalCount
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            date(formatString: "DD MMMM, YYYY")
+          }
+          fields {
+            slug
+          }
+          excerpt
+        }
+      }
+    }
+  }
 `
-
-const Name = (props: INameProps) => {
-  return <RedH1>{props.name}</RedH1>
-}
-
-export default () => {
-  return <Name name="blog page" />
-}

@@ -1,10 +1,9 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
+const sites = require("./src/data/site")
 
 module.exports = {
+  siteMetadata: {
+    sites,
+  },
   plugins: [
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -25,6 +24,14 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: { path: `./src/images/` },
+    },
+    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `./src/data/blogs`,
+      },
     },
   ],
 }

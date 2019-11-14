@@ -7,6 +7,8 @@
 - gatsby-source-filesystem: load local resource
 - gatsby-transformer-sharp
 - gatsby-image [Tuto](https://www.gatsbyjs.org/tutorial/gatsby-image-tutorial/)
+- gatsby-source-filesystem
+- gatsby-transformer-remark : parse markdown files
 
 ### Development environement
 
