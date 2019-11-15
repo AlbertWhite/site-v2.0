@@ -10,6 +10,8 @@
 - gatsby-source-filesystem
 - gatsby-transformer-remark : parse markdown files
 - gatsby-remark-prismjs: highlight file
+- gatsby-remark-images: markdown inline images
+- gatsby-remark-copy-linked-files: markdown inline images
 
 ### Development environement
 

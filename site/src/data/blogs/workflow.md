@@ -3,7 +3,7 @@ title: "How to better construct and ship your web application"
 date: "2019-02-18"
 ---
 
-![Hopper The Rabbit](articles/workflow/workflow1.png)
+![workflow1](images/air.png)
 
 Working in a development team is quite different from working alone or working with one person. Without shared configurations, rules and a good workflow, the more people working on the projet, the more likely the project becomes a mass. In contrast, building shared configurations, reasonable rules, and good workflow are like making good investement: **the team will earn benefits everyday with the productivity**. They also help with garanting the quality of the deliverable and shipping the application more efficiently.
 

@@ -37,7 +37,18 @@ Lots of things are hidden. Web development is not that easy in real case without
 
 #### Todo
 
-- markdown => notes
+- markdown feature images, add more info, like
+
+```
+---
+title: "Using a Framework to Simplify Email Design"
+date: "2017-08-10"
+section: blog
+cover_image: "./foundation-emails-guide@1x.jpg"
+tags: design, development
+---
+```
+
 - make ssr working
 - add seo with [react helmet](https://www.gatsbyjs.org/tutorial/part-eight/#-using-react-helmet-and-gatsby-plugin-react-helmet)
 - try with [pwa, service worker](https://www.gatsbyjs.org/tutorial/part-eight/#-using-react-helmet-and-gatsby-plugin-react-helmet)

@@ -15,8 +15,6 @@
     "lint": "tslint --project ."
   },
   "dependencies": {
-    "@mdx-js/mdx": "^1.5.1",
-    "@mdx-js/react": "^1.5.1",
     "@types/node": "^12.12.7",
     "@types/react": "^16.9.11",
     "@types/react-dom": "^16.9.4",
@@ -26,12 +24,13 @@
     "gatsby": "^2.17.11",
     "gatsby-image": "^2.2.32",
     "gatsby-plugin-eslint": "^2.0.8",
-    "gatsby-plugin-mdx": "^1.0.56",
     "gatsby-plugin-sharp": "^2.2.38",
     "gatsby-plugin-styled-components": "^3.1.12",
     "gatsby-plugin-tslint": "^0.0.2",
     "gatsby-plugin-typescript": "^2.1.17",
     "gatsby-plugin-typography": "^2.3.16",
+    "gatsby-remark-copy-linked-files": "^2.1.29",
+    "gatsby-remark-images": "^3.1.30",
     "gatsby-remark-prismjs": "^3.3.22",
     "gatsby-source-filesystem": "^2.1.36",
     "gatsby-transformer-remark": "^2.6.34",
