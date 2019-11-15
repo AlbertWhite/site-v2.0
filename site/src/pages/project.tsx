@@ -11,20 +11,27 @@ interface ISiteData {
   url: string
 }
 
+const StyledContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+`
+
 export default ({ data }: any) => {
   const sites = data.site.siteMetadata.sites
   const site = sites[0]
   return (
     <Layout>
-      {sites.map(({ id, title, tech, url }: ISiteData) => (
-        <ProjectItem
-          key={id}
-          image={data[id].childImageSharp.fixed}
-          link={url}
-          title={title}
-          tech={tech}
-        />
-      ))}
+      <StyledContainer>
+        {sites.map(({ id, title, tech, url }: ISiteData) => (
+          <ProjectItem
+            key={id}
+            image={data[id].childImageSharp.fixed}
+            link={url}
+            title={title}
+            tech={tech}
+          />
+        ))}
+      </StyledContainer>
     </Layout>
   )
 }
