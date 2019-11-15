@@ -3,8 +3,6 @@ title: "How to better construct and ship your web application"
 date: "2019-02-18"
 ---
 
-![workflow1](images/air.png)
-
 Working in a development team is quite different from working alone or working with one person. Without shared configurations, rules and a good workflow, the more people working on the projet, the more likely the project becomes a mass. In contrast, building shared configurations, reasonable rules, and good workflow are like making good investement: **the team will earn benefits everyday with the productivity**. They also help with garanting the quality of the deliverable and shipping the application more efficiently.
 
 In this article, I will talk about how to better construct and ship web application for a team with the following five subjects :
@@ -72,10 +70,10 @@ The answer is continous integration and continous development, it means that **t
 
 During continous integration, the changes within a commit will be passed to server, built and tested automatically. An error will be thrown immediately if there is a problem with the test or with the build. Please take a look at the workflow of continous integration:
 
-img
+![](/images/workflow/workflow1.png)
 Continous delivery goes one step further than continous integration. After the build and automatical test, the code will be deployed to cdn and product owners can make the test manually with the bundle of a specifique version on the production environment. Please take a look at the workflow of continous delivery:
 
-img
+![](/images/workflow/workflow2.png)
 In case of tools, there are lots of services like [Codeship](https://codeship.com/) who can help with continous integration. Codeship pro is compatible with [Docker](https://www.docker.com/) for configuring the linux server for hosting the code.
 
 After uploading the bundles to a cdn (github, surge...), we can use the bundles in the product enviroment for making real world test manually.
@@ -83,7 +81,3 @@ After uploading the bundles to a cdn (github, surge...), we can use the bundles 
 ### In the end
 
 Keeping the same linter of the code in the team, sharing the same configuration for different project, always adding the necessary tests, building the system of continous integration will help us with construct the ship the web application more efficiently. Although it takes time to build, it will worth in the end.
-
-```
-
-```

@@ -6,11 +6,12 @@ html {
 
 a {
   color: var(--app-main-color, #663399) !important;
+  color: #663399 !important;
 }
 
 pre[class*="language-"] {
   white-space: pre-wrap !important;
-  font-size: 0.9em !important;
+  font-size: 0.8em !important;
 }
 
 /**

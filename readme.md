@@ -38,6 +38,9 @@ Lots of things are hidden. Web development is not that easy in real case without
 #### Todo
 
 - markdown feature images, add more info, like
+  A good md: https://dimitrioslytras.com/blog/avoiding-props-drilling/#Fin
+
+https://markoskon.com/gatsby-plugins-markdown/
 
 ```
 ---
