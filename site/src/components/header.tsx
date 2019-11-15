@@ -36,9 +36,9 @@ export default () => {
       </StyledTitleContainer>
       <StyledMenu>
         <StyledLink to={`/`}>About</StyledLink>
-        <StyledLink to={`/project`}>Project</StyledLink>
+        <StyledLink to={`/code`}>Project</StyledLink>
         <StyledLink to={`/blog`}>Blog</StyledLink>
-        <StyledLink to={`/uxPortfolio`}>UX portfolio</StyledLink>
+        <StyledLink to={`/ux`}>UX portfolio</StyledLink>
       </StyledMenu>
     </>
   )

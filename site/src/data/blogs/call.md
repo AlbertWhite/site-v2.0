@@ -1,6 +1,7 @@
 ---
 title: "Three ways for creating the callApi method"
 date: "2019-04-02"
+category: "blog"
 ---
 
 It is quite useful to create our own callApi method. It is also interesting but can be confusing to play with promise, async/await. I will list three ways for making callApi method with fetch (axio is the similar thing).

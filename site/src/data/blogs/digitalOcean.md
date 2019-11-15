@@ -1,6 +1,7 @@
 ---
 title: "Deploy node server in Digital Ocean"
 date: "2016-09-09"
+category: "blog"
 ---
 
 After deploying a web app with node server, we need to deploy the node server. There are several steps to that. After finish the short tutorial, hope you will feel it is easy to that.

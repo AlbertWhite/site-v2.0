@@ -1,6 +1,7 @@
 ---
 title: "Login, Signup, Find Password by Mail with NodeJS"
 date: "2016-06-23"
+category: "blog"
 ---
 
 These days I am working on build login, signup with Node for a client.

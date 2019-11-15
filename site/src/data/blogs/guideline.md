@@ -1,6 +1,7 @@
 ---
 title: "Angular 1 Guideline"
 date: "2017-06-04"
+category: "blog"
 ---
 
 During the last two months, I did an internship as a front-end developper for Angular. The project is well-structured, and strictly follow [the angular guideline from John Papa](https://github.com/johnpapa/angular-styleguide). Based on the project, I created the 'minimum' version with the same structure. Here is the link for the project, you can read the article while checking the files for the project.

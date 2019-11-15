@@ -1,6 +1,7 @@
 ---
 title: "Rethink on web design"
 date: "2017-11-07"
+category: "blog"
 ---
 
 Thanks to the experience in La Maison du Bitcoin, I had the opportunity for designing for the whole website and then making it. I find web design work is far more difficult than we think. In this article, I will talk about several topics:

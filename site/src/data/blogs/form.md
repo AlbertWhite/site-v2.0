@@ -1,6 +1,7 @@
 ---
 title: "ReduxForm vs Formik, with Material-UI or not"
 date: "2019-04-02"
+category: "blog"
 ---
 
 Form is one of the most important part in web application. When we work with a form, there are so many things that are quite similar, for example: form validation, intial values, error message, catch error after submission... That is why a form library can be quite useful (although we can create our own form library).
@@ -51,8 +52,8 @@ export default reduxForm({ form: "someForm", validate: selfValidation })(Form)
 ```
 
 [Basic example with formik:](https://github.com/AlbertWhite/react-demos/blob/master/demo39-formic-materialUI-vs-reduxform/src/formContainer/formik/index.js)
-  
- `js const Form = props => { return ( <Formik initialValues={{...}} validationSchema={YupSchema} onSubmit={(values, { setSubmitting, setErrors }) => { props.dispatch(submitWithFormik({ values, setSubmitting, setErrors })) }} > {({ errors, handleSubmit, isSubmitting, ...formikProps }) => { return ( <form onSubmit={handleSubmit}> ... <Input name="name" label="Name" errors={errors} {...formikProps} /> ... </form> ) }} </Formik> ) }`
+
+`js const Form = props => { return ( <Formik initialValues={{...}} validationSchema={YupSchema} onSubmit={(values, { setSubmitting, setErrors }) => { props.dispatch(submitWithFormik({ values, setSubmitting, setErrors })) }} > {({ errors, handleSubmit, isSubmitting, ...formikProps }) => { return ( <form onSubmit={handleSubmit}> ... <Input name="name" label="Name" errors={errors} {...formikProps} /> ... </form> ) }} </Formik> ) }`
 
 The two library are both well designed, so which one is better?
 

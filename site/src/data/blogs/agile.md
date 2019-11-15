@@ -1,6 +1,7 @@
 ---
 title: 'Is your team "Agile" ?'
 date: "2019-10-01"
+category: "blog"
 ---
 
 ### Development and delivery
