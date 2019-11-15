@@ -37,10 +37,31 @@ Lots of things are hidden. Web development is not that easy in real case without
 
 #### Todo
 
-- markdown feature images, add more info, like
-  A good md: https://dimitrioslytras.com/blog/avoiding-props-drilling/#Fin
+##### Content
 
-https://markoskon.com/gatsby-plugins-markdown/
+- Review the blogs. Modify the titles to make it more modern.
+- UX portfolio, text ?
+- About. Modify the text.
+- Add footer. Add social media.
+- Add darkmode
+
+##### Tech
+
+- Deploy with netfliy and managing the redirection from yuebaixu.com
+- Add SSR
+- Add SEO with [react helmet](https://www.gatsbyjs.org/tutorial/part-eight/#-using-react-helmet-and-gatsby-plugin-react-helmet)
+- [pwa, service worker](https://www.gatsbyjs.org/tutorial/part-eight/#-using-react-helmet-and-gatsby-plugin-react-helmet)
+- More plugins
+- add google analytics
+
+##### example
+
+- A good md: https://dimitrioslytras.com/blog/avoiding-props-drilling/#Fin
+- https://markoskon.com/gatsby-plugins-markdown/
+
+##### design
+
+rethink on the design
 
 ```
 ---
@@ -51,11 +72,3 @@ cover_image: "./foundation-emails-guide@1x.jpg"
 tags: design, development
 ---
 ```
-
-- make ssr working
-- add seo with [react helmet](https://www.gatsbyjs.org/tutorial/part-eight/#-using-react-helmet-and-gatsby-plugin-react-helmet)
-- try with [pwa, service worker](https://www.gatsbyjs.org/tutorial/part-eight/#-using-react-helmet-and-gatsby-plugin-react-helmet)
-- deploy with netfliy and managing the redirection (godaddy with netfliy)
-- google analytics
-
-welcome the cool things!
