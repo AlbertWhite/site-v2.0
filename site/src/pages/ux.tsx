@@ -32,7 +32,7 @@ export default ({ data }: any) => {
 }
 
 export const query = graphql`
-  query {
+  query ux {
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       totalCount
       edges {

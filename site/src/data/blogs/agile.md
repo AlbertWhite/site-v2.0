@@ -4,7 +4,9 @@ date: "2019-10-01"
 category: "blog"
 ---
 
-### Development and delivery
+A questionnaire about the agility for the development team.
+
+#### Development and delivery
 
 **1. How do you test in your team ?**
 
@@ -60,7 +62,7 @@ category: "blog"
 
 2 - Immediately
 
-### Team
+#### Team
 
 **1. How the team is organized ?**
 
@@ -80,7 +82,7 @@ category: "blog"
 
 **4. Does the work rythme hold for long-term?**
 
-### Methodology
+#### Methodology
 
 **1. How often do you delivery new features ?**
 
@@ -178,7 +180,9 @@ category: "blog"
 
 3 - Yes, and it is improved continuously
 
-**13. Does the team share the clear vision for the product and for the team ? 14. How do you measure the features ?**
+**13. Does the team share the clear vision for the product and for the team ?**
+
+**14. How do you measure the features ?**
 
 0 - No measure
 
@@ -188,4 +192,4 @@ category: "blog"
 
 3 - Yes, and it is improved continuously
 
-### Now... how is the Score for your team :) ?
+#### Now... how is the Score for your team :) ?

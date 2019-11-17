@@ -18,7 +18,6 @@ const StyledContainer = styled.div`
 
 export default ({ data }: any) => {
   const sites = data.site.siteMetadata.sites
-  const site = sites[0]
   return (
     <Layout>
       <StyledContainer>
@@ -37,7 +36,7 @@ export default ({ data }: any) => {
 }
 
 export const query = graphql`
-  query {
+  query code {
     site {
       siteMetadata {
         sites {

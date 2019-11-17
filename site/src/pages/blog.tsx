@@ -5,6 +5,24 @@ import { Link, graphql } from "gatsby"
 
 const isBlog = (node: any) => node.frontmatter.category === "blog"
 
+const StyledTitle = styled.h3`
+  color: #663399;
+  color: var(--app-main-color, #663399);
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+`
+
+const StyledDate = styled.div`
+  font-size: 0.8rem;
+  color: black;
+  margin-bottom: 1.2rem;
+`
+
+const StyledContent = styled.p`
+  color: black;
+  font-size: 0.8rem;
+`
+
 export default ({ data }: any) => {
   return (
     <Layout>
@@ -14,11 +32,9 @@ export default ({ data }: any) => {
           isBlog(node) ? (
             <div key={node.id}>
               <Link to={node.fields.slug}>
-                <h3>
-                  {node.frontmatter.title}{" "}
-                  <span>— {node.frontmatter.date}</span>
-                </h3>
-                <p>{node.excerpt}</p>
+                <StyledTitle>{node.frontmatter.title} </StyledTitle>
+                <StyledDate>{node.frontmatter.date}</StyledDate>
+                <StyledContent>{node.excerpt}</StyledContent>
               </Link>
             </div>
           ) : null
@@ -29,7 +45,7 @@ export default ({ data }: any) => {
 }
 
 export const query = graphql`
-  query {
+  query blog {
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       totalCount
       edges {
