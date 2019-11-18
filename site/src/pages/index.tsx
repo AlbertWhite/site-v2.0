@@ -1,14 +1,14 @@
 import React from "react"
 import styled from "styled-components"
 import Layout from "../components/layout"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 
-export default () => {
+export default ({ data }: any) => {
   return (
     <Layout>
       <p>
-        Hi, I am Albert, my Chinese name is Yuebai XU 许月白. I am a front-end
-        developper based in Paris.
+        Hi, I am Albert, my Chinese name is Yuebai XU 许月白. I am a javascript
+        developper in Paris.
       </p>
       <p>
         I have experience with{" "}
@@ -20,8 +20,8 @@ export default () => {
           react/redux
         </a>
         ,{" "}
-        <Link to="note/guideline" target="_blank">
-          angular1 + gulp
+        <Link to="/guideline" target="_blank">
+          angular1
         </Link>
         . Now I am working in{" "}
         <a href="https://www.fnac.com/" target="_blank">
@@ -43,7 +43,7 @@ export default () => {
           a chrome extension
         </a>
         , and{" "}
-        <Link to="site" rel="noopener noreferrer">
+        <Link to="/code" rel="noopener noreferrer">
           some data visualizations
         </Link>
         .
@@ -51,27 +51,37 @@ export default () => {
       <p>
         Every piece of professional experience brings me something, I note them
         down as{" "}
-        <Link to="note" rel="noopener noreferrer">
-          notes
+        <Link to="/blog" rel="noopener noreferrer">
+          blogs
         </Link>
         .
       </p>
       <p>
         As a master student in Human Computer Interaction (HCI), I am well
         trained in UX design and I have a{" "}
-        <Link to="portfolio" rel="noopener noreferrer">
+        <Link to="/ux" rel="noopener noreferrer">
           portfolio
         </Link>
         .
       </p>
-      <p>I love Paris and I am on my way.</p>
       <p>
-        {/* Here is my{" "}
-        <a href={Resume} target="_blank" rel="noopener noreferrer"> 
-          cv
-        </a>
-        , */}
-        please feel free to contact me via{" "}
+        Here are my cv in{" "}
+        <a
+          href={data.allFile.edges[1].node.publicURL}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          French version
+        </a>{" "}
+        and in{" "}
+        <a
+          href={data.allFile.edges[0].node.publicURL}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          English version
+        </a>{" "}
+        , please feel free to contact me via{" "}
         <a href="mailto:albert.yuebai@gmail.com?Subject=Hi%Albert">
           {" "}
           albert.yuebai@gmail.com
@@ -80,3 +90,16 @@ export default () => {
     </Layout>
   )
 }
+
+export const query = graphql`
+  query cv {
+    allFile(filter: { extension: { eq: "pdf" } }) {
+      edges {
+        node {
+          publicURL
+          name
+        }
+      }
+    }
+  }
+`

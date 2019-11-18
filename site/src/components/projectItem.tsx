@@ -13,6 +13,10 @@ interface IProjectItemProps {
 const StyledContainer = styled.a`
   position: relative;
   text-decoration: none;
+  box-shadow: none;
+  &:hover {
+    box-shadow: none;
+  }
 `
 
 const StyledProjectInfo = styled.div`
@@ -21,7 +25,7 @@ const StyledProjectInfo = styled.div`
   position: absolute;
   width: 100%;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
   color: white;
   text-align: center;
   padding: 50px 10%;
@@ -31,8 +35,12 @@ const StyledProjectInfo = styled.div`
   align-items: center;
   border: 1px solid rgba(255, 255, 255, 0.1);
   ${StyledContainer}:hover & {
-    display: none;
+    opacity: 0;
   }
+`
+
+const StyledTech = styled.div`
+  margin-left: 1rem;
 `
 
 export default ({ image, link, title, tech }: IProjectItemProps) => {
@@ -41,7 +49,7 @@ export default ({ image, link, title, tech }: IProjectItemProps) => {
       <Img fixed={image} alt="headshot" />
       <StyledProjectInfo>
         <div>{title}</div>
-        <div>{tech}</div>
+        <StyledTech>{tech}</StyledTech>
       </StyledProjectInfo>
     </StyledContainer>
   )

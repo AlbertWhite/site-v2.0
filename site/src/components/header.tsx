@@ -20,14 +20,38 @@ const StyledMenu = styled.div`
   display: flex;
   flex-direction: row;
   margin: 10px 0 40px 0;
+  justify-content: space-around;
 `
 
 const StyledLink = styled(Link)`
-  margin-left: 50px;
-  box-shadow: none;
+  box-shadow: ${(props: { shouldHighLight: boolean }) =>
+    props.shouldHighLight ? "box-shadow: 0 1px 0 0 currentColor;" : "none"};
+  font-weight: bold;
+  color: black !important;
 `
 
 export default () => {
+  const pathname = window.location.pathname
+  let shouldHighLightAbout = false
+  let shouldHighLightBlog = false
+  let shouldHighLightCode = false
+  let shouldHighLightUX = false
+
+  switch (pathname) {
+    case "/":
+      shouldHighLightAbout = true
+      break
+    case "/code":
+      shouldHighLightCode = true
+      break
+    case "/ux":
+      shouldHighLightUX = true
+      break
+    default:
+      shouldHighLightBlog = true
+      break
+  }
+
   return (
     <>
       <StyledTitleContainer>
@@ -35,10 +59,18 @@ export default () => {
         <StyledSubTitle>Javascript Developer</StyledSubTitle>
       </StyledTitleContainer>
       <StyledMenu>
-        <StyledLink to={`/`}>About</StyledLink>
-        <StyledLink to={`/code`}>Project</StyledLink>
-        <StyledLink to={`/blog`}>Blog</StyledLink>
-        <StyledLink to={`/ux`}>UX portfolio</StyledLink>
+        <StyledLink to={`/`} shouldHighLight={shouldHighLightAbout}>
+          About
+        </StyledLink>
+        <StyledLink to={`/code`} shouldHighLight={shouldHighLightCode}>
+          Project
+        </StyledLink>
+        <StyledLink to={`/blog`} shouldHighLight={shouldHighLightBlog}>
+          Blog
+        </StyledLink>
+        <StyledLink to={`/ux`} shouldHighLight={shouldHighLightUX}>
+          UX portfolio
+        </StyledLink>
       </StyledMenu>
     </>
   )

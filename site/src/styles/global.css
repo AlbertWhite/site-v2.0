@@ -9,6 +9,10 @@ a {
   color: #663399 !important;
 }
 
+a:hover {
+  box-shadow: 0 1px 0 0 currentColor;
+}
+
 pre[class*="language-"] {
   white-space: pre-wrap !important;
   font-size: 0.8em !important;

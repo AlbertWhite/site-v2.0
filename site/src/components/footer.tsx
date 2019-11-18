@@ -4,18 +4,24 @@ import styled from "styled-components"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-const StyledMenu = styled.div`
+const StyledIcons = styled.div``
+
+const StyledBottom = styled.div`
+  font-size: 0.8rem;
   display: flex;
   flex-direction: row;
-  margin: 10px 0 40px 0;
+  justify-content: space-between;
+  align-items: center;
+}
 `
 
-const StyledLink = styled(Link)`
-  margin-left: 50px;
+const StyledA = styled.a`
   box-shadow: none;
+  margin-left: 1rem;
+  &:hover {
+    box-shadow: none;
+  }
 `
-
-const StyledBottom = styled.div``
 
 export default () => {
   const data = useStaticQuery(
@@ -28,15 +34,37 @@ export default () => {
             }
           }
         }
+        github: file(relativePath: { eq: "icons/github.png" }) {
+          childImageSharp {
+            fixed(width: 30, height: 30) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
+        behance: file(relativePath: { eq: "icons/behance.png" }) {
+          childImageSharp {
+            fixed(width: 30, height: 30) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
       }
     `
   )
   return (
-    <>
-      <a href="https://www.linkedin.com/in/yuebai-xu-53a7099a/">
-        <Img fixed={data.linkedin.childImageSharp.fixed} alt="headshot" />
-      </a>
-      <StyledBottom>Powered by Gatsby.js. Albert Yuebai XU - 2019</StyledBottom>
-    </>
+    <StyledBottom>
+      <span>Powered by Gatsby.js. Albert Yuebai XU - 2019</span>
+      <StyledIcons>
+        <StyledA href="https://www.linkedin.com/in/yuebai-xu-53a7099a/">
+          <Img fixed={data.linkedin.childImageSharp.fixed} alt="headshot" />
+        </StyledA>
+        <StyledA href="https://github.com/AlbertWhite">
+          <Img fixed={data.github.childImageSharp.fixed} alt="headshot" />
+        </StyledA>
+        <StyledA href="https://www.behance.net/AlbertXu">
+          <Img fixed={data.behance.childImageSharp.fixed} alt="headshot" />
+        </StyledA>
+      </StyledIcons>
+    </StyledBottom>
   )
 }
