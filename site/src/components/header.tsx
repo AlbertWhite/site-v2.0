@@ -12,6 +12,8 @@ const StyledTitleContainer = styled.div`
 
 const StyledTitle = styled.h2`
   margin-bottom: 0;
+  color: #663399;
+  color: var(--app-main-color, #663399);
 `
 
 const StyledSubTitle = styled.h4`
@@ -87,12 +89,12 @@ export default () => {
     <>
       <StyledHeader>
         <StyledTitleContainer>
-          <StyledTitle>XXXXXXXXx</StyledTitle>
-          <StyledSubTitle>YYYYYYYYYYYY</StyledSubTitle>
+          <StyledTitle>Albert Yuebai XU</StyledTitle>
+          <StyledSubTitle>Javascript Developer</StyledSubTitle>
         </StyledTitleContainer>
         <StyledToggle
           className="customToggle"
-          defaultChecked={!isDarkMode}
+          defaultChecked={isDarkMode}
           onChange={() => setIsDarkMode(!isDarkMode)}
           icons={false}
         />

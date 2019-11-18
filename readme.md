@@ -40,7 +40,6 @@ Lots of things are hidden. Web development is not that easy in real case without
 ##### Content
 
 - review all the text
-- Add darkmode
 
 ##### Tech
 
@@ -55,10 +54,6 @@ Lots of things are hidden. Web development is not that easy in real case without
 
 - A good md: https://dimitrioslytras.com/blog/avoiding-props-drilling/#Fin
 - https://markoskon.com/gatsby-plugins-markdown/
-
-##### design
-
-rethink on the design
 
 ```
 ---

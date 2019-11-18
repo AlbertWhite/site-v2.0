@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 
 const StyledTitle = styled.h2`
   color: #663399;
@@ -13,17 +13,34 @@ const StyledDate = styled.div`
   margin-bottom: 2rem;
 `
 
+const StyledDevider = styled.span`
+  margin: 0 1rem;
+`
+
 export default ({ data }: any) => {
   const {
     frontmatter: { title, date },
     html,
   } = data.markdownRemark
-  console.warn("alb", { data })
   return (
-    <div>
+    <div id="anchor">
       <StyledTitle>{title}</StyledTitle>
       {date && <StyledDate>{date}</StyledDate>}
       <div dangerouslySetInnerHTML={{ __html: html }} />
+
+      <div>
+        <Link to="/blog">Back to Blogs</Link>
+        <StyledDevider>|</StyledDevider>
+        <a
+          href="/"
+          onClick={e => {
+            e.preventDefault()
+            scrollTo(0, 0)
+          }}
+        >
+          Go to Top
+        </a>
+      </div>
     </div>
   )
 }

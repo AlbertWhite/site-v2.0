@@ -41,6 +41,7 @@
     "react-toggle": "^4.1.1",
     "react-typography": "^0.16.19",
     "styled-components": "^4.4.1",
+    "surge": "^0.21.3",
     "tslint": "^5.20.1",
     "tslint-config-prettier": "^1.18.0",
     "tslint-loader": "^3.5.4",
