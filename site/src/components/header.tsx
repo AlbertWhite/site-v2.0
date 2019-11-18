@@ -45,12 +45,11 @@ const StyledToggle = styled(Toggle)``
 export default () => {
   // local storage cannot save boolean, it can only save string
   const initialDarkMode =
-    JSON.parse(localStorage.getItem("isDarkMode") || "{}") || false
-
+    JSON.parse(localStorage.getItem("isDarkMode") || null) || false
   const [isDarkMode, setIsDarkMode] = useState(initialDarkMode)
 
   useEffect(() => {
-    localStorage.setItem("isDarkMode", isDarkMode)
+    localStorage.setItem("isDarkMode", JSON.stringify(isDarkMode))
     if (isDarkMode) {
       document.querySelector("body").className = "dark"
     } else {
