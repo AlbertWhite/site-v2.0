@@ -1,7 +1,6 @@
 ---
 imageId: "train"
 title: "Train Reminder"
-date: ""
 category: "ux"
 ---
 

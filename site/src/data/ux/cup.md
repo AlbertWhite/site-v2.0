@@ -1,7 +1,6 @@
 ---
 imageId: "cup"
 title: "Buddy Cup"
-date: ""
 category: "ux"
 ---
 

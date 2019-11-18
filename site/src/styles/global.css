@@ -1,12 +1,41 @@
+html,
+body {
+  min-height: 100vh;
+}
+
 html {
   background-color: white;
   --app-max-width: 672px;
   --app-main-color: #663399;
 }
 
+body.dark {
+  background: #282c35;
+  color: white;
+}
+
+body.dark h2,
+body.dark h3,
+body.dark h4,
+body.dark p {
+  color: white !important;
+}
+
+body.dark a {
+  color: #e0c1ff;
+}
+
+body.dark a h3 {
+  color: #e0c1ff;
+}
+
+body.dark a div {
+  color: white;
+}
+
 a {
-  color: var(--app-main-color, #663399) !important;
-  color: #663399 !important;
+  color: var(--app-main-color, #663399);
+  color: #663399;
 }
 
 a:hover {
@@ -16,6 +45,22 @@ a:hover {
 pre[class*="language-"] {
   white-space: pre-wrap !important;
   font-size: 0.8em !important;
+}
+
+.react-toggle--focus .react-toggle-thumb {
+  box-shadow: none !important;
+}
+
+/*used in header.tsx for customize color*/
+.customToggle.react-toggle--checked .react-toggle-track {
+  background-color: #663399;
+  background-color: var(--app-main-color, #663399);
+}
+
+.customToggle.react-toggle--checked:hover:not(.react-toggle--disabled)
+  .react-toggle-track {
+  background-color: #663399;
+  background-color: var(--app-main-color, #663399);
 }
 
 /**

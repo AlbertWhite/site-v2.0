@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 import { graphql } from "gatsby"
-import Layout from "../components/layout"
 
 const StyledTitle = styled.h2`
   color: #663399;
@@ -10,20 +9,22 @@ const StyledTitle = styled.h2`
 
 const StyledDate = styled.div`
   font-size: 0.8rem;
-  color: black;
+  color: inherit;
   margin-bottom: 2rem;
 `
 
 export default ({ data }: any) => {
-  const post = data.markdownRemark
+  const {
+    frontmatter: { title, date },
+    html,
+  } = data.markdownRemark
+  console.warn("alb", { data })
   return (
-    <Layout>
-      <div>
-        <StyledTitle>{post.frontmatter.title}</StyledTitle>
-        <StyledDate>{post.frontmatter.date}</StyledDate>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
-      </div>
-    </Layout>
+    <div>
+      <StyledTitle>{title}</StyledTitle>
+      {date && <StyledDate>{date}</StyledDate>}
+      <div dangerouslySetInnerHTML={{ __html: html }} />
+    </div>
   )
 }
 

@@ -1,7 +1,6 @@
 ---
 imageId: "momenthere"
 title: "Momenthere"
-date: ""
 category: "ux"
 ---
 

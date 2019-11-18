@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "@emotion/core": "^10.0.22",
+    "@types/react-toggle": "^4.0.2",
     "gatsby-image": "^2.2.32",
     "gatsby-plugin-emotion": "^4.1.14",
     "gatsby-plugin-sharp": "^2.2.38",

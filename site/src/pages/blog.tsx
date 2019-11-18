@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import Layout from "../components/layout"
 import { Link, graphql } from "gatsby"
 
 const isBlog = (node: any) => node.frontmatter.category === "blog"
@@ -25,22 +24,19 @@ const StyledContent = styled.p`
 
 export default ({ data }: any) => {
   return (
-    <Layout>
-      {" "}
-      <div>
-        {data.allMarkdownRemark.edges.map(({ node }: any) =>
-          isBlog(node) ? (
-            <div key={node.id}>
-              <Link to={node.fields.slug}>
-                <StyledTitle>{node.frontmatter.title} </StyledTitle>
-                <StyledDate>{node.frontmatter.date}</StyledDate>
-                <StyledContent>{node.excerpt}</StyledContent>
-              </Link>
-            </div>
-          ) : null
-        )}
-      </div>
-    </Layout>
+    <div>
+      {data.allMarkdownRemark.edges.map(({ node }: any) =>
+        isBlog(node) ? (
+          <div key={node.id}>
+            <Link to={node.fields.slug}>
+              <StyledTitle>{node.frontmatter.title} </StyledTitle>
+              <StyledDate>{node.frontmatter.date}</StyledDate>
+              <StyledContent>{node.excerpt}</StyledContent>
+            </Link>
+          </div>
+        ) : null
+      )}
+    </div>
   )
 }
 

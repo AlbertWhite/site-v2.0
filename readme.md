@@ -39,10 +39,7 @@ Lots of things are hidden. Web development is not that easy in real case without
 
 ##### Content
 
-- Review the blogs. Modify the titles to make it more modern.
-- UX portfolio, text ?
-- About. Modify the text.
-- Add footer. Add social media.
+- review all the text
 - Add darkmode
 
 ##### Tech

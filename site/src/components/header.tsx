@@ -1,6 +1,8 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import styled from "styled-components"
+import "react-toggle/style.css"
+import Toggle from "react-toggle"
 
 const StyledTitleContainer = styled.div`
   display: flex;
@@ -24,13 +26,36 @@ const StyledMenu = styled.div`
 `
 
 const StyledLink = styled(Link)`
-  box-shadow: ${(props: { shouldHighLight: boolean }) =>
+  box-shadow: ${(props: { isDarkMode: boolean; shouldHighLight: boolean }) =>
     props.shouldHighLight ? "box-shadow: 0 1px 0 0 currentColor;" : "none"};
   font-weight: bold;
-  color: black !important;
+  color: ${(props: { isDarkMode: boolean; shouldHighLight: boolean }) =>
+    props.isDarkMode ? "white !important" : "black"};
 `
+const StyledHeader = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+`
+const StyledToggle = styled(Toggle)``
 
 export default () => {
+  // local storage cannot save boolean, it can only save string
+  const initialDarkMode =
+    JSON.parse(localStorage.getItem("isDarkMode") || "{}") || false
+
+  const [isDarkMode, setIsDarkMode] = useState(initialDarkMode)
+
+  useEffect(() => {
+    localStorage.setItem("isDarkMode", isDarkMode)
+    if (isDarkMode) {
+      document.querySelector("body").className = "dark"
+    } else {
+      document.querySelector("body").className = ""
+    }
+  }, [isDarkMode])
+
   const pathname = window.location.pathname
   let shouldHighLightAbout = false
   let shouldHighLightBlog = false
@@ -45,6 +70,12 @@ export default () => {
       shouldHighLightCode = true
       break
     case "/ux":
+    case "/cup/":
+    case "/fortify/":
+    case "/love/":
+    case "/momenthere/":
+    case "/sleep/":
+    case "/train/":
       shouldHighLightUX = true
       break
     default:
@@ -54,21 +85,45 @@ export default () => {
 
   return (
     <>
-      <StyledTitleContainer>
-        <StyledTitle>Albert Yuebai XU</StyledTitle>
-        <StyledSubTitle>Javascript Developer</StyledSubTitle>
-      </StyledTitleContainer>
+      <StyledHeader>
+        <StyledTitleContainer>
+          <StyledTitle>XXXXXXXXx</StyledTitle>
+          <StyledSubTitle>YYYYYYYYYYYY</StyledSubTitle>
+        </StyledTitleContainer>
+        <StyledToggle
+          className="customToggle"
+          defaultChecked={!isDarkMode}
+          onChange={() => setIsDarkMode(!isDarkMode)}
+          icons={false}
+        />
+      </StyledHeader>
       <StyledMenu>
-        <StyledLink to={`/`} shouldHighLight={shouldHighLightAbout}>
+        <StyledLink
+          to={`/`}
+          shouldHighLight={shouldHighLightAbout}
+          isDarkMode={isDarkMode}
+        >
           About
         </StyledLink>
-        <StyledLink to={`/code`} shouldHighLight={shouldHighLightCode}>
+        <StyledLink
+          to={`/code`}
+          shouldHighLight={shouldHighLightCode}
+          isDarkMode={isDarkMode}
+        >
           Project
         </StyledLink>
-        <StyledLink to={`/blog`} shouldHighLight={shouldHighLightBlog}>
+        <StyledLink
+          to={`/blog`}
+          shouldHighLight={shouldHighLightBlog}
+          isDarkMode={isDarkMode}
+        >
           Blog
         </StyledLink>
-        <StyledLink to={`/ux`} shouldHighLight={shouldHighLightUX}>
+        <StyledLink
+          to={`/ux`}
+          shouldHighLight={shouldHighLightUX}
+          isDarkMode={isDarkMode}
+        >
           UX portfolio
         </StyledLink>
       </StyledMenu>

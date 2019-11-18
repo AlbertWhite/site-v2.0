@@ -1,11 +1,10 @@
 import React from "react"
 import styled from "styled-components"
-import Layout from "../components/layout"
 import { Link, graphql } from "gatsby"
 
 export default ({ data }: any) => {
   return (
-    <Layout>
+    <>
       <p>
         Hi, I am Albert, my Chinese name is Yuebai XU 许月白. I am a javascript
         developper in Paris.
@@ -87,7 +86,7 @@ export default ({ data }: any) => {
           albert.yuebai@gmail.com
         </a>
       </p>
-    </Layout>
+    </>
   )
 }
 

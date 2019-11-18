@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import Layout from "../components/layout"
 import { Link, graphql } from "gatsby"
 import ProjectItem from "../components/projectItem"
 
@@ -13,21 +12,19 @@ const StyledContainer = styled.div`
 
 export default ({ data }: any) => {
   return (
-    <Layout>
-      <StyledContainer>
-        {data.allMarkdownRemark.edges.map(({ node }: any) => {
-          return isUX(node) ? (
-            <ProjectItem
-              key={node.fields.slug}
-              image={data[node.frontmatter.imageId].childImageSharp.fixed}
-              link={node.fields.slug}
-              title={node.frontmatter.title}
-              tech={""}
-            />
-          ) : null
-        })}
-      </StyledContainer>
-    </Layout>
+    <StyledContainer>
+      {data.allMarkdownRemark.edges.map(({ node }: any) => {
+        return isUX(node) ? (
+          <ProjectItem
+            key={node.fields.slug}
+            image={data[node.frontmatter.imageId].childImageSharp.fixed}
+            link={node.fields.slug}
+            title={node.frontmatter.title}
+            tech={""}
+          />
+        ) : null
+      })}
+    </StyledContainer>
   )
 }
 

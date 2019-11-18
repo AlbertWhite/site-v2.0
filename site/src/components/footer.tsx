@@ -7,6 +7,7 @@ import Img from "gatsby-image"
 const StyledIcons = styled.div``
 
 const StyledBottom = styled.div`
+  margin-top: 1rem;
   font-size: 0.8rem;
   display: flex;
   flex-direction: row;

@@ -1,7 +1,6 @@
 ---
 imageId: "fortify"
 title: "Fortify"
-date: ""
 category: "ux"
 ---
 

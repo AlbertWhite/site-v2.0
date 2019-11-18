@@ -1,7 +1,6 @@
 ---
 imageId: "love"
 title: "Love Album"
-date: ""
 category: "ux"
 ---
 

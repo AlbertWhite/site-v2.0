@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import Layout from "../components/layout"
 import { Link, graphql } from "gatsby"
 import ProjectItem from "../components/projectItem"
 
@@ -19,19 +18,17 @@ const StyledContainer = styled.div`
 export default ({ data }: any) => {
   const sites = data.site.siteMetadata.sites
   return (
-    <Layout>
-      <StyledContainer>
-        {sites.map(({ id, title, tech, url }: ISiteData) => (
-          <ProjectItem
-            key={id}
-            image={data[id].childImageSharp.fixed}
-            link={url}
-            title={title}
-            tech={tech}
-          />
-        ))}
-      </StyledContainer>
-    </Layout>
+    <StyledContainer>
+      {sites.map(({ id, title, tech, url }: ISiteData) => (
+        <ProjectItem
+          key={id}
+          image={data[id].childImageSharp.fixed}
+          link={url}
+          title={title}
+          tech={tech}
+        />
+      ))}
+    </StyledContainer>
   )
 }
 

@@ -38,6 +38,7 @@
     "prismjs": "^1.17.1",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
+    "react-toggle": "^4.1.1",
     "react-typography": "^0.16.19",
     "styled-components": "^4.4.1",
     "tslint": "^5.20.1",

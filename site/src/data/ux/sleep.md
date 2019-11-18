@@ -1,7 +1,6 @@
 ---
 imageId: "sleep"
 title: "Sleep Fairy"
-date: ""
 category: "ux"
 ---
 
