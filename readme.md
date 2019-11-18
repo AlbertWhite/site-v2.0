@@ -54,15 +54,9 @@ Gatsby is not limited to making pages from files like many static site generator
 
 Lots of things are hidden. Web development is not that easy in real case without Gastby.
 
-#### Todo
-
-##### Content
-
-- review all the text
-
 ##### Tech
 
-- Deploy with netfliy and managing the redirection from yuebaixu.com
+- review all the text
 - Add SSR
 - Add SEO with [react helmet](https://www.gatsbyjs.org/tutorial/part-eight/#-using-react-helmet-and-gatsby-plugin-react-helmet)
 - [pwa, service worker](https://www.gatsbyjs.org/tutorial/part-eight/#-using-react-helmet-and-gatsby-plugin-react-helmet)
