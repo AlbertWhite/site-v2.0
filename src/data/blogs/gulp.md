@@ -2,32 +2,28 @@
 title: "Use Gulp for three reasons"
 date: "2016-05-04"
 category: "blog"
-star: 2
+star: 1
 ---
 
-The first day I came to the office, I remember my tutor told me: have you ever tried to use gulp? We use gulp for our projects here.
-
-I heard that before, but never tried with that at that time. However, after I try with it, I konw I will never code html without it until there is a better tool for me!
-
 ![](images/gulp/1.png)
-First of all, what is [gulp](http://www.gulpjs.com/}?
+First of all, what is [gulp](http://www.gulpjs.com/)?
 
-Gulp helps front-end programmers enhance their workflows, but how? Gulp have a lot of plugins to help front-end programmers to accomplish this goal. However, like NPM(node package manager), many plugins are used for similar functions and not all of them are perfect to use, so I am writing this article to summarize some really good plugin and how they help me in development. In short, gulp helps me in the following three ways:
+Gulp helps front-end programmers enhance their workflows, but how? Gulp have a lot of plugins to help front-end programmers to accomplish this goal. In short, gulp helps me in the following three ways:
 
-1. Create server and synchronize code and the browser
+1. Create server and synchronize code with the browser
 2. Watch changes for sass
 3. Export code into the version for public use
 
 ### Create server and synchronize code and the browser
 
-Perhaps this is the most attracting function from gulp for programmers. Instead of following the traditional workflow :change code, refresh brower and see the changes, gulp has plugins to synchronize code and the browsers. Once programmers save the code, the browser will refresh automatically! Let's take a look how it works:
+Perhaps this is the most attracting function from gulp for programmers. Instead of following the traditional workflow: change code, refresh browser and see the changes, gulp has plugins to synchronize code and the browsers. Once programmers save the code, the browser will refresh automatically! Let's take a look how it works:
 
 ![](images/gulp/2.gif)
 It's cool isn't it? This feature helps save a lot of time.
 
 There are different ways to do that, but I recommend to use the plugin [browsersync](http://www.browsersync.io/) for this feature.
 
-How to use it? First of all, we need to install gulp with $: npm install gulp and then install the plugin with $: npm install brower-sync.
+How to use it? First of all, we need to install gulp with `$: npm install gulp` and then install the plugin with `$: npm install brower-sync.`
 
 After installing gulp, we can start creating the new file **gulpfile.js** to add code.
 
@@ -49,19 +45,15 @@ gulp.task("server", ["sass"], function() {
 })
 ```
 
-After that, we just go to terminal, and run the command \$: gulp server to start the server.
+After that, we just go to terminal, and run the command `$: gulp` server to start the server.
 
-More then that, browser-sync could be used for multiple devices, and it also supports synchronizing for inputs.
+More than that, browser-sync could be used for multiple devices, and it also supports synchronizing for inputs.
 
 If you want to know more about this plugin, please view the its [website](http://www.browsersync.io/).
 
 ### Watch changes for sass
 
-While we are using sass, maybe the most annoying problem is we always to export sass into css and then view the effects. As a result, there are many solutions to automatic the workflow, for example, [compass watch](http://compass-style.org/help/) could do a good job, but do you know, gulp could also provide a solution to that?
-
-The plugin I am now introducing is [gulp-sass](https://www.npmjs.com/package/gulp-sass). This plugin could watch for the changes in sass and also report errors in sass.
-
-As for the code, we can also write this part into the server task.
+While we are using sass, maybe the most annoying problem is we always need to compile sass into css. Gulp could also provide a solution for that with the plugin [gulp-sass](https://www.npmjs.com/package/gulp-sass). This plugin could watch for the changes in sass and also report errors for sass.
 
 gulpfile.js
 
@@ -119,7 +111,7 @@ gulp.task("export", function() {
 })
 ```
 
-As we can see, the **src** and **pipe** functions could be used to move files with gulp. They are documented **here**.
+As we can see, the **src** and **pipe** functions could be used to move files with gulp.
 
 ### Combine gulp and node server
 
@@ -159,5 +151,3 @@ gulp.task('express',function(){
 });
 });
 ```
-
-Gulp is very useful to automate front-end developers' workflow. Hope you like it!

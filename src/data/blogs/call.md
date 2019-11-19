@@ -1,18 +1,21 @@
 ---
-title: "Three ways for creating the callApi method"
+title: "Creating the callApi method with promise, async/await"
 date: "2019-04-02"
 category: "blog"
 star: 3
 ---
 
-It is quite useful to create our own callApi method. It is also interesting but can be confusing to play with promise, async/await. I will list three ways for making callApi method with fetch (axio is the similar thing).
+It is quite useful to create our own callApi method in the application. In this article, I will talk about three ways to implement it with promise, async/await.
+
+##### Some notions with async/await and promise
 
 First of all, there are some things to be clarified about async/await and promise:
-Async doesn't not need to be used with await, but await must be written in a async function.
-In order to use async, we need to use .then or await. Async will return a promise.
-A promise must be resolved/rejected, but why there is no resolve or reject in 'fetch' function? Because fetch api will return a promise but it will resolve/reject itself by then/catch.
 
-##### Method 1
+- Async doesn't not need to be used with await, but await must be written in a async function.
+- In order to use async, we need to use .then or await. Async will return a promise.
+- A promise must be resolved/rejected, but why there is no resolve or reject in 'fetch' function? Because fetch api will return a promise and it will resolve/reject itself by then/catch.
+
+##### Method 1: return fetch.then directly
 
 ```js
 const callApi = (url, params) => {
@@ -27,7 +30,7 @@ callApi(url, params).then(res => {
 })
 ```
 
-##### Method 2
+##### Method 2: create new Promise as result
 
 ```js
 const callApi = (url, params) => {
@@ -48,7 +51,7 @@ callApi(url, params).then(res => {
 })
 ```
 
-##### Method 3
+##### Method 3: use async/await
 
 ```js
 async function callApi(url, params) {

@@ -1,17 +1,17 @@
 ---
-title: "ReduxForm vs Formik, with Material-UI or not"
+title: "ReduxForm vs Formik, with Material-UI or not ?"
 date: "2019-04-02"
 category: "blog"
-star: 3
+star: 4
 ---
 
-Form is one of the most important part in web application. When we work with a form, there are so many things that are quite similar, for example: form validation, intial values, error message, catch error after submission... That is why a form library can be quite useful (although we can create our own form library).
+Form is one of the most important part in web application. When we work with a form, there are so many things that are quite similar, for example: form validation, initial values, error message, catch error after submission... That is why a form library can be quite useful (although we can create our own form library).
 
-Material-UI provides form control component with styles and functions already integrated. They can be useful but sometimes they can create problems, just like Bootstrap.
+Material-UI provides form control component with already integrated styles and functions. They can be useful but sometimes they can cause problems, just like Bootstrap.
 
 ### The choose between redux-form and formik
 
-In terms of form library, two of the most recommended ones are: [Redux-Form](https://redux-form.com/8.1.0/) and [Formik](https://jaredpalmer.com/formik/) . What are the advantages and hidden disavantages behind them?
+In terms of form library, two of the most recommended ones are: [Redux-Form](https://redux-form.com/8.1.0/) and [Formik](https://jaredpalmer.com/formik/) . What are the advantages and hidden disadvantages behind them?
 
 First of all, both of them are well designed. The fundamental features are supported in different way. Formik works as a wrapper component without passing data to redux store and reducer, redux-form works as a HOC and all data are passed by redux store.
 
@@ -54,13 +54,29 @@ export default reduxForm({ form: "someForm", validate: selfValidation })(Form)
 
 [Basic example with formik:](https://github.com/AlbertWhite/react-demos/blob/master/demo39-formic-materialUI-vs-reduxform/src/formContainer/formik/index.js)
 
-`js const Form = props => { return ( <Formik initialValues={{...}} validationSchema={YupSchema} onSubmit={(values, { setSubmitting, setErrors }) => { props.dispatch(submitWithFormik({ values, setSubmitting, setErrors })) }} > {({ errors, handleSubmit, isSubmitting, ...formikProps }) => { return ( <form onSubmit={handleSubmit}> ... <Input name="name" label="Name" errors={errors} {...formikProps} /> ... </form> ) }} </Formik> ) }`
+```js
+const Form = props => {
+  return (
+    <Formik
+      initialValues={{...}}
+      validationSchema={YupSchema}
+      onSubmit={(values, { setSubmitting, setErrors }) => {
+         props.dispatch(submitWithFormik({ values, setSubmitting, setErrors })) }}>
+         {({ errors, handleSubmit, isSubmitting, ...formikProps })  => {
+          return (
+            <form onSubmit={handleSubmit}> ...
+              <Input name="name" label="Name" errors={errors} {...formikProps} />
+            </form> ) }}
+    </Formik>
+  )
+}
+```
 
 The two library are both well designed, so which one is better?
 
 The answer is clear: it depends on the situation.
 
-If your web application is simple and the inner logic is not complicated, I think formik is better, because of its light-weight, and the fact of not passing data by redux store. However, if the innter logic in your web application is complicated , I think the fact of **be able to access all the data and meta attributes of a form in store** is quite helpful for us the have more control of your form. For example: if we have multiple forms in one page, and it is able to use a button outside of the form to submit a specific form, in this case, the solution with redux-form is easier.
+If your web application is simple and the inner logic is not complicated, I think formik is better, because of its light-weight, and the fact of not passing data by redux store. However, if the inner logic in your web application is complicated , I think the fact of **be able to access all the data and meta attributes of a form in store** is quite helpful for us the have more control of your form.
 
 ### With or without Material-UI
 
@@ -69,7 +85,7 @@ First of all, either with or without Material-UI, it is quite important to creat
 - Keep the same style of all the input/button in your site
 - Make rendering easier for dropdown, radio button..., because we only need to care about the values which will be passed to the component
 - Manage error message.
-- Adapt the component hehaviors with the data from the form library.
+- Adapt the component behaviors with the data from the form library.
 
 Besides, DOM element can be unstandsood as a Component. Why not create your own DOM component?
 
@@ -119,15 +135,16 @@ const Input = props => {
 
 Although Material-UI is well designed, does it has some drawbacks?
 
-The answer is yes: when the default style and default behavior are already set, it is hard to customize in a deep level. I know there are a big group of talented developpers who are working on it to support, but maybe someone just doens't like the fact that all is in control.
+The answer is yes: when the default style and default behavior are already set, it is hard to customize in a deep level. I know there are a big group of talented developers who are working on it to support, but maybe someone just doesn't like the fact that all is in control.
 
 However, if you are working on a demo or a project without a designer, material-UI is the best choice. It is already set and quickly to use.
 
 ### Takeaway
 
-Redux-form and formik are both well designed. If the site is complicated with multiple forms to interact, redux-form is a better choice because all the data are saved in redux store. Material-UI is perfect for a project without too much customization (design or behavior). If you have enough time for a complicated project as well as with a good designer, it is better to create the form control component on yourown.
+Redux-form and formik are both well designed. If the site is complicated with multiple forms to interact, redux-form is a better choice because all the data are saved in redux store.
+Material-UI is perfect for a project without too much customization (design or behavior). If you have enough time for a complicated project as well as with a good designer, it should be better to create the form control component on your own.
 
-Here is the [working demo](https://github.com/AlbertWhite/react-demos/tree/master/demo39-formic-materialUI-vs-reduxform) on github.img
+Here is the [working demo](https://github.com/AlbertWhite/react-demos/tree/master/demo39-formic-materialUI-vs-reduxform) on github.
 ![](images/form/1.png)
 
 Thanks for reading!

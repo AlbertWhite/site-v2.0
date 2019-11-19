@@ -11,9 +11,17 @@ const StyledContainer = styled.div`
   flex-direction: column;
 `
 
+const StyledTitle = styled.div`
+  margin-bottom: 1rem;
+`
+
 export default ({ data }: any) => {
   return (
     <StyledContainer>
+      <StyledTitle>
+        Once I was a student in HCI(Human Computer Interaction), and here is my
+        portfolio at that time.
+      </StyledTitle>
       <SEO title="Albert Yuebai XU - UX portfolio" />
       {data.allMarkdownRemark.edges.map(({ node }: any) => {
         return isUX(node) ? (

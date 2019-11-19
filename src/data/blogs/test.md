@@ -2,16 +2,16 @@
 title: "Write test for React: component, hoc, hooks, promise, saga"
 date: "2019-07-30"
 category: "blog"
-star: 5
+star: 4
 ---
 
-The only way to make sure the validity of our code is to write test. In this article, I will talk about writing test for react component, connected component, hoc, react hooks, redux saga function (generator function), function with promise, and mock dependency.
+In this article, I will talk about writing test for react component, connected component, hoc, react hooks, redux saga function (generator function), and function with promise. In the end, I will also talk about an important technique: how to mock functions.
 
 All the examples are available in this git repo: [react test demos](https://github.com/AlbertWhite/react-test-demos)
 
 ### 1.Test for react component
 
-We will begin with tests for react component with [Enzyme](https://airbnb.io/enzyme/). If you have already worked with Enzyme, you should know that there are **shallow rendering** and **mount**. Mount is for rendering the full DOM while shallow will not render into the sub component unless you **'find'** and **'dive'** into it.
+We will begin with tests for react component with [Enzyme](https://airbnb.io/enzyme/). If you have already worked with Enzyme, you should know that there are **shallow** and **mount** for rendering the component. Mount is for rendering the full DOM while shallow will not render the sub component unless you **'find'** and **'dive'** into it.
 
 Imagine that we have a component with the name of "Com" with another component "SubCom" inside. Here is an example of test:
 
@@ -37,7 +37,7 @@ it("should have a subComponent", () => {
   expect(wrapper.find("SubCom").props()).toEqual({ testProp: "testProp" }) // need to find the SubComponent in shallow rendering
 })
 
-it("func should be excusted if we click on subComponent", () => {
+it("func should be executed if we click on subComponent", () => {
   // GIVEN
   const func = jest.fn()
   const props = { func }
@@ -53,7 +53,7 @@ it("func should be excusted if we click on subComponent", () => {
 
 [Link to source code](https://github.com/AlbertWhite/react-test-demos/tree/master/src/component).
 
-### 2. Test with connected component and HOC (higher order component)
+### 2. Test with connected component and HOC (Higher Order Component)
 
 ['Connect'](https://react-redux.js.org/api/connect) in react-redux is a higher order component. I will give two examples about how to test a connected component, and how to test another higher order component like [redux-form](https://github.com/erikras/redux-form).
 
@@ -65,7 +65,6 @@ it("Should be able to test connected component", () => {
   // WHEN
   const wrapper = mount(
     <Provider store={store}>
-      {" "}
       // in need of a Provider for connected component
       <ConnectedComponent />
     </Provider>

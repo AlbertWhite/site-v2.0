@@ -2,22 +2,20 @@
 title: "Build your Mean Stack with Gulp"
 date: "2016-07-12"
 category: "blog"
-star: 4
+star: 2
 ---
 
-MEAN stack(MongoDB, Express.js, AngularJS, Node.js) is a very inspring topic nowadays for front-end developers, because they think they can become full-stack developer with only Javascript! However, it is still not the best choice to build web apps, and that's why we still need python, PHP and Java for back-end development.
+MEAN stack(MongoDB, Express.js, AngularJS, Node.js) is a very inspiring topic nowadays for front-end developers, because we can become full-stack developer with only Javascript! As a front-end developer, it is worth learning MEAN stack because that's a very good path for learning how backend works.
 
-However, as a front-end developer, it is still worth learning MEAN stack because that's a very good path for learning how backend works.
-
-But.. wait, we only mention MEAN stack, but if we want to use Gulp(or Grunt) for it?
+Gulp is the task runner which supports live-loading. Is it possible to run Node Server with gulp ?
 
 ### How to make Gulp + Express work
 
-Well, if we want to use Gulp and Express together, the problem might come to our mind. Well, we can use Express.js to build the server, but then how to use Gulp to run the Express Server?
+Well, if we want to use Gulp and Express together, the problem might come to our mind: we can use Express.js to build the server, but how to use Gulp to run it?
 
-The best solution to me now is to use the gulp liveload plugin [gulp-express](https://www.npmjs.com/package/gulp-express).
+Luckly, there is a gulp plugin exist: [gulp-express](https://www.npmjs.com/package/gulp-express).
 
-You can easily use this plugin to run your script of express server in your gulp file, and you can also use it to live reload your server and also browser!
+You can easily use this plugin to run express server in the gulp file, and you can also use it to live reload your server and browser!
 
 gulpfile.js
 
@@ -38,7 +36,7 @@ gulp.task("server", function() {
 })
 ```
 
-That's awesome, isn't it? We can reload the server with the code '[server.run]' and reload the browser with 'server.notify'.
+That's awesome, isn't it? We can reload the server with the code `server.run` and reload the browser with `server.notify`.
 
 As for the express server, we can try with the basic one:
 
@@ -60,15 +58,9 @@ app.listen(3000, function() {
 
 ### How to make Express+Angular work
 
-Before we want to make them work, I want to make it clear: Node.js is for backend, but Angular is still for front-end. Although we can set routing and bind data in Angular, but it is still front-end framework. In other words, if we want to deal with the database or public API via http request, we still need to do that in node server.
+How does Express and Angular communicates with each other? How does angular controller get data from server?
 
-But now the problem comes, how does Express and Angular communicates with each other? Now the data is always got in the server, but Angular needs to use the data in controllers. Then how do angular get data from server?
-
-Let's imagine: what is the basic way of communication between client and server?
-
-Yes, with get and post request in http protocols.
-
-Then the answer is clear for us. We need to create API in the server, and use the api in Angular. For example, in the server:
+Then the answer is clear for us. We need to create API in the server, and use the API in Angular. For example, in the server:
 
 express-server.js
 
@@ -109,4 +101,4 @@ $http.get('/api/numbers') //use api in the server and get the data
     });
 ```
 
-I set up a very simple project in [github](https://github.com/AlbertWhite/mean-stack-with-gulp). Please take a look and have fun!
+Here is the [demo](https://github.com/AlbertWhite/mean-stack-with-gulp) in github. Thanks for reading!

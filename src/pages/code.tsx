@@ -16,6 +16,10 @@ const StyledContainer = styled.div`
   flex-direction: column;
 `
 
+const StyledTitle = styled.div`
+  margin-bottom: 1rem;
+`
+
 export default ({ data }: any) => {
   const sites = data.site.siteMetadata.sites
   return (

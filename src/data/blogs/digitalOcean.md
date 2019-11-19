@@ -1,11 +1,11 @@
 ---
-title: "Deploy node server in Digital Ocean"
+title: "Deploy node server to Digital Ocean with PM2"
 date: "2016-09-09"
 category: "blog"
 star: 1
 ---
 
-After deploying a web app with node server, we need to deploy the node server. There are several steps to that. After finish the short tutorial, hope you will feel it is easy to that.
+It is my note about how to deploy node server to DigitalOcean.
 
 ### 1. Create a virtual server in DigitalOcean
 
@@ -34,15 +34,15 @@ After connecting with CyperDuck, we can put the files in /home directory.
 
 ### 3. Use PM2 node module to launch node server
 
-PM2 is a production process manager for Node.js. We need to access the node server file in command line and install the pm2 node module by the command `\$ npm install pm2 -g`.
+PM2 is a production process manager for Node.js. We need to access the node server file in command line and install the pm2 node module by the command `$ npm install pm2 -g`.
 
-In order to access the node server file in command line, we need to use ssh. By using the command \$username@ip address and entering the password, we can access to virtual server with SSH protocol.
+In order to access the node server file in command line, we need to use ssh. By using the command `$username@ip address` and entering the password, we can access to virtual server with SSH protocol.
 
-After accessing to the virtual server, we can install PM2 node module and use it by the command \$pm2 start server.js.
+After accessing to the virtual server, we can install PM2 node module and use it by the command `$pm2 start server.js`.
 
-There are some other useful commands for PM2, such as the command to stop the virtual server$pm2 stop server.js, sometimes we need to kill all the processes by $pm2 kill, and restart the server by \$pm2 restart server.js.
+There are some other useful commands for PM2, such as the command to stop the virtual server `$pm2 stop server.js`, sometimes we need to kill all the processes by `$pm2 kill`, and restart the server by `$pm2 restart server.js`.
 
-### 4. Purchase a domain name and redirect the domain name to the virtual server's IP address
+### 4. Purchase a domain and redirect the domain to the virtual server's IP address
 
 After the last three steps, we can already visit the web app by inputting the ip address in the browser.
 
