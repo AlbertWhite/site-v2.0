@@ -12,6 +12,7 @@
 - gatsby-remark-prismjs: highlight file
 - gatsby-remark-images: markdown inline images
 - gatsby-remark-copy-linked-files: markdown inline images
+- gatsby-plugin-react-helmet: SEO
 
 ### Development environement
 
@@ -43,6 +44,11 @@ There are many good practices about modern web development.
 7. NodeJS
    We can write NodeJS function with Gatsby API.
    Ex: onCreateNode, createPages
+8. React-Helmet.
+
+- More react-like header management
+- SEO : this is important not just for site viewers, but also for SEO — title and description metadata stored in the document head is a key component used by Google in determining placement in search results.
+- different meta informations for different pages. [source](https://stackoverflow.com/questions/52690820/what-is-the-purpose-of-react-helmet)
 
 Schema connections (edges) is the ability to query over collections of nodes of a type.
 
@@ -56,9 +62,9 @@ Lots of things are hidden. Web development is not that easy in real case without
 
 ##### Tech
 
-- Add SEO with [react helmet](https://www.gatsbyjs.org/tutorial/part-eight/#-using-react-helmet-and-gatsby-plugin-react-helmet)
 - [pwa, service worker](https://www.gatsbyjs.org/tutorial/part-eight/#-using-react-helmet-and-gatsby-plugin-react-helmet)
 - Add SSR // not working
+- Add cypress test
 - More plugins
 - add google analytics
 - review all the text

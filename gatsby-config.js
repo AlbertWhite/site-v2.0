@@ -5,6 +5,7 @@ module.exports = {
     sites,
   },
   plugins: [
+    `gatsby-plugin-react-helmet`, // header information for SEO
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { Link, graphql } from "gatsby"
 import ProjectItem from "../components/projectItem"
+import SEO from "../components/seo"
 
 interface ISiteData {
   id: string
@@ -19,6 +20,7 @@ export default ({ data }: any) => {
   const sites = data.site.siteMetadata.sites
   return (
     <StyledContainer>
+      <SEO title="Albert Yuebai XU - websites" />
       {sites.map(({ id, title, tech, url }: ISiteData) => (
         <ProjectItem
           key={id}

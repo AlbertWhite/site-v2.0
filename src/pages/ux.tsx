@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { Link, graphql } from "gatsby"
 import ProjectItem from "../components/projectItem"
+import SEO from "../components/seo"
 
 const isUX = (node: any) => node.frontmatter.category === "ux"
 
@@ -13,6 +14,7 @@ const StyledContainer = styled.div`
 export default ({ data }: any) => {
   return (
     <StyledContainer>
+      <SEO title="Albert Yuebai XU - UX portfolio" />
       {data.allMarkdownRemark.edges.map(({ node }: any) => {
         return isUX(node) ? (
           <ProjectItem

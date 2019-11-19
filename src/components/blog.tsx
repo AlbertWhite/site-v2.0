@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { graphql, Link } from "gatsby"
-
+import SEO from "./seo"
 const StyledTitle = styled.h2`
   color: #663399;
   color: var(--app-main-color, #663399);
