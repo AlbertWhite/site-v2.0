@@ -43,13 +43,18 @@ const StyledHeader = styled.div`
 const StyledToggle = styled(Toggle)``
 
 export default () => {
-  // local storage cannot save boolean, it can only save string
-  const initialDarkMode =
-    JSON.parse(localStorage.getItem("isDarkMode") || null) || false
+  let initialDarkMode = false
+  if (typeof window !== "undefined") {
+    // local storage cannot save boolean, it can only save string. It can not be found with SSR.
+    initialDarkMode =
+      JSON.parse(localStorage.getItem("isDarkMode") || null) || false
+  }
   const [isDarkMode, setIsDarkMode] = useState(initialDarkMode)
 
   useEffect(() => {
-    localStorage.setItem("isDarkMode", JSON.stringify(isDarkMode))
+    if (typeof window !== "undefined") {
+      localStorage.setItem("isDarkMode", JSON.stringify(isDarkMode))
+    }
     if (isDarkMode) {
       document.querySelector("body").className = "dark"
     } else {
