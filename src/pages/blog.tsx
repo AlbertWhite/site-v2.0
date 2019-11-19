@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { Link, graphql } from "gatsby"
 import SEO from "../components/seo"
+import { start } from "repl"
 
 const isBlog = (node: any) => node.frontmatter.category === "blog"
 
@@ -23,6 +24,14 @@ const StyledContent = styled.p`
   font-size: 0.8rem;
 `
 
+const renderStar = (times: number) => {
+  let stars = []
+  for (let i = 0; i < times; i++) {
+    stars.push("★")
+  }
+  return stars
+}
+
 export default ({ data }: any) => {
   return (
     <div>
@@ -31,8 +40,11 @@ export default ({ data }: any) => {
         isBlog(node) ? (
           <div key={node.id}>
             <Link to={node.fields.slug}>
-              <StyledTitle>{node.frontmatter.title} </StyledTitle>
-              <StyledDate>{node.frontmatter.date}</StyledDate>
+              <StyledTitle>{node.frontmatter.title}</StyledTitle>
+              <StyledDate>
+                {node.frontmatter.date} {renderStar(node.frontmatter.star)}
+              </StyledDate>
+              {/* <StyledDate></StyledDate> */}
               <StyledContent>{node.excerpt}</StyledContent>
             </Link>
           </div>
@@ -53,6 +65,7 @@ export const query = graphql`
             title
             date(formatString: "DD MMMM, YYYY")
             category
+            star
           }
           fields {
             slug

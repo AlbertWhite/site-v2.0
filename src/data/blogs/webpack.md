@@ -2,6 +2,7 @@
 title: "Webpack configuration for react"
 date: "2019-03-14"
 category: "blog"
+star: 2
 ---
 
 In order to work with react, we need an environment for compiling es6 and jsx, besides that, we need to support import css and files into javascript files. Webpack is a good choice for working with react, but we should notice that **webpack is not only for react**, and react can work with other compile tools, like [React scripts](https://www.npmjs.com/package/react-scripts) used by [Create react app](https://github.com/facebook/create-react-app). If it is only for react, what is the most suitable scenario for using webpack?

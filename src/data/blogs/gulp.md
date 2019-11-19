@@ -2,6 +2,7 @@
 title: "Use Gulp for three reasons"
 date: "2016-05-04"
 category: "blog"
+star: 2
 ---
 
 The first day I came to the office, I remember my tutor told me: have you ever tried to use gulp? We use gulp for our projects here.

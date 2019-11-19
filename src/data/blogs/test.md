@@ -2,6 +2,7 @@
 title: "Write test for React: component, hoc, hooks, promise, saga"
 date: "2019-07-30"
 category: "blog"
+star: 5
 ---
 
 The only way to make sure the validity of our code is to write test. In this article, I will talk about writing test for react component, connected component, hoc, react hooks, redux saga function (generator function), function with promise, and mock dependency.

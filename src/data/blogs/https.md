@@ -2,6 +2,7 @@
 title: "Add ssl certificate for your node website (https)"
 date: "2016-08-01"
 category: "blog"
+star: 1
 ---
 
 Recently one of our company customer asked us to use https instead of http for their node based website. The logic is simple: buy the ssl certificate (.cer file), and then use them in your node server code. There are three steps in order to do that.

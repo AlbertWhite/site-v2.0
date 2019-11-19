@@ -2,9 +2,10 @@
 title: 'Is your team "Agile" ?'
 date: "2019-10-01"
 category: "blog"
+star: 5
 ---
 
-A questionnaire about the agility for the development team.
+A questionnaire about the agility in the development team.
 
 #### Development and delivery
 
