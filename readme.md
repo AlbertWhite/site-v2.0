@@ -14,6 +14,7 @@
 - gatsby-remark-copy-linked-files: markdown inline images
 - gatsby-plugin-react-helmet: SEO
 - gatsby-plugin-manifest: PWA
+- gatsby-plugin-google-analytics
 
 ### Development environement
 
@@ -64,7 +65,6 @@ Lots of things are hidden. Web development is not that easy in real case without
 ##### Tech
 
 - Add cypress test
-- add google analytics
 - review all the text
 - mobile text
 

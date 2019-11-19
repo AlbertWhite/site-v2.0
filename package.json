@@ -25,6 +25,7 @@
     "gatsby": "^2.17.11",
     "gatsby-image": "^2.2.32",
     "gatsby-plugin-eslint": "^2.0.8",
+    "gatsby-plugin-google-analytics": "^2.1.28",
     "gatsby-plugin-manifest": "^2.2.29",
     "gatsby-plugin-offline": "^3.0.22",
     "gatsby-plugin-react-helmet": "^3.1.15",
