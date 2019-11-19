@@ -13,6 +13,7 @@
 - gatsby-remark-images: markdown inline images
 - gatsby-remark-copy-linked-files: markdown inline images
 - gatsby-plugin-react-helmet: SEO
+- gatsby-plugin-manifest: PWA
 
 ### Development environement
 
@@ -62,9 +63,7 @@ Lots of things are hidden. Web development is not that easy in real case without
 
 ##### Tech
 
-- [pwa, service worker](https://www.gatsbyjs.org/tutorial/part-eight/#-using-react-helmet-and-gatsby-plugin-react-helmet)
 - Add cypress test
-- More plugins
 - add google analytics
 - review all the text
 - mobile text
