@@ -54,6 +54,12 @@ const StyledTech = styled.div`
   margin-left: 1rem;
 `
 
+const StyledImg = styled(Img)`
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
+`
+
 export default ({ image, link, title, tech }: IProjectItemProps) => {
   const Container = link.includes("http")
     ? StyledExternalLink
@@ -61,7 +67,7 @@ export default ({ image, link, title, tech }: IProjectItemProps) => {
 
   return (
     <Container to={link} href={link}>
-      <Img fixed={image} alt="headshot" />
+      <StyledImg fixed={image} alt="headshot" />
       <StyledProjectInfo>
         <div>{title}</div>
         <StyledTech>{tech}</StyledTech>

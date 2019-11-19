@@ -62,12 +62,6 @@ Gatsby is not limited to making pages from files like many static site generator
 
 Lots of things are hidden. Web development is not that easy in real case without Gastby.
 
-##### Tech
-
-- Add cypress test
-- review all the text
-- mobile text
-
 ##### example
 
 - A good md: https://dimitrioslytras.com/blog/avoiding-props-drilling/#Fin
