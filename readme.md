@@ -63,7 +63,6 @@ Lots of things are hidden. Web development is not that easy in real case without
 ##### Tech
 
 - [pwa, service worker](https://www.gatsbyjs.org/tutorial/part-eight/#-using-react-helmet-and-gatsby-plugin-react-helmet)
-- Add SSR // not working
 - Add cypress test
 - More plugins
 - add google analytics

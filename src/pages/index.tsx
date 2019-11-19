@@ -1,10 +1,12 @@
 import React from "react"
 import styled from "styled-components"
 import { Link, graphql } from "gatsby"
+import SEO from "../components/seo"
 
 export default ({ data }: any) => {
   return (
     <>
+      <SEO />
       <p>
         Hi, I am Albert, my Chinese name is Yuebai XU 许月白. I am a javascript
         developper in Paris.
