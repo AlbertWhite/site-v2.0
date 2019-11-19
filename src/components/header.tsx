@@ -62,7 +62,10 @@ export default () => {
     }
   }, [isDarkMode])
 
-  const pathname = window.location.pathname
+  let pathname = "/"
+  if (typeof window !== "undefined") {
+    pathname = window.location.pathname
+  }
   let shouldHighLightAbout = false
   let shouldHighLightBlog = false
   let shouldHighLightCode = false
