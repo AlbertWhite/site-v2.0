@@ -37,7 +37,7 @@ export default ({ data }: any) => {
     <div>
       <SEO title="Albert Yuebai XU - blogs" />
       Technology changes rapid, so as the importance of articles. I add "stars"
-      to mark the importance in today's context for development.
+      to mark the importance in today's context of development.
       {data.allMarkdownRemark.edges.map(({ node }: any) =>
         isBlog(node) ? (
           <div key={node.id}>
