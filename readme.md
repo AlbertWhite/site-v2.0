@@ -1,4 +1,4 @@
-##### [www.yuebaixu.com](www.yuebaixu.com)
+##### [http://www.yuebaixu.com](www.yuebaixu.com)
 
 Personal website forked from [gatsby starter hello world](https://github.com/gatsbyjs/gatsby-starter-hello-world).
 
