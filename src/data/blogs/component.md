@@ -96,7 +96,7 @@ const Select = props => {
 />
 ```
 
-<Select label="Letter" placeholder="Please choose a letter" />
+<Select label="Letter" placeholder="Please choose a letter" ></Select>
 
 #### 3. Render children and condition
 
@@ -109,3 +109,5 @@ Modal component
 Authentication render props, Context
 
 Account HOC
+
+asdasdsa
