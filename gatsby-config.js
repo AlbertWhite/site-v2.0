@@ -8,7 +8,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-152865169-1",
+        trackingId: process.env.GATSBY_GOOGLE_TRACKING_ID,
         // Defines where to place the tracking script - `true` in the head and `false` in the body
         head: false,
         // Setting this parameter is optional
@@ -80,6 +80,7 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          "gatsby-remark-component",
           // {
           //   resolve: `gatsby-remark-copy-linked-files`,
           // },

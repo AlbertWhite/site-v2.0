@@ -32,6 +32,7 @@ Built with [Gatsby](https://www.gatsbyjs.org/), Typescript, Styled Component and
 - gatsby-plugin-react-helmet: SEO with react-like header management
 - gatsby-plugin-manifest: PWA
 - gatsby-plugin-google-analytics
+- gatsby-remark-component: use react component in markdown
 
 ##### Take ideas from ...
 
