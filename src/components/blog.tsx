@@ -1,4 +1,7 @@
 import React from "react"
+import Button from "./blogs/component/Button"
+import Select from "./blogs/component/Select"
+import rehypeReact from "rehype-react"
 import styled from "styled-components"
 import { graphql, Link } from "gatsby"
 import SEO from "./seo"
@@ -17,16 +20,21 @@ const StyledDevider = styled.span`
   margin: 0 1rem;
 `
 
+const renderAst = new rehypeReact({
+  createElement: React.createElement,
+  components: { button: Button, select: Select },
+}).Compiler
+
 export default ({ data }: any) => {
   const {
     frontmatter: { title, date },
-    html,
+    htmlAst,
   } = data.markdownRemark
   return (
     <div id="anchor">
       <StyledTitle>{title}</StyledTitle>
       {date && <StyledDate>{date}</StyledDate>}
-      <div dangerouslySetInnerHTML={{ __html: html }} />
+      <div>{renderAst(htmlAst)}</div>
 
       <div>
         <Link to="/blog">Back to Blogs</Link>
@@ -48,7 +56,7 @@ export default ({ data }: any) => {
 export const query = graphql`
   query oneBlog($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
+      htmlAst
       frontmatter {
         title
         date(formatString: "DD MMMM, YYYY")
