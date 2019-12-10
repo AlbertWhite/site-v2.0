@@ -24,7 +24,7 @@ React provides some approaches to organise our component, like HOC, renderProps.
 Format HTMl controls into Components
 HTML native input, button are ugly and we will not use it directly into our website. The best solution, should be creating our own HTML control components and pass variants in props to control attributes, onClick function and switch the output.
 
-##### 1. Button Component
+##### Button Component
 
 ```js
 const Button = ({ isloading, children, ...otherProps }) => {
