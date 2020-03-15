@@ -32,6 +32,7 @@ const StyledProjectInfo = styled.div`
   transition: all 0.2s ease-out;
   position: absolute;
   width: 100%;
+  height: 92%;
   top: 0;
   background-color: rgba(16, 7, 25, 0.7);
   color: white;

@@ -1,5 +1,11 @@
 module.exports = [
   {
+    id: "coronavirus",
+    title: "Visualization for coronavirus in China",
+    tech: "react",
+    url: "https://albertwhite.github.io/nCov-virus-visualization/",
+  },
+  {
     id: "air",
     title: "Air quality visualization in Beijing 2011-2016",
     tech: "d3.js",

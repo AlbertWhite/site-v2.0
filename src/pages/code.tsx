@@ -50,6 +50,13 @@ export const query = graphql`
         }
       }
     }
+    coronavirus: file(relativePath: { eq: "sites/coronavirus.png" }) {
+      childImageSharp {
+        fixed(width: 672, height: 125) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
     price: file(relativePath: { eq: "sites/price.png" }) {
       childImageSharp {
         fixed(width: 672, height: 125) {

@@ -42,7 +42,7 @@ export default () => {
             }
           }
         }
-        behance: file(relativePath: { eq: "icons/behance.png" }) {
+        soundcloud: file(relativePath: { eq: "icons/soundcloud.png" }) {
           childImageSharp {
             fixed(width: 30, height: 30) {
               ...GatsbyImageSharpFixed
@@ -62,8 +62,8 @@ export default () => {
         <StyledA href="https://github.com/AlbertWhite">
           <Img fixed={data.github.childImageSharp.fixed} alt="headshot" />
         </StyledA>
-        <StyledA href="https://www.behance.net/AlbertXu">
-          <Img fixed={data.behance.childImageSharp.fixed} alt="headshot" />
+        <StyledA href="https://soundcloud.com/user-864339084">
+          <Img fixed={data.soundcloud.childImageSharp.fixed} alt="headshot" />
         </StyledA>
       </StyledIcons>
     </StyledBottom>

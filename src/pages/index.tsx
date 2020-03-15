@@ -24,11 +24,7 @@ export default ({ data }: any) => {
         <Link to="/guideline" target="_blank">
           angular1
         </Link>
-        . Now I am working in{" "}
-        <a href="https://www.fnac.com/" target="_blank">
-          Fnac
-        </a>{" "}
-        as a front-end developer with React.
+        .
       </p>
       <p>
         I am interested with creating things, like
