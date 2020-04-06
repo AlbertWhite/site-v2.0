@@ -7,7 +7,7 @@ star: 2
 
 Well it is just a simple summary for how to use children props, HOC (Higher Order Component), and render props. They are not complicated to use, but it takes some efforts to remember to use them wisely and properly. For example, a common user case for HOC and renderProps are: customize the props for components inside Layout component.
 
-### children props
+#### children props
 
 ```js
 const Layout = ({children}) => (
@@ -22,7 +22,7 @@ const Layout = ({children}) => (
 </Layout>
 ```
 
-### Higher Order Component
+#### Higher Order Component
 
 ```js
 const withLayout = Component => {
@@ -38,7 +38,7 @@ const withLayout = Component => {
 withLayout(Component)
 ```
 
-### Render Props
+#### Render Props
 
 ```js
 const Layout = ({ render }) => (
