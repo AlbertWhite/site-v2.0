@@ -85,17 +85,32 @@ In this way, after we make the npm install, the design system library will be ve
 
 ![](images/designsystem/1.png)
 
-#### 5. Storybook
+#### 5. Version management
+
+An update of library needs to be accompanied with a new version in package.json. If the project is hosted on git, there should be a new tag pushed.
+
+Terminal commands:
+
+```js
+npm version //update package.json and create a new tag
+git push --follow-tags // push tags
+```
+
+And then we can update the version for this dependency in package.json of client project.
+
+`"exterior-ui-lib": "git+https://github.com/AlbertWhite/Styled-system-and-storybook.git#v1.0.11"`
+
+#### 6. Storybook
 
 It's a must to have storybook in react design system to be able to see and debug our design system.
 
 The official tutorial of storybook is very clear, here is my version of [storybook config with typescript](https://github.com/AlbertWhite/react-design-system-with-typescript-storybook/blob/master/.storybook/main.js).
 
-#### 6. Optional: Typescript
+#### 7. Optional: Typescript
 
 We can also integrate typescript in design system just by adding some extra config for webpack and create tsconfig.js for typescript configuration. The official documentation is well written, or you can check how it is done in the [demo](https://github.com/AlbertWhite/react-design-system-with-typescript-storybook)
 
-#### 7. Optional: Styled System
+#### 8. Optional: Styled System
 
 [Styled System](https://styled-system.com/) lets you quickly build custom UI components with constraint-based style props, which means, you can add js like props to control css. It's built upon styled components.
 
