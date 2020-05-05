@@ -49,6 +49,13 @@ export default () => {
             }
           }
         }
+        medium: file(relativePath: { eq: "icons/medium.png" }) {
+          childImageSharp {
+            fixed(width: 30, height: 30) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
       }
     `
   )
@@ -61,6 +68,9 @@ export default () => {
         </StyledA>
         <StyledA href="https://github.com/AlbertWhite">
           <Img fixed={data.github.childImageSharp.fixed} alt="headshot" />
+        </StyledA>
+        <StyledA href="https://medium.com/@albertyuebaixu">
+          <Img fixed={data.medium.childImageSharp.fixed} alt="headshot" />
         </StyledA>
         <StyledA href="https://soundcloud.com/user-864339084">
           <Img fixed={data.soundcloud.childImageSharp.fixed} alt="headshot" />

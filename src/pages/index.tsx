@@ -51,7 +51,8 @@ export default ({ data }: any) => {
         <Link to="/blog" rel="noopener noreferrer">
           blogs
         </Link>
-        .
+        . Selected articles are on{" "}
+        <a href={"https://medium.com/@albertyuebaixu"}>my Medium blog</a>.
       </p>
       <p>
         As a master student in Human Computer Interaction (HCI), I am well
