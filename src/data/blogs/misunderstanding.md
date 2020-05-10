@@ -1,5 +1,5 @@
 ---
-title: "Misunderstandings with React.memo, useMemo, and useCallback"
+title: "Some misunderstandings with React.memo, useMemo, and useCallback"
 date: "2020-05-10"
 category: "blog"
 star: 5
