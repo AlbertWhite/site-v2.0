@@ -5,6 +5,8 @@ category: "blog"
 star: 5
 ---
 
+[Read this article on medium](https://medium.com/@albertyuebaixu/some-misunderstandings-with-react-memo-usememo-and-usecallback-27449b670d60)
+
 React.memo, PureComponent, React.useMemo, React.useCallback are React APIs for optimizing web performance. However, on the React official document website, there are only explanations without example, which makes it hard to understand the real use cases. In this article, I want to list my misunderstandings and pitfalls I had when I worked with these APIs.
 
 Let's GO!

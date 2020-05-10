@@ -5,6 +5,8 @@ category: "blog"
 star: 4
 ---
 
+[Read this article on medium](https://medium.com/@albertyuebaixu/write-test-for-react-component-hoc-hooks-promise-saga-b04b231ac9e8)
+
 In this article, I will talk about writing test for react component, connected component, hoc, react hooks, redux saga function (generator function), and function with promise. In the end, I will also talk about an important technique: how to mock functions.
 
 All the examples are available in this git repo: [react test demos](https://github.com/AlbertWhite/react-test-demos)
