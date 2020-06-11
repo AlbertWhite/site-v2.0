@@ -31,6 +31,12 @@ module.exports = [
       "https://albertwhite.github.io/Visualization-for-travail-destinations/",
   },
   {
+    id: "hkfilm",
+    title: "Visualization for Hong kong films",
+    tech: "react",
+    url: "https://hkfilm.netlify.app/",
+  },
+  {
     id: "poet",
     title: "Visualization for Poets in Tang dynasty in ancient China",
     tech: "backbone.js",

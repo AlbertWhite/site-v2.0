@@ -85,6 +85,13 @@ export const query = graphql`
         }
       }
     }
+    hkfilm: file(relativePath: { eq: "sites/hkfilm.png" }) {
+      childImageSharp {
+        fixed(width: 672, height: 125) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
     poet: file(relativePath: { eq: "sites/poet.png" }) {
       childImageSharp {
         fixed(width: 672, height: 125) {
