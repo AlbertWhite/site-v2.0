@@ -9,7 +9,15 @@ export default ({ data }: any) => {
       <SEO />
       <p>
         Hi, I am Albert, my Chinese name is Yuebai XU 许月白. I am a javascript
-        developper in Paris.
+        developper in Paris. Now I am working in{" "}
+        <a
+          href="https://www.linkedin.com/company/the-fork-a-tripadvisor-company/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          TheFork
+        </a>{" "}
+        as a fullstack developer.
       </p>
       <p>
         I have experience with{" "}
@@ -24,7 +32,7 @@ export default ({ data }: any) => {
         <Link to="/guideline" target="_blank">
           angular1
         </Link>
-        .
+        , and ApolloGraphQL.
       </p>
       <p>
         I am interested with creating things, like
@@ -65,7 +73,7 @@ export default ({ data }: any) => {
       <p>
         Here are my cv in{" "}
         <a
-          href={data.allFile.edges[1].node.publicURL}
+          href={data.allFile.edges[0].node.publicURL}
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -73,7 +81,7 @@ export default ({ data }: any) => {
         </a>{" "}
         and in{" "}
         <a
-          href={data.allFile.edges[0].node.publicURL}
+          href={data.allFile.edges[1].node.publicURL}
           target="_blank"
           rel="noopener noreferrer"
         >
