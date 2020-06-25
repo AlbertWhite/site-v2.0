@@ -9,7 +9,7 @@ export default ({ data }: any) => {
       <SEO />
       <p>
         Hi, I am Albert, my Chinese name is Yuebai XU 许月白. I am a javascript
-        developper in Paris. Now I am working in{" "}
+        developer in Paris. Now I am working in{" "}
         <a
           href="https://www.linkedin.com/company/the-fork-a-tripadvisor-company/"
           target="_blank"
