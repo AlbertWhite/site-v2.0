@@ -15,7 +15,7 @@ Cypress comes into my mind. It is a end to end test tool and it works like a hum
 
 I have tried to configurer the Cypress to searching from Douban.com but I am banned after +150 searches in 15 minutes, so I turned to search from google in Cypress, it's faster and I am not banned.
 
-Here is the piece of code, it's quite fun to use Cypress in the way of web a crawler.
+Here is the piece of code in Cypress as web crawler:
 
 ```
 describe('get DoubanId', () => {
