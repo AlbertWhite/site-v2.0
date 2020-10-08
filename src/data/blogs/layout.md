@@ -22,6 +22,12 @@ const Layout = ({children}) => (
 </Layout>
 ```
 
+#### Updated 2020/10/08: Pass props to children in layout component with React.cloneElement
+
+```js
+const childrenWithClient = React.cloneElement(children, injectedProps)
+```
+
 ##### Updated 2020/08/28: Pass arrow function as children prop
 
 We can also pass an arrow function as the child component. **It's very useful for creating "helper wrapper" component.**
