@@ -1,5 +1,5 @@
 ---
-title: "Write test for React: component, hoc, hooks, promise, saga"
+title: "Write test for React: component, hoc, hooks, promise, saga, graphql, custom hooks"
 date: "2020-10-09"
 category: "blog"
 star: 4
