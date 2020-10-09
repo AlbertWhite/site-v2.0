@@ -1,6 +1,6 @@
 ---
 title: "Write test for React: component, hoc, hooks, promise, saga"
-date: "2019-07-30"
+date: "2020-10-09"
 category: "blog"
 star: 4
 ---
@@ -9,7 +9,7 @@ star: 4
 
 In this article, I will talk about writing test for react component, connected component, hoc, react hooks, redux saga function (generator function), and function with promise. In the end, I will also talk about an important technique: how to mock functions.
 
-All the examples are available in this git repo: [react test demos](https://github.com/AlbertWhite/react-test-demos)
+Examples are available in this git repo: [react test demos](https://github.com/AlbertWhite/react-test-demos)
 
 ### 1.Test for react component
 
@@ -180,7 +180,7 @@ it("should return error if input is false with .then", () => {
 
 [Link to source code](https://github.com/AlbertWhite/react-test-demos/tree/master/src/promise).
 
-### 5. Test with react hooks
+### 5. Test components with react hooks
 
 In order to test hooks, I use [react testing library](https://testing-library.com/docs/react-testing-library/intro). React testing library is competitor of Enzyme for react integration test. The idea behind this library is to test the DOM by simulating the real user interface. It is like "mount" in Enzyme. (Update 2019/08/27: Enzyme now also supports hooks.)
 
@@ -216,57 +216,54 @@ describe("ComponentWithHooks", () => {
 
 [Link to source code](https://github.com/AlbertWhite/react-test-demos/tree/master/src/hook).
 
-###6. Mock dependency
+### 6. Test graphql queries
 
-In case of testing with mock dependency, there are several possiblities: Mock a default dependency or mock a name dependency ? Mock the implementation only once or mock the implementation multiple times ?
+We can test graphql queries by providing a [MockedProvider](https://www.apollographql.com/docs/react/development-testing/testing/#mockedprovider) for mocked query responses. An example will be shown in the next part 'Test custom hooks'.
 
-Mock the dependency only once while importing the dependency:
+If the query is made by the hook **useQuery** and if it is used only once in the component, it is not a bad way to mock **useQuery** to return the expected result. (For more information: [How to mock dependencies in jest: the pitfalls, the tricks and the best practices]())
 
-```js
-import { func } from "./index"
+### 7. Test custom hooks
 
-jest.mock("./defaultDependency", () => input => input) // mock should in the beginning
-jest.mock("./nameDependency", () => ({ sameString: input => input + "1" })) // mock should in the beginning
+What is the custom hook ?
+[A custom Hook is a JavaScript function whose name starts with ”use” and that may call other Hooks.](https://reactjs.org/docs/hooks-custom.html#extracting-a-custom-hook)
+Component is for the UI, then the custom hook is for your component logic. It can be how we get and format data, and it can be also how to handle the callbacks.
 
-describe("func", () => {
-  it("should work with mock dependency", () => {
-    expect(func(true, "hello")).toEqual("hello")
-    expect(func(false, "hello")).toEqual("hello1")
-  })
-})
-```
+Without a library, it is not easy to test a custom hook independently because it "lives" in a component.
+Luckily the library [react hooks testing library](https://react-hooks-testing-library.com/) helps us solve this problem.
 
-Mock the dependency multiple times by import, mock and mockImplementation:
+Let's take an example of a custom hook which uses two other hooks (useContext and useQuery).
 
 ```js
-import { func } from "./index"
-import reverseString from "./defaultDependency"
-import * as nameDependencies from "./nameDependency"
+const useMyHook = () => {
+  const {id} = useMyContext() // get data from my context
+  const {data, error, loading} = useQuery(query, variables: {id}) // use graphql hook to get data
+  const formattedData = //... format data
+  return formattedData // return data
+}
 
-jest.mock("./defaultDependency")
-// jest.mock('./nameDependency')
 
-nameDependencies.sameString = jest.fn()
+// to test
 
-describe("func", () => {
-  it("should work with mock dependency", () => {
-    reverseString.mockImplementationOnce(input => input)
-    expect(func(true, "hello")).toEqual("hello")
+// the hook use context and query, in this case we need to create wrapper for test
+const GQLMockedProvider = ({children}) => (
+  <MockedProvider mocks={...}> {/* MockedProvider from apollo to mock query responses */}
+    <MyContext.Provider> {/* Wrap context provider for hook wrapper */}
+      {children} {/* the children here is necessary, if not the hook won't be rendered*/}
+    </MyContext.Provider>
+  </MockedProvider>
+)
 
-    nameDependencies.sameString.mockImplementationOnce(input => input + "2")
-    expect(func(false, "hello")).toEqual("hello2")
-  })
 
-  it("should work with mock dependency", () => {
-    reverseString.mockImplementationOnce(input => input + "1")
-    expect(func(true, "hello")).toEqual("hello1")
-
-    nameDependencies.sameString.mockImplementationOnce(input => input + "3")
-    expect(func(false, "hello")).toEqual("hello3")
+describe('my hook', () => {
+  it('should return right data', async () => {
+    const {result, waitForNextUpdate} = renderHook(() => useMyHook(), {
+      wrapper: GQLMockedProvider, // use the wrapper
+    });
+    await waitForNextUpdate() // useQuery is async
+    expect(result.current).toEqual(...)
   })
 })
-```
 
-[Link to source code](https://github.com/AlbertWhite/react-test-demos/tree/master/src/dependency).
+```
 
 Thanks for reading !
