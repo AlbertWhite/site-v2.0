@@ -1,11 +1,11 @@
 ---
 title: "Three ways to create layout component in React"
-date: "2020-08-28"
+date: "2020-12-12"
 category: "blog"
 star: 5
 ---
 
-Well it is just a simple summary for how to use children props, HOC (Higher Order Component), and render props. They are not complicated to use, but it takes some efforts to remember to use them wisely and properly. For example, a common user case for HOC and renderProps are: customize the props for components inside Layout component.
+It is a summary on how to use children props, HOC (Higher Order Component), and render props to create layout components. They are not complicated to understand, but it takes some efforts to use them wisely and properly.
 
 #### Children props
 
@@ -58,6 +58,8 @@ const Query = ({children}) {
 ```
 
 #### Higher Order Component
+
+A common user case for HOC and renderProps are: customize the props for components inside Layout component.
 
 ```js
 const withLayout = Component => {
@@ -117,4 +119,26 @@ const Layout = ({ content }) => (
 const content = <div>content</div>
 <Layout content={content}/>
 
+```
+
+#### Compound component (updated on 2020/12/12)
+
+Compound component is not for creating Layout component, but it's a special pattern for creating associated component.
+
+The example is really easy. If we write the component in this way:
+
+```js
+
+const App = ... // a component
+const SubApp = ... // another component
+
+App.SubApp = SubApp
+
+```
+
+Then we can use them in this way:
+
+```js
+<App/>
+<App.SubApp/>
 ```
