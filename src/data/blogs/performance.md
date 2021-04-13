@@ -35,7 +35,7 @@ Lazyload shouldn't impact SEO components (internal links, JSONLD...).
 
 Even if we know all the principles and good practices, it may be still very difficult to find out real good solutions to improve web performance.
 
-Solutions should come from problems. If your main goal for this page is improving the LCP, maybe you should change the LCP object; if your main goal is to improving FIP and TTI, maybe you could delay some js execution. Generally, less bundle size and lazyload could improve nearly all the metrics.
+Solutions should come from problems. If your main goal for this page is improving the LCP, maybe you should change the LCP object; if your main goal is to improve FIP and TTI, maybe you could delay some js execution. Generally, less bundle size and lazyload could improve nearly all the metrics.
 
 You need ideas, plenty of ideas, sometimes even out of the box to improve the metrics of your website.
 
