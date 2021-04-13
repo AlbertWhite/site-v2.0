@@ -1,6 +1,6 @@
 ---
 title: "Code execution order with useEffect and cleanup function"
-date: "2021-04-11"
+date: "2021-04-10"
 category: "blog"
 star: 4
 ---
