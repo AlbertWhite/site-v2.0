@@ -169,7 +169,9 @@ Equality of objects and functions is a difficult subject in javascript. For exam
 
 ### 8. Will useCallback functions be called everytime when component rerender ?
 
-Yes. Not like useMemo, which will be executed only once if the dependency array doesn't change, useCallback will be called everytime the compoent rerender, even if the dependency doesn't change. The only purpose for useCallback is to returning the same callback function which will be passed to child component to prevent from child component rerendering.
+Yes. Not like useMemo, which will be executed only once if the dependency array doesn't change, useCallback will be called everytime the compoent rerender, even if the dependency doesn't change.
+
+The only purpose for useCallback is to returning the same callback function which will be passed to child component to prevent from child component rerendering.
 
 #### 9. What is memoization ?
 
