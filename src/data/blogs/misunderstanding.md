@@ -167,7 +167,11 @@ The PureComponent Child will not rerender if Component rerenders.
 
 Equality of objects and functions is a difficult subject in javascript. For example, {} !== {}. We need to be careful with it to make sure the dependencies are really equal.
 
-#### 8. What is memoization ?
+### 8. Will useCallback functions be called everytime when component rerender ?
+
+Yes. Not like useMemo, which will be executed only once if the dependency array doesn't change, useCallback will be called everytime the compoent rerender, even if the dependency doesn't change. The only purpose for useCallback is to returning the same callback function which will be passed to child component to prevent from child component rerendering.
+
+#### 9. What is memoization ?
 
 useCallback and useMemo will return memoized object. In computer science, [Memoized is a technique in which partial results are recorded (forming a memo) and then can be reused later without having to recompute them.](https://wikidiff.com/memoization/memorization)
 
