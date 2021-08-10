@@ -63,7 +63,7 @@ export default () => {
     <StyledBottom>
       <span>Powered by Gatsby.js. Albert Yuebai XU - 2020</span>
       <StyledIcons>
-        <StyledA href="https://www.linkedin.com/in/yuebai-xu-53a7099a/">
+        <StyledA href="https://linkedin.com/in/albert-yuebai-xu-53a7099a">
           <Img fixed={data.linkedin.childImageSharp.fixed} alt="headshot" />
         </StyledA>
         <StyledA href="https://github.com/AlbertWhite">
