@@ -44,7 +44,10 @@ export default ({ data }: any) => {
           a npm module
         </a>
         ,{" "}
-        <a href="https://github.com/AlbertWhite/Title-reader" target="_blank">
+        <a
+          href="https://chrome.google.com/webstore/detail/page-title-fetcher/ipnimfnclmbojlnoeiiklmadebceackl"
+          target="_blank"
+        >
           a chrome extension
         </a>
         , and{" "}
