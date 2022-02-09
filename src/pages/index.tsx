@@ -20,15 +20,24 @@ export default ({ data }: any) => {
         as a fullstack developer.
       </p>
       <p>
-       As a front-end developer with more than 4 years' experience, I am very good at Javascript, React, ApolloGraphQL, as well as code checking and building tools: Webpack, Eslint, Typescript. 
-      </p>
-       
-      <p>
-       I am focusing on using the above technologies for front-end problematic solution design: <b>SEO implementation; Web performance improvement; Design System Integration; Code Quality enhancement; GTM / Adobe Tracking. </b>
+        As a front-end developer with more than 4 years' experience, I am very
+        good at Javascript, React, ApolloGraphQL, as well as code checking and
+        building tools: Webpack, Eslint, Typescript.
       </p>
 
       <p>
-       As a full-stack developer, I am able to interact with DB with SQL and Knex.js; build GraphQL Server and Express Server under DDD (Domain Driven Design) principle; launch project with Docker and Docker compose. 
+        I am focusing on using the above technologies for front-end problematic
+        solution design:{" "}
+        <b>
+          SEO implementation; Web performance improvement; Design System
+          Integration; Code Quality enhancement; GTM / Adobe Tracking.{" "}
+        </b>
+      </p>
+
+      <p>
+        As a full-stack developer, I am able to interact with DB with SQL and
+        Knex.js; build GraphQL Server and Express Server under DDD (Domain
+        Driven Design) principle; launch project with Docker and Docker compose.
       </p>
       <p>
         Outside of work, I am interested in creating things with code, like
@@ -98,7 +107,7 @@ export default ({ data }: any) => {
 
 export const query = graphql`
   query cv {
-    allFile(filter: { extension: { eq: "pdf" } }) {
+    allFile(filter: { sourceInstanceName: { eq: "cv" } }) {
       edges {
         node {
           publicURL

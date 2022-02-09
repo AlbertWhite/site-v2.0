@@ -8,8 +8,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-disqus`,
       options: {
-          shortname: `yuebaixu`
-      }
+        shortname: `yuebaixu`,
+      },
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
@@ -78,8 +78,15 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `src`,
-        path: `./src/data/files`,
+        name: `cv`,
+        path: `./src/data/cv`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `scores`,
+        path: `./src/data/scores`,
       },
     },
     {
