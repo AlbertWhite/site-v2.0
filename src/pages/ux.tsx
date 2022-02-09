@@ -19,8 +19,8 @@ export default ({ data }: any) => {
   return (
     <StyledContainer>
       <StyledTitle>
-        Once I was a student in HCI(Human Computer Interaction), and here is my
-        portfolio at that time.
+        I majored in HCI (Human Computer Interaction) for my master degree. <b>The education laied the ground for my sense of UX design</b>. Here is my
+        portfolio at that time. 
       </StyledTitle>
       <SEO title="Albert Yuebai XU - UX portfolio" />
       {data.allMarkdownRemark.edges.map(({ node }: any) => {

@@ -70,6 +70,7 @@ export default () => {
   let shouldHighLightBlog = false
   let shouldHighLightCode = false
   let shouldHighLightUX = false
+  let shouldHighLightMusic = false
 
   switch (pathname) {
     case "/":
@@ -77,6 +78,9 @@ export default () => {
       break
     case "/code":
       shouldHighLightCode = true
+      break
+        case "/music":
+      shouldHighLightMusic = true
       break
     case "/ux":
     case "/cup/":
@@ -97,7 +101,7 @@ export default () => {
       <StyledHeader>
         <StyledTitleContainer>
           <StyledTitle>Albert Yuebai XU</StyledTitle>
-          <StyledSubTitle>Javascript Developer</StyledSubTitle>
+          <StyledSubTitle>Fullstack Developer</StyledSubTitle>
         </StyledTitleContainer>
         <StyledToggle
           className="customToggle"
@@ -133,8 +137,15 @@ export default () => {
           shouldHighLight={shouldHighLightUX}
           isDarkMode={isDarkMode}
         >
-          UX portfolio
+          UX
         </StyledLink>
+        {/* <StyledLink
+          to={`/music`}
+          shouldHighLight={shouldHighLightMusic}
+          isDarkMode={isDarkMode}
+        >
+          Guitar Music Score
+        </StyledLink> */}
       </StyledMenu>
     </>
   )

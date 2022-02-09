@@ -8,34 +8,30 @@ export default ({ data }: any) => {
     <>
       <SEO />
       <p>
-        Hi, I am Albert, my Chinese name is Yuebai XU 许月白. I am a javascript
-        developer in Paris. Now I am working in{" "}
+        Hi, I am Albert, my Chinese name is Yuebai XU 许月白. I am a full-stack
+        developer based in Paris. Now I am working in{" "}
         <a
           href="https://www.linkedin.com/company/the-fork-a-tripadvisor-company/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          TheFork
+          TheFork (A TripAdvisor Company)
         </a>{" "}
         as a fullstack developer.
       </p>
       <p>
-        I have experience with{" "}
-        <a
-          href="https://github.com/AlbertWhite/react-demos"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          react/redux
-        </a>
-        ,{" "}
-        <Link to="/guideline" target="_blank">
-          angular1
-        </Link>
-        , and ApolloGraphQL.
+       As a front-end developer with more than 4 years' experience, I am very good at Javascript, React, ApolloGraphQL, as well as code checking and building tools: Webpack, Eslint, Typescript. 
+      </p>
+       
+      <p>
+       I am focusing on using the above technologies for front-end problematic solution design: <b>SEO implementation; Web performance improvement; Design System Integration; Code Quality enhancement; GTM / Adobe Tracking. </b>
+      </p>
+
+      <p>
+       As a full-stack developer, I am able to interact with DB with SQL and Knex.js; build GraphQL Server and Express Server under DDD (Domain Driven Design) principle; launch project with Docker and Docker compose. 
       </p>
       <p>
-        I am interested with creating things, like
+        Outside of work, I am interested with creating things with code, like
         <a
           href="https://github.com/AlbertWhite/Recent-update-package"
           target="_blank"
