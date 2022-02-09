@@ -31,7 +31,7 @@ export default ({ data }: any) => {
        As a full-stack developer, I am able to interact with DB with SQL and Knex.js; build GraphQL Server and Express Server under DDD (Domain Driven Design) principle; launch project with Docker and Docker compose. 
       </p>
       <p>
-        Outside of work, I am interested with creating things with code, like
+        Outside of work, I am interested in creating things with code, like
         <a
           href="https://github.com/AlbertWhite/Recent-update-package"
           target="_blank"
@@ -86,7 +86,7 @@ export default ({ data }: any) => {
         >
           English version
         </a>{" "}
-        , please feel free to contact me via{" "}
+        , feel free to contact me via{" "}
         <a href="mailto:albert.yuebai@gmail.com?Subject=Hi%Albert">
           {" "}
           albert.yuebai@gmail.com

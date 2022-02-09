@@ -34,6 +34,9 @@ const StyledLink = styled(Link)`
   color: ${(props: { isDarkMode: boolean; shouldHighLight: boolean }) =>
     props.isDarkMode ? "white !important" : "black"};
 `
+
+
+
 const StyledHeader = styled.div`
   display: flex;
   flex-direction: row;
@@ -50,6 +53,21 @@ export default () => {
       JSON.parse(localStorage.getItem("isDarkMode") || null) || false
   }
   const [isDarkMode, setIsDarkMode] = useState(initialDarkMode)
+
+
+  const data = useStaticQuery(
+    graphql`
+      query MusicIcon {
+        music: file(relativePath: { eq: "icons/music.png" }) {
+          childImageSharp {
+            fixed(width: 20, height: 25) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
+      }
+    `
+  )
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -100,8 +118,8 @@ export default () => {
     <>
       <StyledHeader>
         <StyledTitleContainer>
-          <StyledTitle>Albert Yuebai XU</StyledTitle>
-          <StyledSubTitle>Fullstack Developer</StyledSubTitle>
+          <StyledTitle>{shouldHighLightMusic ? 'FingerMoon':'Albert Yuebai XU'}</StyledTitle>
+          <StyledSubTitle>{shouldHighLightMusic ? 'FingerStyle Guitar Arrangement':'Fullstack Developer'}</StyledSubTitle>
         </StyledTitleContainer>
         <StyledToggle
           className="customToggle"
@@ -139,13 +157,13 @@ export default () => {
         >
           UX
         </StyledLink>
-        {/* <StyledLink
+        <StyledLink
           to={`/music`}
           shouldHighLight={shouldHighLightMusic}
           isDarkMode={isDarkMode}
         >
-          Guitar Music Score
-        </StyledLink> */}
+          Music
+        </StyledLink>
       </StyledMenu>
     </>
   )
