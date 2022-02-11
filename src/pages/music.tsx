@@ -15,7 +15,9 @@ const Tab = ({ href, name, innerHtml }) => (
 
 export default ({ data }: any) => {
   // sort by file name 1- / 2- ...
-  const sortedScores = [...data.allFile.edges].sort(n => n.node.name[0])
+  const sortedScores = [...data.allFile.edges].sort(
+    (a, b) => a.node.name[0] - b.node.name[0]
+  )
   console.warn("ax", sortedScores)
   return (
     <div>
