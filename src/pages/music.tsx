@@ -18,7 +18,6 @@ export default ({ data }: any) => {
   const sortedScores = [...data.allFile.edges].sort(
     (a, b) => a.node.name[0] - b.node.name[0]
   )
-  console.warn("ax", sortedScores)
   return (
     <div>
       <SEO title="FingerMoon - Guitar Arrangement" />
