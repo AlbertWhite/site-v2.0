@@ -23,7 +23,7 @@
     "@types/styled-components": "^4.4.0",
     "babel-plugin-styled-components": "^1.10.6",
     "eslint-loader": "^3.0.2",
-    "gatsby": "^2.17.11",
+    "gatsby": "^5.3.3",
     "gatsby-image": "^2.2.32",
     "gatsby-plugin-disqus": "^1.2.3",
     "gatsby-plugin-eslint": "^2.0.8",
