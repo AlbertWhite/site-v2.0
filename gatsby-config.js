@@ -23,21 +23,6 @@ module.exports = {
         respectDNT: true,
       },
     },
-    {
-      resolve: `gatsby-plugin-manifest`, // PWA
-
-      options: {
-        name: `Albert Yuebai XU`,
-        short_name: `AlbertYuebai`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
-        // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
-        display: `standalone`,
-        icon: `src/images/icon.png`, // This path is relative to the root of the site.
-      },
-    },
     `gatsby-plugin-offline`, //service worker for PWA
     `gatsby-plugin-react-helmet`, // header information for SEO
     `gatsby-transformer-sharp`,
@@ -103,7 +88,7 @@ module.exports = {
               // It's important to specify the maxWidth (in pixels) of
               // the content container as this plugin uses this as the
               // base for generating different widths of each image.
-              maxWidth: "672px",
+              maxWidth: 672,
               quality: 80,
             },
           },
