@@ -118,8 +118,14 @@ export default () => {
     <>
       <StyledHeader>
         <StyledTitleContainer>
-          <StyledTitle>{shouldHighLightMusic ? 'FingerMoon':'Albert Yuebai XU'}</StyledTitle>
-          <StyledSubTitle>{shouldHighLightMusic ? 'FingerStyle Guitar Arrangement':'Fullstack Developer'}</StyledSubTitle>
+          <StyledTitle>
+            {shouldHighLightMusic ? "FingerMoon" : "Albert Yuebai XU"}
+          </StyledTitle>
+          <StyledSubTitle>
+            {shouldHighLightMusic
+              ? "FingerStyle Guitar Arrangement"
+              : "Fullstack Developer"}
+          </StyledSubTitle>
         </StyledTitleContainer>
         <StyledToggle
           className="customToggle"
@@ -134,6 +140,13 @@ export default () => {
           shouldHighLight={shouldHighLightAbout}
           isDarkMode={isDarkMode}
         >
+          Blog
+        </StyledLink>
+        <StyledLink
+          to={`/about`}
+          shouldHighLight={shouldHighLightBlog}
+          isDarkMode={isDarkMode}
+        >
           About
         </StyledLink>
         <StyledLink
@@ -142,13 +155,6 @@ export default () => {
           isDarkMode={isDarkMode}
         >
           Project
-        </StyledLink>
-        <StyledLink
-          to={`/blog`}
-          shouldHighLight={shouldHighLightBlog}
-          isDarkMode={isDarkMode}
-        >
-          Blog
         </StyledLink>
         <StyledLink
           to={`/ux`}
