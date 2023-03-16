@@ -17,12 +17,12 @@ We create the strangler layer to keep the same API, but behind the strangler lay
 
 ### Frontend example
 
-Imagine when you are migrating your website into a new framework, the new framework provides some new component which is not yet supported by the old framwork. You need to implement the new component into the old framework without crashing the old framework.
+Imagine when you are migrating your website into a new framework, the new framework provides some new component which is not yet supported by the old framework. You need to implement the new component into the old framework without crashing the old framework.
 
 ![](images/strangler/2.png)
 
-In this case, we could do something in `webpack` and replace the reference of the new component to a placeholder component which is still supported by the old framework. See ? It's the same idea as Strangle pattern: change the things behind, and make the change invisible in the consumer side.
+In this case, we could do something in `webpack` and replace the reference of the new component to a placeholder component which is still supported by the old framework. See ? It's the same idea as Strangle pattern: change the things behind, and make the change invisible on the consumer side.
 
 ### Conclusion
 
-Strangler pattern is useful in the refactor of huge system, by creating the layer in the middle, API consumer could use the API as it wants, while the only change is in the "backend".  
+Strangler pattern is useful in the refactor of a huge system, by creating the layer in the middle, API consumer could use the API as it wants, while the only change is in the "backend".  
