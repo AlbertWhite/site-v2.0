@@ -92,12 +92,15 @@ export default () => {
 
   switch (pathname) {
     case "/":
+      shouldHighLightBlog = true
+      break
+    case "/about":
       shouldHighLightAbout = true
       break
     case "/code":
       shouldHighLightCode = true
       break
-        case "/music":
+    case "/music":
       shouldHighLightMusic = true
       break
     case "/ux":
@@ -137,14 +140,14 @@ export default () => {
       <StyledMenu>
         <StyledLink
           to={`/`}
-          shouldHighLight={shouldHighLightAbout}
+          shouldHighLight={shouldHighLightBlog}
           isDarkMode={isDarkMode}
         >
           Blog
         </StyledLink>
         <StyledLink
           to={`/about`}
-          shouldHighLight={shouldHighLightBlog}
+          shouldHighLight={shouldHighLightAbout}
           isDarkMode={isDarkMode}
         >
           About
