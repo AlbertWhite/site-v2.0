@@ -1,6 +1,6 @@
 ---
 title: "Generate types from graphql in server side and client side"
-date: "2023-10-16"
+date: "2023-05-16"
 category: "blog"
 star: 4
 ---
