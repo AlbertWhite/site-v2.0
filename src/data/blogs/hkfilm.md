@@ -3,6 +3,7 @@ title: "How do I use Cypress as web crawler"
 date: "2020-06-11"
 category: "blog"
 star: 2
+keyword: "test"
 ---
 
 As a big fan of Hong kong films, I had always wanted to make a website for it, mainly for myself, to list all the Hong kong films from 1979 to 2002 (the golden period of Hong kong film industry). Now the website is available [here](https://hkfilm.netlify.app/). All the data comes from Douban.com, the biggest website for movie/book information in China.

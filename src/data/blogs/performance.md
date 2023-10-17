@@ -3,6 +3,7 @@ title: "Improve site performance with examples"
 date: "2021-04-11"
 category: "blog"
 star: 5
+keyword: "web performance"
 ---
 
 Several practical ways to improve site performance with React.

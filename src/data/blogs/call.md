@@ -3,6 +3,7 @@ title: "Creating the callApi method with promise, async/await"
 date: "2019-04-02"
 category: "blog"
 star: 3
+keyword: "javascript"
 ---
 
 It is quite useful to create our own callApi method in the application. In this article, I will talk about three ways to implement it with promise, async/await.

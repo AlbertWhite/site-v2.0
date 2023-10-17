@@ -3,6 +3,7 @@ title: 'Is your team "Agile" ?'
 date: "2019-10-01"
 category: "blog"
 star: 5
+keyword: "soft skills"
 ---
 
 A questionnaire about the agility in the development team.

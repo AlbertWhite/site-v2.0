@@ -3,6 +3,7 @@ title: "Some misunderstandings with React.memo, useMemo, and useCallback"
 date: "2020-05-10"
 category: "blog"
 star: 5
+keyword: "react"
 ---
 
 [Read this article on medium](https://medium.com/@albertyuebaixu/some-misunderstandings-with-react-memo-usememo-and-usecallback-27449b670d60)

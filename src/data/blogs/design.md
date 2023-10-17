@@ -3,6 +3,7 @@ title: "Rethink on web design"
 date: "2017-11-07"
 category: "blog"
 star: 4
+keyword: "other"
 ---
 
 Thanks to the experience in La Maison du Bitcoin, I had the opportunity for designing the whole website and then implementing it. In this article, I will talk about several things I have learned about web design during this experience:

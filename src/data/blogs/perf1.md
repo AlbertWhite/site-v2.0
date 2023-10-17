@@ -3,6 +3,7 @@ title: "Improve Web Performance with example for next.js: how did I find lodash 
 date: "2023-01-28"
 category: "blog"
 star: 5
+keyword: "web performance"
 ---
 
 With NextJS, it's not easy to detect if a piece of code (for example, lodash) is really included in the JS bundle for two reasons:

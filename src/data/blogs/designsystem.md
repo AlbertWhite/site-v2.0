@@ -3,6 +3,7 @@ title: "React design system with typescript and storybook"
 date: "2020-04-08"
 category: "blog"
 star: 5
+keyword: "react"
 ---
 
 [Read this article on medium](https://medium.com/@albertyuebaixu/react-design-system-with-typescript-and-storybook-1a99cdba24c6)

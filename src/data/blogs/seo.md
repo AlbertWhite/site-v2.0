@@ -3,6 +3,7 @@ title: "How to improve SEO with technical solution"
 date: "2023-08-17"
 category: "blog"
 star: 5
+keyword: "other"
 ---
 
 Sometimes SEO (Search Engine Optimization) seems a bit far from technical stuff, and in many companies, SEO is in the marketing's scope. It makes sense, because today SEO doesn't only concern classic search engines, but also concerns social media like facebook, instagram, tik tok. However, in this article, I would like to raise the point to improve SEO with **technical solutions** by developers.

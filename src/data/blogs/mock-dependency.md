@@ -3,6 +3,7 @@ title: "How to mock default import and named import in jest"
 date: "2020-10-09"
 category: "blog"
 star: 4
+keyword: "test"
 ---
 
 Dependencies make tests complicated. Mock them help us concentrate on the things we really want to test.

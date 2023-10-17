@@ -3,6 +3,7 @@ title: "Three ways to create layout component in React"
 date: "2020-12-12"
 category: "blog"
 star: 5
+keyword: "react"
 ---
 
 It is a summary on how to use children props, HOC (Higher Order Component), and render props to create layout components. They are not complicated to understand, but it takes some efforts to use them wisely and properly.

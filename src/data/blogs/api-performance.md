@@ -3,6 +3,7 @@ title: "Difference between server side performance and web performance"
 date: "2023-02-28"
 category: "blog"
 star: 3
+keyword: "web performance"
 ---
 
 Recently I am working on a refactor of api. Doing the API in the right way might slightly bring performance issues, so I have worked on the measurement of performance in the development and in the production. Here is my learning:

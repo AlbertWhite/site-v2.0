@@ -3,6 +3,7 @@ title: "Rethink on data in React"
 date: "2019-12-12"
 category: "blog"
 star: 5
+keyword: "react"
 ---
 
 According to Gatsby, data is something outside of the component. React doesn't have its officiel way to fetch and manage data, and it only has its officiel way to pass data with props, HOC...

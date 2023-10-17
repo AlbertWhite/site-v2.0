@@ -3,6 +3,7 @@ title: "How to use hooks (useContext, useReducer) to replace redux"
 date: "2020-06-29"
 category: "blog"
 star: 5
+keyword: "react"
 ---
 
 ### Intro

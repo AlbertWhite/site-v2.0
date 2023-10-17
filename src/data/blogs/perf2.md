@@ -3,6 +3,7 @@ title: "How to find ideas for web performance improvement"
 date: "2023-02-25"
 category: "blog"
 star: 5
+keyword: "web performance"
 ---
 
 Improving web performance sounds easy, but it's a difficult subject because it's not easy to find ideas for the improvement. In this article, I would like to share some ways which I found useful to find these ideas.

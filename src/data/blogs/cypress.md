@@ -3,6 +3,7 @@ title: "Cypress test without polluting the database"
 date: "2020-04-11"
 category: "blog"
 star: 4
+keyword: "test"
 ---
 
 Cypress is a popular end to end test tool. It can be used to test on localhost during the development, and it can also be used to test the preproduction and even production on the CI. In order to test on localhost, we just need to set 'baseUrl' to localhost in the cypress configuration. In order to test on CI, we can choose the 'headless' mode to run the test in terminal.

@@ -3,6 +3,7 @@ title: "Common patterns for customized hooks"
 date: "2021-06-15"
 category: "blog"
 star: 5
+keyword: "react"
 ---
 
 Customized hooks are like helper functions in React, they encapsulate logics with different React native hooks: useState, useEffect, useCallback, useMemo, useContext, useRef. In this article, I am going to share some common patterns for customized hooks with the help of React native hooks.

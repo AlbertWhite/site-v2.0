@@ -3,6 +3,7 @@ title: "Webpack configuration for react development"
 date: "2019-03-14"
 category: "blog"
 star: 3
+keyword: "react"
 ---
 
 In order to work with react, we need an environment for compiling es6 and jsx, besides that, we need to support import css and images into javascript. Webpack is a good choice for working with that, but we should notice that **webpack is not only for react**, and react can work with other compile tools, like [browserify](http://browserify.org/).

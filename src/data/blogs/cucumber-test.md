@@ -3,6 +3,7 @@ title: "Use Cucumber test for QA and SEO testing"
 date: "2023-01-23"
 category: "blog"
 star: 5
+keyword: "test"
 ---
 
 Periodically QA testing is a very important way to monitor the website's healthiness. It's one of the most efficient and the most rapid ways to report website errors.

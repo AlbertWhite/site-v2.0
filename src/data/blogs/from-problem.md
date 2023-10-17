@@ -3,6 +3,7 @@ title: "From problem to decision: how to choose a technical solution"
 date: "2023-01-07"
 category: "blog"
 star: 5
+keyword: "soft skills"
 ---
 
 It's a small article about a recent learning on how to choose a technical solution, which works well in my life when I take non technical solutions too.

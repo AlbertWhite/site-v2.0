@@ -3,6 +3,7 @@ title: "Rethink on React component patterns"
 date: "2019-12-09"
 category: "blog"
 star: 5
+keyword: "react"
 ---
 
 As mentioned by the [first part of tutorial from Gatsby](https://www.gatsbyjs.org/tutorial/part-one/#building-with-components):

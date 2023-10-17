@@ -3,6 +3,7 @@ title: "How react lazy helps with web performance"
 date: "2020-07-30"
 category: "blog"
 star: 5
+keyword: "react"
 ---
 
 React.Lazy is a React official API for lazy load component / dynamic import bundle. In this article, I will show a real simple example on how react lazy helps with web performance.

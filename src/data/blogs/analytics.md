@@ -3,6 +3,7 @@ title: "Track web performance with Google Analytics"
 date: "2020-04-13"
 category: "blog"
 star: 5
+keyword: "web performance"
 ---
 
 This is a research project for discovering the possibility of tracking web performances with Google Analytics. In this project, we have succeed with:

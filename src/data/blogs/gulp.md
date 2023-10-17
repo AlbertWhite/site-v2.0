@@ -3,6 +3,7 @@ title: "Use Gulp for three reasons"
 date: "2016-05-04"
 category: "blog"
 star: 1
+keyword: "other"
 ---
 
 ![](images/gulp/1.png)

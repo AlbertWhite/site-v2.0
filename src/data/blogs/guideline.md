@@ -3,6 +3,7 @@ title: "Angular 1 Guideline"
 date: "2017-06-04"
 category: "blog"
 star: 2
+keyword: "other"
 ---
 
 During the last two months, I did an internship as a front-end developer for Angular. The project is well-structured, and strictly follow [the angular guideline from John Papa](https://github.com/johnpapa/angular-styleguide). Here are the best practices:

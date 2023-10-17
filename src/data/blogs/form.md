@@ -3,6 +3,7 @@ title: "ReduxForm vs Formik, with Material-UI or not ?"
 date: "2019-04-02"
 category: "blog"
 star: 4
+keyword: "react"
 ---
 
 Form is one of the most important part in web application. When we work with a form, there are so many things that are quite similar, for example: form validation, initial values, error message, catch error after submission... That is why a form library can be quite useful (although we can create our own form library).

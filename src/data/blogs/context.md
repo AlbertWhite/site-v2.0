@@ -3,6 +3,7 @@ title: "Create HOC pattern for context"
 date: "2020-04-02"
 category: "blog"
 star: 4
+keyword: "react"
 ---
 
 Some data should be shared throughout the whole application, for example, the site language, the device size. A common solution is to use redux and share the data in store.

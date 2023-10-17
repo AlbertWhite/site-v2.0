@@ -3,6 +3,7 @@ title: "Deploy node server to Digital Ocean with PM2"
 date: "2016-09-09"
 category: "blog"
 star: 1
+keyword: "other"
 ---
 
 It is my note about how to deploy node server to DigitalOcean.

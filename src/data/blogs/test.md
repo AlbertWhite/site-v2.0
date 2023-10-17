@@ -3,6 +3,7 @@ title: "Write test for React: component, hoc, hooks, promise, saga, graphql, cus
 date: "2020-10-09"
 category: "blog"
 star: 4
+keyword: "test"
 ---
 
 [Read this article on medium](https://medium.com/@albertyuebaixu/write-test-for-react-component-hoc-hooks-promise-saga-b04b231ac9e8)
