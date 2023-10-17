@@ -6,7 +6,6 @@ import Footer from "./footer"
 
 const StyledContainer = styled.div`
   align-items: center;
-  max-width: var(--app-max-width, 672px);
   max-width: 672px;
   margin: 0 auto;
 
