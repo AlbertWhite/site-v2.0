@@ -8,8 +8,9 @@ export default ({ data }: any) => {
     <>
       <SEO />
       <p>
-        Hi, I am Albert, my Chinese name is Yuebai XU 许月白. I am a full-stack
-        developer based in Paris. Now I am working in{" "}
+        Hello / Bonjour / 你好, I am Albert, my Chinese name is Yuebai XU
+        许月白. I am a full-stack developer with more than 6 years experience.
+        My last job is in{" "}
         <a
           href="https://www.linkedin.com/company/the-fork-a-tripadvisor-company/"
           target="_blank"
@@ -17,27 +18,29 @@ export default ({ data }: any) => {
         >
           TheFork (A TripAdvisor Company)
         </a>{" "}
-        as a fullstack developer.
+        as a fullstack developer. I am located in Paris.
       </p>
       <p>
-        As a front-end developer with more than 4 years' experience, I am very
-        good at Javascript, React, ApolloGraphQL, as well as code checking and
-        building tools: Webpack, Eslint, Typescript.
+        Having worked as front-end lead developer in a small team with 4
+        fullstack developers and as a backend developer in a backend-driven
+        team, I have led several cross-domain projects from planning the
+        technical solution to ship the project in time. I am good at discovering
+        and initializing technical solutions with different possibilities and
+        choose the most coherent one based on the contextual constraints.
       </p>
-
       <p>
-        I am focusing on using the above technologies for front-end problematic
-        solution design:{" "}
-        <b>
-          SEO implementation; Web performance improvement; Design System
-          Integration; Code Quality enhancement; GTM / Adobe Tracking.{" "}
-        </b>
+        Apart from building web interface and API, I have experience with
+        typescript migration, nextjs migration, web performance investigations
+        and improvement, GA tracking, braze and braze API implementation,
+        talon.one, and technical SEO.
       </p>
-
       <p>
-        As a full-stack developer, I am able to interact with DB with SQL and
-        Knex.js; build GraphQL Server and Express Server under DDD (Domain
-        Driven Design) principle; launch project with Docker and Docker compose.
+        As a developer, I am able to plan and work on complicated frontend
+        subjects independently. I am good at Typescript, React, Nextjs,
+        ApolloGraphQL, Cypress, Jest, React-testing-library. As for the backend
+        side, I am familiar with ApolloGraphQL, Rest API, Joi, Cucumber Test,
+        Express server and middleware, Sql, Knex under DDD (Domain Driven
+        Design) principle.
       </p>
       <p>
         Outside of work, I am interested in creating things with code, like
