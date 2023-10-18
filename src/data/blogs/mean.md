@@ -3,7 +3,7 @@ title: "Build your Mean Stack with Gulp"
 date: "2016-07-12"
 category: "blog"
 star: 2
-keyword: "nodejs"
+keyword: "backend"
 ---
 
 MEAN stack(MongoDB, Express.js, AngularJS, Node.js) is a very inspiring topic nowadays for front-end developers, because we can become full-stack developer with only Javascript! As a front-end developer, it is worth learning MEAN stack because that's a very good path for learning how backend works.

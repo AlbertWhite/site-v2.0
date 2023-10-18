@@ -3,7 +3,7 @@ title: "Strangler pattern with backend and frontend examples"
 date: "2023-03-16"
 category: "blog"
 star: 5
-keyword: "other"
+keyword: "backend"
 ---
 
 [Strangler pattern](https://www.redhat.com/architect/pros-and-cons-strangler-architecture-pattern) is a useful pattern when we refactor the code base behind without touching the API. Recently I have touched two totally different examples from backend and frontend. They are quite different but share the same idea.

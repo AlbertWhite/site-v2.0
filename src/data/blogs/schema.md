@@ -3,7 +3,7 @@ title: "Generate types from graphql in server side and client side"
 date: "2023-05-16"
 category: "blog"
 star: 4
-keyword: "graphql"
+keyword: "backend"
 ---
 
 Graphql has its own type system, and converting it to typescript will make life easier. There are many tools to do that, including [graphql-codegen](https://the-guild.dev/graphql/codegen) or [apollo codegen:generate](https://www.apollographql.com/blog/tooling/apollo-codegen/typescript-graphql-code-generator-generate-graphql-types/). 

@@ -3,7 +3,7 @@ title: "Login, Signup, Find Password by Mail with NodeJS"
 date: "2016-06-23"
 category: "blog"
 star: 1
-keyword: "nodejs"
+keyword: "backend"
 ---
 
 It is a demo for une application full-stack with NodeJS and PassportJS. The demo supports login, signup and forget password.

@@ -3,7 +3,7 @@ title: "Why use GatsbyJS for this new portfolio  website"
 date: "2019-11-20"
 category: "blog"
 star: 4
-keyword: "javascript"
+keyword: "other"
 ---
 
 Recently I remade my blog with GatsbyJS. The main reason is that I don't want to create blog by writing html anymore. Gatsby has its [support to transformer markdown files into react pages](https://www.gatsbyjs.org/tutorial/part-six/). During the development with GatsbyJS, I find that GatsbyJS is really a treasure box with its [plugins](https://www.gatsbyjs.org/plugins/), its [support for web performance](https://www.gatsbyjs.org/tutorial/part-eight/), its logic of focusing on the web content instead of technical details and [its focus on the deployment since the beginning of its tutorial](https://www.gatsbyjs.org/tutorial/part-one/#deploying-a-gatsby-site). In this article I will talk a bit with my journey with GatsbyJS.
