@@ -33,6 +33,10 @@ body.dark a div {
   color: white;
 }
 
+body.dark .filterContainer{
+  background-color: #282c35;
+}
+
 a {
   color: var(--app-main-color, #663399);
   color: #663399;

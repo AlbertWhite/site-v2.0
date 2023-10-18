@@ -62,7 +62,8 @@ const StyledContent = styled.p`
 
 const StyledFilter = styled.a<{ isSelected: boolean }>`
   font-size: 0.9rem;
-  color: ${props => (props.isSelected ? "#663399" : "rgba(102, 51, 153, 0.5)")};
+  color: ${props =>
+    props.isSelected ? "#663399 !important" : "rgba(102, 51, 153, 0.5)"};
   box-shadow: none;
   cursor: pointer;
   margin-right: 0.8rem;
@@ -101,7 +102,7 @@ export default ({ data }: any) => {
       "stars" to mark the importance in today's context of development. <br />
       Selected articles are on{" "}
       <a href={"https://medium.com/@albertyuebaixu"}>Medium</a>.
-      <StyledFilterContainer>
+      <StyledFilterContainer className="filterContainer">
         {keywordsWithCount.map(({ keyword, count }) => (
           <StyledFilter
             isSelected={keyword === selectedCategory}
