@@ -84,7 +84,7 @@ export default ({ data }: any) => {
       <p>
         Here are my cv in{" "}
         <a
-          href={data.allFile.edges[0].node.publicURL}
+          href={data.allFile.edges[1].node.publicURL}
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -92,7 +92,7 @@ export default ({ data }: any) => {
         </a>{" "}
         and in{" "}
         <a
-          href={data.allFile.edges[1].node.publicURL}
+          href={data.allFile.edges[0].node.publicURL}
           target="_blank"
           rel="noopener noreferrer"
         >
