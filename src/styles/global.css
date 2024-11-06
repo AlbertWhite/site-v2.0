@@ -5,8 +5,14 @@ body {
 
 html {
   background-color: white;
-  --app-max-width: 672px;
   --app-main-color: #663399;
+  align-items: center;
+  max-width: 672px;
+  margin: 0 auto;
+
+  @media (max-width: 768px) {
+    max-width: 80%;
+  }
 }
 
 body.dark {
