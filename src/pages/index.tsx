@@ -98,8 +98,9 @@ export default ({ data }: any) => {
   return (
     <div>
       <SEO title="Albert Yuebai XU - blogs" />
-      Technology changes rapidly, so as the importance of articles. I add
-      "stars" to mark the importance in today's context of development. <br />
+      Technology evolves quickly, and the significance of articles grows
+      alongside it. I use "stars" to highlight their relevance in the context of
+      today's technology world. <br />
       Selected articles are on{" "}
       <a href={"https://medium.com/@albertyuebaixu"}>Medium</a>.
       <StyledFilterContainer className="filterContainer">
