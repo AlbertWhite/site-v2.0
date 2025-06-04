@@ -35,8 +35,6 @@ const StyledLink = styled(Link)`
     props.isDarkMode ? "white !important" : "black"};
 `
 
-
-
 const StyledHeader = styled.div`
   display: flex;
   flex-direction: row;
@@ -53,7 +51,6 @@ export default () => {
       JSON.parse(localStorage.getItem("isDarkMode") || null) || false
   }
   const [isDarkMode, setIsDarkMode] = useState(initialDarkMode)
-
 
   const data = useStaticQuery(
     graphql`
@@ -130,12 +127,12 @@ export default () => {
               : "Fullstack Developer"}
           </StyledSubTitle>
         </StyledTitleContainer>
-        <StyledToggle
+        {/* <StyledToggle
           className="customToggle"
           defaultChecked={isDarkMode}
           onChange={() => setIsDarkMode(!isDarkMode)}
           icons={false}
-        />
+        /> */}
       </StyledHeader>
       <StyledMenu>
         <StyledLink
