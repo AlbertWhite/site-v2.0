@@ -61,7 +61,6 @@ As a javascript developer, maybe you want to do more than just front-end develop
 - [gatsby-remark-copy-linked-files](https://www.gatsbyjs.org/packages/gatsby-remark-copy-linked-files/?=gatsby-remark-copy-linked-files): use inline images in markdown
 - [gatsby-plugin-react-helmet](https://www.gatsbyjs.org/packages/gatsby-plugin-react-helmet/?=gatsby-plugin-react-helmet): SEO with react-like header management
 - [gatsby-plugin-manifest](https://www.gatsbyjs.org/packages/gatsby-plugin-manifest/?=gatsby-plugin-manifest): PWA
-- [gatsby-plugin-google-analytics](https://www.gatsbyjs.org/packages/gatsby-plugin-manifest/?=gatsby-plugin-google-analytics)
 
 The **darkmode** is hand-made and I took an idea from [here](https://www.gatsbyjs.org/packages/gatsby-plugin-dark-mode/?=darkmode).
 

@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 import SEO from "../components/seo"
-import { Disqus } from "gatsby-plugin-disqus"
 import { graphql } from "gatsby"
 
 const Tab = ({ href, name, innerHtml }) => (
@@ -86,10 +85,6 @@ export default ({ data }: any) => {
           '<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1035996412&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/user-864339084" title="指月 Finger moon" target="_blank" style="color: #cccccc; text-decoration: none;">指月 Finger moon</a> · <a href="https://soundcloud.com/user-864339084/miss-you-everyday-guitar" title="天天想你 / Miss you everyday - Guitar FingerStyle" target="_blank" style="color: #cccccc; text-decoration: none;">天天想你 / Miss you everyday - Guitar FingerStyle</a></div>'
         }
       />
-
-      <div style={{ marginTop: "50px" }}>
-        <Disqus />
-      </div>
     </div>
   )
 }

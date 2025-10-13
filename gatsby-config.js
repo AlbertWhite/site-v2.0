@@ -5,24 +5,6 @@ module.exports = {
     sites,
   },
   plugins: [
-    {
-      resolve: `gatsby-plugin-disqus`,
-      options: {
-        shortname: `yuebaixu`,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: process.env.GATSBY_GOOGLE_TRACKING_ID,
-        // Defines where to place the tracking script - `true` in the head and `false` in the body
-        head: false,
-        // Setting this parameter is optional
-        anonymize: true,
-        // Setting this parameter is also optional
-        respectDNT: true,
-      },
-    },
     `gatsby-plugin-offline`, //service worker for PWA
     `gatsby-plugin-react-helmet`, // header information for SEO
     `gatsby-transformer-sharp`,
@@ -34,7 +16,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-typescript`, // typescript
-    `gatsby-plugin-tslint`, // typescript,
     {
       resolve: `gatsby-plugin-styled-components`,
       options: {
