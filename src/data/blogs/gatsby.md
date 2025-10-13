@@ -51,7 +51,6 @@ As a javascript developer, maybe you want to do more than just front-end develop
 - [gatsby-plugin-typography](https://www.gatsbyjs.org/packages/gatsby-plugin-typography/?=gatsby-plugin-typography): predefined css
 - [gatsby-plugin-typescript](https://www.gatsbyjs.org/packages/gatsby-plugin-typescript/?=gatsby-plugin-typescript): support for typescript
 - [gatsby-plugin-tslint](https://www.gatsbyjs.org/packages/gatsby-plugin-tslint/?=gatsby-plugin-tslint): support for tslint ([Tuto: Gatsby+Typescipt+Prettier](https://medium.com/maxime-heckel/getting-started-with-typescript-on-gatsby-8544b47c1d27))
-- [gatsby-image](https://www.gatsbyjs.org/packages/gatsby-image/?=gatsby-image)
 - [gatsby-transformer-sharp](https://www.gatsbyjs.org/packages/gatsby-transformer-sharp/?=gatsby-transformer-sharp)
 - [gatsby-plugin-sharp](https://www.gatsbyjs.org/packages/gatsby-plugin-sharp/?=gatsby-plugin-sharp): optimizing images
 - [gatsby-source-filesystem](https://www.gatsbyjs.org/packages/gatsby-source-filesystem/?=gatsby-source-filesystem): load local resource

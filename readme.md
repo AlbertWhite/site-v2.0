@@ -24,7 +24,6 @@ Built with [Gatsby](https://www.gatsbyjs.org/), Typescript, Styled Component and
 - gatsby-plugin-sharp: optimizing images
 - gatsby-source-filesystem: load local resource
 - gatsby-transformer-sharp
-- gatsby-image [Tuto](https://www.gatsbyjs.org/tutorial/gatsby-image-tutorial/)
 - gatsby-transformer-remark : take raw content from markdown files to be used in app
 - gatsby-remark-prismjs: highlight file
 - gatsby-remark-images: markdown inline images
