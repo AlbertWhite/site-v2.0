@@ -1,79 +1,79 @@
 import React from "react"
-import { Link } from "gatsby"
 import styled from "styled-components"
 import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
-
-const StyledIcons = styled.div``
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const StyledBottom = styled.div`
   margin-top: 1rem;
   font-size: 0.8rem;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-}
+`
+
+const StyledIcons = styled.div`
+  display: flex;
+  align-items: center;
 `
 
 const StyledA = styled.a`
-  box-shadow: none;
+  display: inline-flex;
+  width: 30px;
+  height: 30px;
   margin-left: 1rem;
+  box-shadow: none;
   &:hover {
     box-shadow: none;
   }
 `
 
-export default () => {
-  const data = useStaticQuery(
-    graphql`
-      query Icon {
-        linkedin: file(relativePath: { eq: "icons/linkedin.png" }) {
-          childImageSharp {
-            fixed(width: 30, height: 30) {
-              ...GatsbyImageSharpFixed
-            }
-          }
-        }
-        github: file(relativePath: { eq: "icons/github.png" }) {
-          childImageSharp {
-            fixed(width: 30, height: 30) {
-              ...GatsbyImageSharpFixed
-            }
-          }
-        }
-        soundcloud: file(relativePath: { eq: "icons/soundcloud.png" }) {
-          childImageSharp {
-            fixed(width: 30, height: 30) {
-              ...GatsbyImageSharpFixed
-            }
-          }
-        }
-        medium: file(relativePath: { eq: "icons/medium.png" }) {
-          childImageSharp {
-            fixed(width: 30, height: 30) {
-              ...GatsbyImageSharpFixed
-            }
-          }
+const IconImage = styled(GatsbyImage)`
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+`
+
+export default function FooterIcons() {
+  const data = useStaticQuery(graphql`
+    query Icon {
+      linkedin: file(relativePath: { eq: "icons/linkedin.png" }) {
+        childImageSharp {
+          gatsbyImageData(width: 30, height: 30, layout: FIXED)
         }
       }
-    `
-  )
+      github: file(relativePath: { eq: "icons/github.png" }) {
+        childImageSharp {
+          gatsbyImageData(width: 30, height: 30, layout: FIXED)
+        }
+      }
+      soundcloud: file(relativePath: { eq: "icons/soundcloud.png" }) {
+        childImageSharp {
+          gatsbyImageData(width: 30, height: 30, layout: FIXED)
+        }
+      }
+      medium: file(relativePath: { eq: "icons/medium.png" }) {
+        childImageSharp {
+          gatsbyImageData(width: 30, height: 30, layout: FIXED)
+        }
+      }
+    }
+  `)
+
   return (
     <StyledBottom>
-      <span>Powered by Gatsby.js. Albert Yuebai XU - 2022</span>
+      <span>Powered by Gatsby.js. Albert Yuebai XU - 2025</span>
       <StyledIcons>
         <StyledA href="https://linkedin.com/in/albert-yuebai-xu-53a7099a">
-          <Img fixed={data.linkedin.childImageSharp.fixed} alt="headshot" />
+          <IconImage image={getImage(data.linkedin)} alt="LinkedIn" />
         </StyledA>
         <StyledA href="https://github.com/AlbertWhite">
-          <Img fixed={data.github.childImageSharp.fixed} alt="headshot" />
+          <IconImage image={getImage(data.github)} alt="GitHub" />
         </StyledA>
         <StyledA href="https://medium.com/@albertyuebaixu">
-          <Img fixed={data.medium.childImageSharp.fixed} alt="headshot" />
+          <IconImage image={getImage(data.medium)} alt="Medium" />
         </StyledA>
         <StyledA href="https://soundcloud.com/user-864339084">
-          <Img fixed={data.soundcloud.childImageSharp.fixed} alt="headshot" />
+          <IconImage image={getImage(data.soundcloud)} alt="SoundCloud" />
         </StyledA>
       </StyledIcons>
     </StyledBottom>

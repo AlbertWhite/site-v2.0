@@ -24,14 +24,12 @@ Built with [Gatsby](https://www.gatsbyjs.org/), Typescript, Styled Component and
 - gatsby-plugin-sharp: optimizing images
 - gatsby-source-filesystem: load local resource
 - gatsby-transformer-sharp
-- gatsby-image [Tuto](https://www.gatsbyjs.org/tutorial/gatsby-image-tutorial/)
 - gatsby-transformer-remark : take raw content from markdown files to be used in app
 - gatsby-remark-prismjs: highlight file
 - gatsby-remark-images: markdown inline images
 - gatsby-remark-copy-linked-files: markdown inline images
 - gatsby-plugin-react-helmet: SEO with react-like header management
 - gatsby-plugin-manifest: PWA
-- gatsby-plugin-google-analytics
 - gatsby-remark-component: use react component in markdown
 
 ##### Take ideas from ...

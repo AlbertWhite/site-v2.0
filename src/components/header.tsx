@@ -52,19 +52,17 @@ export default () => {
   }
   const [isDarkMode, setIsDarkMode] = useState(initialDarkMode)
 
-  const data = useStaticQuery(
-    graphql`
-      query MusicIcon {
-        music: file(relativePath: { eq: "icons/music.png" }) {
-          childImageSharp {
-            fixed(width: 20, height: 25) {
-              ...GatsbyImageSharpFixed
-            }
+  const data = useStaticQuery(graphql`
+    query MusicIcon {
+      music: file(relativePath: { eq: "icons/music.png" }) {
+        childImageSharp {
+          fixed(width: 20, height: 25) {
+            ...GatsbyImageSharpFixed
           }
         }
       }
-    `
-  )
+    }
+  `)
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -86,21 +84,21 @@ export default () => {
   let shouldHighLightCode = false
   let shouldHighLightUX = false
   let shouldHighLightMusic = false
-
+  console.log(pathname)
   switch (pathname) {
     case "/":
       shouldHighLightBlog = true
       break
-    case "/about":
+    case "/about/":
       shouldHighLightAbout = true
       break
-    case "/code":
+    case "/code/":
       shouldHighLightCode = true
       break
-    case "/music":
+    case "/music/":
       shouldHighLightMusic = true
       break
-    case "/ux":
+    case "/ux/":
     case "/cup/":
     case "/fortify/":
     case "/love/":
