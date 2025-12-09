@@ -1,6 +1,7 @@
 const sites = require("./src/data/site")
 
 module.exports = {
+  pathPrefix: "/site-v2.0",
   siteMetadata: {
     sites,
   },
