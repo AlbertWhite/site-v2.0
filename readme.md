@@ -1,5 +1,3 @@
-##### [www.yuebaixu.com](http://www.yuebaixu.com)
-
 Personal website forked from [gatsby starter hello world](https://github.com/gatsbyjs/gatsby-starter-hello-world).
 
 Built with [Gatsby](https://www.gatsbyjs.org/), Typescript, Styled Component and Prettier. Deployed by [Netflify](https://www.netlify.com/) with cd (continuous development) integrated.
