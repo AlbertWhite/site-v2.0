@@ -86,25 +86,25 @@ export default () => {
   let shouldHighLightMusic = false
   console.log(pathname)
   switch (pathname) {
-    case "/":
+    case "/site-v2.0/":
       shouldHighLightBlog = true
       break
-    case "/about/":
+    case "/site-v2.0/about/":
       shouldHighLightAbout = true
       break
-    case "/code/":
+    case "/site-v2.0/code/":
       shouldHighLightCode = true
       break
-    case "/music/":
+    case "/site-v2.0/music/":
       shouldHighLightMusic = true
       break
-    case "/ux/":
-    case "/cup/":
-    case "/fortify/":
-    case "/love/":
-    case "/momenthere/":
-    case "/sleep/":
-    case "/train/":
+    case "/site-v2.0/ux/":
+    case "/site-v2.0/cup/":
+    case "/site-v2.0/fortify/":
+    case "/site-v2.0/love/":
+    case "/site-v2.0/momenthere/":
+    case "/site-v2.0/sleep/":
+    case "/site-v2.0/train/":
       shouldHighLightUX = true
       break
     default:
