@@ -21,7 +21,7 @@ const SEO = ({
     <meta name="viewport" content="width=device-width, initial-scale = 1.0" />
     <meta property="og:title" content="Albert Yuebai XU" />
     <meta property="og:type" content="portfolio" />
-    <meta property="og:url" content="http://www.yuebaixu.com" />
+    <meta property="og:url" content="http://www.albertyuebaixu.com" />
     <meta
       property="og:description"
       content="Albert Yuebai XU - Javascript Developer in Paris"

@@ -54,7 +54,7 @@ There are two advantages for writing tests:
 
 Webpack makes front-end development workflow more fluid and professional.
 
-In detail, as I mentioned in [another article about webpack](https://www.yuebaixu.com/webpack/). There are three main purposes of webpack:
+In detail, as I mentioned in [another article about webpack](/webpack/). There are three main purposes of webpack:
 
 - Create a dev server and watch for changes
 - Parse files (js, jsx, scss, images, json...)

@@ -84,32 +84,25 @@ export default () => {
   let shouldHighLightCode = false
   let shouldHighLightUX = false
   let shouldHighLightMusic = false
-  console.log(pathname)
-  switch (pathname) {
-    case "/site-v2.0/":
-      shouldHighLightBlog = true
-      break
-    case "/site-v2.0/about/":
-      shouldHighLightAbout = true
-      break
-    case "/site-v2.0/code/":
-      shouldHighLightCode = true
-      break
-    case "/site-v2.0/music/":
-      shouldHighLightMusic = true
-      break
-    case "/site-v2.0/ux/":
-    case "/site-v2.0/cup/":
-    case "/site-v2.0/fortify/":
-    case "/site-v2.0/love/":
-    case "/site-v2.0/momenthere/":
-    case "/site-v2.0/sleep/":
-    case "/site-v2.0/train/":
-      shouldHighLightUX = true
-      break
-    default:
-      shouldHighLightBlog = true
-      break
+
+  if (pathname.includes("/about/")) {
+    shouldHighLightAbout = true
+  } else if (pathname.includes("/code/")) {
+    shouldHighLightCode = true
+  } else if (pathname.includes("/music/")) {
+    shouldHighLightMusic = true
+  } else if (
+    pathname.includes("/ux/") ||
+    pathname.includes("/cup/") ||
+    pathname.includes("/fortify/") ||
+    pathname.includes("/love/") ||
+    pathname.includes("/momenthere/") ||
+    pathname.includes("/sleep/") ||
+    pathname.includes("/train/")
+  ) {
+    shouldHighLightUX = true
+  } else {
+    shouldHighLightBlog = true
   }
 
   return (

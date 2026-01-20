@@ -85,7 +85,7 @@ const useIsMobile() {
 
 useCallback is a special hook, it is not used for preventing from being called only once, but is used for creating a memoized callback which will be passed into the Child component and prevent from the Child component reloading only because of the callback function. In other words, if the callback is not being passed to the child component, then useCallback is useless.
 
-You can refer to this [article](https://www.yuebaixu.com/misunderstanding/) I have written to clairy the difference between `React.memo`, `useMemo` and `useCallback`.
+You can refer to this [article](/misunderstanding/) I have written to clairy the difference between `React.memo`, `useMemo` and `useCallback`.
 
 ## Level 2: Customized hook with compound native hooks
 
@@ -98,14 +98,14 @@ It's a common pattern for state management, when the state is not complicated. I
 For example, if you want to create a hook to manage the count with some complicated calculations:
 
 ```js
-const useCount = initialCount => {
+const useCount = (initialCount) => {
   const [count, setCount] = useState(initialCount)
 
-  const addCount = useCallback(number => {
+  const addCount = useCallback((number) => {
     return setCount(count + number)
   }, [])
 
-  const subStractCount = useCallback(number => {
+  const subStractCount = useCallback((number) => {
     return subStractCount(count - number)
   }, [])
 
@@ -155,7 +155,7 @@ They are quite common patterns for fetching data. There are two possibilities: f
 With rest api:
 
 ```js
-export const useDataWithFetch = url => {
+export const useDataWithFetch = (url) => {
   const [data, setData] = useState({})
 
   useEffect(async () => {

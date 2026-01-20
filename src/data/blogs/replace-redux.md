@@ -19,7 +19,7 @@ In this article, I will write down a tutorial on how to replace redux by useCont
 
 ### Some thinking on 'use' and 'with' in React
 
-Just before this tutorial, I want to share something with hooks. React Hooks reinforce the development of react and make it more flexible. In general, there are two ways : 'use' and 'with'. 'use' is always used for customizing hooks, for example, 'useEffect', or [customized](https://reactjs.org/docs/hooks-custom.html) 'useMyEffect', 'useContext', or 'useMyContext'. 'with' is always used as HOC component. You can check an example of it with my article [Create HOC pattern 'withContext' for context](https://www.yuebaixu.com/context/).
+Just before this tutorial, I want to share something with hooks. React Hooks reinforce the development of react and make it more flexible. In general, there are two ways : 'use' and 'with'. 'use' is always used for customizing hooks, for example, 'useEffect', or [customized](https://reactjs.org/docs/hooks-custom.html) 'useMyEffect', 'useContext', or 'useMyContext'. 'with' is always used as HOC component. You can check an example of it with my article [Create HOC pattern 'withContext' for context](/context).
 
 Ok, let's start our tutorial:
 
