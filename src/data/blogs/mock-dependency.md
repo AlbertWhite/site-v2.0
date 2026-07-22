@@ -1,7 +1,7 @@
 ---
 title: "How to mock default import and named import in jest"
 date: "2020-10-09"
-category: "blog"
+category: "blog-unlisted"
 star: 4
 keyword: "test"
 ---

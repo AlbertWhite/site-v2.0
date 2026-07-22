@@ -1,7 +1,7 @@
 ---
 title: "Use Gulp for three reasons"
 date: "2016-05-04"
-category: "blog"
+category: "blog-unlisted"
 star: 1
 keyword: "other"
 ---

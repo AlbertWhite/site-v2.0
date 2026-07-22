@@ -1,7 +1,7 @@
 ---
 title: "Deploy node server to Digital Ocean with PM2"
 date: "2016-09-09"
-category: "blog"
+category: "blog-unlisted"
 star: 1
 keyword: "other"
 ---

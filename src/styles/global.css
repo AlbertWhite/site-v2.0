@@ -52,9 +52,135 @@ a:hover {
   box-shadow: 0 1px 0 0 currentColor;
 }
 
+/* Code blocks */
+
+.gatsby-highlight {
+  position: relative;
+  background: #0f172a;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 0.75rem;
+  margin: 1.75rem 0;
+  padding: 1.25rem 1.5rem;
+  overflow: auto;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.12);
+}
+
+.gatsby-highlight pre[class*="language-"] {
+  background: transparent;
+  margin: 0;
+  white-space: pre !important;
+  font-size: 0.85em !important;
+}
+
+.gatsby-highlight::before {
+  content: attr(data-language);
+  position: absolute;
+  top: 0.7rem;
+  right: 1.1rem;
+  font-family: "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: rgba(226, 232, 240, 0.35);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  pointer-events: none;
+}
+
+code[class*="language-"],
 pre[class*="language-"] {
-  white-space: pre-wrap !important;
-  font-size: 0.8em !important;
+  color: #e2e8f0;
+  font-family: "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  text-shadow: none;
+}
+
+.gatsby-highlight pre[class*="language-"].line-numbers {
+  padding-left: 3.2em;
+}
+
+.line-numbers .line-numbers-rows {
+  left: -3.2em;
+  width: 2.6em;
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.line-numbers-rows > span:before {
+  color: rgba(226, 232, 240, 0.3);
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #64748b;
+  font-style: italic;
+}
+
+.token.punctuation {
+  color: #94a3b8;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #fda4af;
+}
+
+.token.boolean,
+.token.number {
+  color: #fdba74;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #86efac;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: #94a3b8;
+  background: transparent;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: #818cf8;
+}
+
+.token.function,
+.token.class-name,
+.token.function-variable {
+  color: #f9a8d4;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+  color: #fde68a;
+}
+
+/* Inline code (single backtick, not inside a fenced block) */
+:not(pre) > code[class*="language-"] {
+  background: #f3f4f6;
+  color: #4338ca;
+  padding: 0.15em 0.45em;
+  border-radius: 0.35rem;
+  font-family: "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.85em;
+  white-space: nowrap;
+}
+
+body.dark .gatsby-highlight {
+  border-color: rgba(255, 255, 255, 0.12);
 }
 
 .react-toggle--focus .react-toggle-thumb {
@@ -71,31 +197,4 @@ pre[class*="language-"] {
   .react-toggle-track {
   background-color: #663399;
   background-color: var(--app-main-color, #663399);
-}
-
-/**
- * If you already use line highlighting
- */
-
-/* Adjust the position of the line numbers */
-.gatsby-highlight pre[class*="language-"].line-numbers {
-  padding-left: 2.8em;
-}
-
-/**
- * If you only want to use line numbering
- */
-
-.gatsby-highlight {
-  background-color: #fdf6e3;
-  border-radius: 0.3em;
-  margin: 0.5em 0;
-  padding: 1em;
-  overflow: auto;
-}
-
-.gatsby-highlight pre[class*="language-"].line-numbers {
-  padding: 0;
-  padding-left: 2.8em;
-  overflow: initial;
 }

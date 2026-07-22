@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { Link } from "gatsby"
 import styled from "styled-components"
-import "react-toggle/style.css"
-import Toggle from "react-toggle"
 
 const StyledTitleContainer = styled.div`
   display: flex;
@@ -12,36 +10,49 @@ const StyledTitleContainer = styled.div`
 
 const StyledTitle = styled.h2`
   margin-bottom: 0;
-  color: #663399;
-  color: var(--app-main-color, #663399);
+  font-weight: 800;
+  color: #111827;
+  color: var(--app-main-color, #111827);
 `
 
 const StyledSubTitle = styled.h4`
   margin-top: 0;
+  font-family: monospace;
+  font-weight: 400;
+  color: #9ca3af;
 `
 
 const StyledMenu = styled.div`
   display: flex;
   flex-direction: row;
-  margin: 10px 0 40px 0;
-  justify-content: space-around;
+  align-items: center;
+  gap: 1.5rem;
 `
 
-const StyledLink = styled(Link)`
-  box-shadow: ${(props: { isDarkMode: boolean; shouldHighLight: boolean }) =>
-    props.shouldHighLight ? "box-shadow: 0 1px 0 0 currentColor;" : "none"};
-  font-weight: bold;
-  color: ${(props: { isDarkMode: boolean; shouldHighLight: boolean }) =>
-    props.isDarkMode ? "white !important" : "black"};
+const StyledLink = styled(Link)<{
+  isDarkMode: boolean
+  shouldHighLight: boolean
+}>`
+  box-shadow: none;
+  font-weight: ${props => (props.shouldHighLight ? 700 : 400)};
+  text-decoration: ${props => (props.shouldHighLight ? "underline" : "none")};
+  text-underline-offset: 4px;
+  color: ${props => {
+    if (props.isDarkMode) return "white !important"
+    return props.shouldHighLight ? "#111827" : "#9ca3af"
+  }};
+  &:hover {
+    box-shadow: none;
+  }
 `
 
 const StyledHeader = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  margin-bottom: 1rem;
 `
-const StyledToggle = styled(Toggle)``
 
 export default () => {
   let initialDarkMode = false
@@ -51,18 +62,6 @@ export default () => {
       JSON.parse(localStorage.getItem("isDarkMode") || null) || false
   }
   const [isDarkMode, setIsDarkMode] = useState(initialDarkMode)
-
-  const data = useStaticQuery(graphql`
-    query MusicIcon {
-      music: file(relativePath: { eq: "icons/music.png" }) {
-        childImageSharp {
-          fixed(width: 20, height: 25) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
-    }
-  `)
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -79,89 +78,31 @@ export default () => {
   if (typeof window !== "undefined") {
     pathname = window.location.pathname
   }
-  let shouldHighLightAbout = false
-  let shouldHighLightBlog = false
-  let shouldHighLightCode = false
-  let shouldHighLightUX = false
-  let shouldHighLightMusic = false
-
-  if (pathname.includes("/about/")) {
-    shouldHighLightAbout = true
-  } else if (pathname.includes("/code/")) {
-    shouldHighLightCode = true
-  } else if (pathname.includes("/music/")) {
-    shouldHighLightMusic = true
-  } else if (
-    pathname.includes("/ux/") ||
-    pathname.includes("/cup/") ||
-    pathname.includes("/fortify/") ||
-    pathname.includes("/love/") ||
-    pathname.includes("/momenthere/") ||
-    pathname.includes("/sleep/") ||
-    pathname.includes("/train/")
-  ) {
-    shouldHighLightUX = true
-  } else {
-    shouldHighLightBlog = true
-  }
+  const shouldHighLightAbout = pathname.includes("/about/")
+  const shouldHighLightBlog = !shouldHighLightAbout
 
   return (
-    <>
-      <StyledHeader>
-        <StyledTitleContainer>
-          <StyledTitle>
-            {shouldHighLightMusic ? "FingerMoon" : "Albert Yuebai XU"}
-          </StyledTitle>
-          <StyledSubTitle>
-            {shouldHighLightMusic
-              ? "FingerStyle Guitar Arrangement"
-              : "Fullstack Developer"}
-          </StyledSubTitle>
-        </StyledTitleContainer>
-        {/* <StyledToggle
-          className="customToggle"
-          defaultChecked={isDarkMode}
-          onChange={() => setIsDarkMode(!isDarkMode)}
-          icons={false}
-        /> */}
-      </StyledHeader>
+    <StyledHeader>
+      <StyledTitleContainer>
+        <StyledTitle>Albert Yuebai Xu</StyledTitle>
+        <StyledSubTitle>fullstack developer</StyledSubTitle>
+      </StyledTitleContainer>
       <StyledMenu>
         <StyledLink
           to={`/`}
           shouldHighLight={shouldHighLightBlog}
           isDarkMode={isDarkMode}
         >
-          Blog
+          blog
         </StyledLink>
         <StyledLink
           to={`/about`}
           shouldHighLight={shouldHighLightAbout}
           isDarkMode={isDarkMode}
         >
-          About
-        </StyledLink>
-        <StyledLink
-          to={`/code`}
-          shouldHighLight={shouldHighLightCode}
-          isDarkMode={isDarkMode}
-        >
-          Project
-        </StyledLink>
-        <StyledLink
-          to={`/ux`}
-          shouldHighLight={shouldHighLightUX}
-          isDarkMode={isDarkMode}
-        >
-          UX
-        </StyledLink>
-        <StyledLink
-          to={`/music`}
-          shouldHighLight={shouldHighLightMusic}
-          isDarkMode={isDarkMode}
-        >
-          Music
+          about
         </StyledLink>
       </StyledMenu>
-    </>
+    </StyledHeader>
   )
 }

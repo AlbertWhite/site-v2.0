@@ -51,17 +51,13 @@ export default ({ data }: any) => {
           {" "}
           a npm module
         </a>
-        ,{" "}
+        , and{" "}
         <a
           href="https://chrome.google.com/webstore/detail/page-title-fetcher/ipnimfnclmbojlnoeiiklmadebceackl"
           target="_blank"
         >
           a chrome extension
         </a>
-        , and{" "}
-        <Link to="/code" rel="noopener noreferrer">
-          some data visualizations
-        </Link>
         .
       </p>
       <p>
@@ -72,14 +68,6 @@ export default ({ data }: any) => {
         </Link>
         . Selected articles are on{" "}
         <a href={"https://medium.com/@albertyuebaixu"}>my Medium blog</a>.
-      </p>
-      <p>
-        As a master student in Human Computer Interaction (HCI), I am well
-        trained in UX design and I have a{" "}
-        <Link to="/ux" rel="noopener noreferrer">
-          portfolio
-        </Link>
-        .
       </p>
       <p>
         Here are my cv in{" "}

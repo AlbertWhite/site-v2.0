@@ -1,7 +1,7 @@
 ---
 title: "Creating the callApi method with promise, async/await"
 date: "2019-04-02"
-category: "blog"
+category: "blog-unlisted"
 star: 3
 keyword: "react"
 ---

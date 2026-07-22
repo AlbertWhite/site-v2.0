@@ -1,7 +1,7 @@
 ---
 title: 'Is your team "Agile" ?'
 date: "2019-10-01"
-category: "blog"
+category: "blog-unlisted"
 star: 5
 keyword: "soft skills"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "How react lazy helps with web performance"
 date: "2020-07-30"
-category: "blog"
+category: "blog-unlisted"
 star: 5
 keyword: "react"
 ---

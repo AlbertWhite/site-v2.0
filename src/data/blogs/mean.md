@@ -1,7 +1,7 @@
 ---
 title: "Build your Mean Stack with Gulp"
 date: "2016-07-12"
-category: "blog"
+category: "blog-unlisted"
 star: 2
 keyword: "backend"
 ---
