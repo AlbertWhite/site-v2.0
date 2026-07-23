@@ -5,7 +5,7 @@ body {
 
 html {
   background-color: white;
-  --app-main-color: #663399;
+  --app-main-color: #3538cd;
   align-items: center;
   max-width: 672px;
   margin: 0 auto;
@@ -28,11 +28,11 @@ body.dark p {
 }
 
 body.dark a {
-  color: #e0c1ff;
+  color: #a5b4fc;
 }
 
 body.dark a h3 {
-  color: #e0c1ff;
+  color: #a5b4fc;
 }
 
 body.dark a div {
@@ -44,8 +44,8 @@ body.dark .filterContainer{
 }
 
 a {
-  color: var(--app-main-color, #663399);
-  color: #663399;
+  color: var(--app-main-color, #3538cd);
+  color: #3538cd;
 }
 
 a:hover {
@@ -189,12 +189,12 @@ body.dark .gatsby-highlight {
 
 /*used in header.tsx for customize color*/
 .customToggle.react-toggle--checked .react-toggle-track {
-  background-color: #663399;
-  background-color: var(--app-main-color, #663399);
+  background-color: #3538cd;
+  background-color: var(--app-main-color, #3538cd);
 }
 
 .customToggle.react-toggle--checked:hover:not(.react-toggle--disabled)
   .react-toggle-track {
-  background-color: #663399;
-  background-color: var(--app-main-color, #663399);
+  background-color: #3538cd;
+  background-color: var(--app-main-color, #3538cd);
 }

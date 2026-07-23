@@ -61,7 +61,6 @@ export default function FooterIcons() {
 
   return (
     <StyledBottom>
-      <span>Powered by Gatsby.js. Albert Yuebai XU - 2025</span>
       <StyledIcons>
         <StyledA href="https://linkedin.com/in/albert-yuebai-xu-53a7099a">
           <IconImage image={getImage(data.linkedin)} alt="LinkedIn" />

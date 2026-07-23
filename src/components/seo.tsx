@@ -1,5 +1,6 @@
 import React from "react"
 import { Helmet } from "react-helmet"
+import { withPrefix } from "gatsby"
 
 const SEO = ({
   title = "Albert Yuebai XU - Javascript Developer",
@@ -9,6 +10,21 @@ const SEO = ({
   <Helmet>
     <meta charSet="utf-8" />
     <title>{title}</title>
+    <link rel="icon" type="image/svg+xml" href={withPrefix("/favicon.svg")} />
+    <link rel="alternate icon" href={withPrefix("/favicon.ico")} />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href={withPrefix("/favicon-32x32.png")}
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href={withPrefix("/favicon-16x16.png")}
+    />
+    <link rel="apple-touch-icon" href={withPrefix("/apple-touch-icon.png")} />
     <meta
       name="description"
       content="Albert Yuebai XU - Javascript Developer in Paris"

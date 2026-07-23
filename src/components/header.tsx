@@ -11,8 +11,7 @@ const StyledTitleContainer = styled.div`
 const StyledTitle = styled.h2`
   margin-bottom: 0;
   font-weight: 800;
-  color: #111827;
-  color: var(--app-main-color, #111827);
+  color: #3538cd;
 `
 
 const StyledSubTitle = styled.h4`
@@ -39,7 +38,7 @@ const StyledLink = styled(Link)<{
   text-underline-offset: 4px;
   color: ${props => {
     if (props.isDarkMode) return "white !important"
-    return props.shouldHighLight ? "#111827" : "#9ca3af"
+    return props.shouldHighLight ? "#3538cd" : "#9ca3af"
   }};
   &:hover {
     box-shadow: none;
@@ -78,8 +77,8 @@ export default () => {
   if (typeof window !== "undefined") {
     pathname = window.location.pathname
   }
-  const shouldHighLightAbout = pathname.includes("/about/")
-  const shouldHighLightBlog = !shouldHighLightAbout
+  const shouldHighLightBlog = pathname.includes("/blog/")
+  const shouldHighLightAbout = !shouldHighLightBlog
 
   return (
     <StyledHeader>
@@ -90,17 +89,17 @@ export default () => {
       <StyledMenu>
         <StyledLink
           to={`/`}
-          shouldHighLight={shouldHighLightBlog}
-          isDarkMode={isDarkMode}
-        >
-          blog
-        </StyledLink>
-        <StyledLink
-          to={`/about`}
           shouldHighLight={shouldHighLightAbout}
           isDarkMode={isDarkMode}
         >
           about
+        </StyledLink>
+        <StyledLink
+          to={`/blog`}
+          shouldHighLight={shouldHighLightBlog}
+          isDarkMode={isDarkMode}
+        >
+          blog
         </StyledLink>
       </StyledMenu>
     </StyledHeader>
