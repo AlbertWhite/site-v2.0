@@ -6,7 +6,7 @@ star: 1
 keyword: "backend"
 ---
 
-It is a demo for une application full-stack with NodeJS and PassportJS. The demo supports login, signup and forget password.
+It is a demo for an application full-stack with NodeJS and PassportJS. The demo supports login, signup and forget password.
 
 The dependencies are:
 

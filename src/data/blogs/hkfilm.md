@@ -14,7 +14,7 @@ This step takes most of the time during the project, even if it is done by machi
 
 Cypress comes into my mind. It is a end to end test tool and it works like a human. What if it can extract the information from the website and log it locally ? With `cy.writeFile()`, this task can be easily done.
 
-I have tried to configurer the Cypress to searching from Douban.com but I am banned after +150 searches in 15 minutes, so I turned to search from google in Cypress, it's faster and I am not banned.
+I have tried to configure the Cypress to searching from Douban.com but I am banned after +150 searches in 15 minutes, so I turned to search from google in Cypress, it's faster and I am not banned.
 
 Here is the piece of code in Cypress as web crawler:
 

@@ -129,6 +129,6 @@ module.exports = merge(common, {
       }
 ```
 
-Here is the configuration ! We should also note that it is just the basic configuration and it is just one type of implementaion. The potential is huge with the ecosystem of ecosystem webpack.
+Here is the configuration ! We should also note that it is just the basic configuration and it is just one type of implementation. The potential is huge with the ecosystem of ecosystem webpack.
 
 Hope this article helps. Thanks for reading!

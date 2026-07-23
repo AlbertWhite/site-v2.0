@@ -6,7 +6,7 @@ star: 5
 keyword: "other"
 ---
 
-Working in a development team is quite different from working alone or working with only one person. Without shared configurations, rules and reasonable workflow, the more people working on the projet, the more likely the project becomes a mass. In contrast, building shared configurations, creating reasonable workflow, and sharing good working practices are like making good investment: **the team will earn benefits everyday with the productivity**. They also help with guaranteeing the quality of the deliverable and shipping the application more efficiently.
+Working in a development team is quite different from working alone or working with only one person. Without shared configurations, rules and reasonable workflow, the more people working on the project, the more likely the project becomes a mass. In contrast, building shared configurations, creating reasonable workflow, and sharing good working practices are like making good investment: **the team will earn benefits everyday with the productivity**. They also help with guaranteeing the quality of the deliverable and shipping the application more efficiently.
 
 In this article, I will talk about how to better construct and ship web application within a development team:
 
@@ -18,7 +18,7 @@ In case of this, there are two places where we can look at:
 
 ##### Eslint
 
-First of all, we need to integrate linter to the IDE for detecting the problemes automatically. Here is the guide for [how to integrate eslint to different kinds of IDE](https://eslint.org/docs/user-guide/integrations).
+First of all, we need to integrate linter to the IDE for detecting the problems automatically. Here is the guide for [how to integrate eslint to different kinds of IDE](https://eslint.org/docs/user-guide/integrations).
 
 If your team have multiple projects to work on and you want to share the same eslint config, it is recommended to build shared configuration in eslint. Here is the famous example from [eslint-config-airbnb](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb). We can create and share the configuration as a node module with the name of 'eslint-config-your-linter", then add to your project by **'extends'** it in your eslint config.
 
@@ -60,7 +60,7 @@ In detail, as I mentioned in [another article about webpack](/webpack/). There a
 - Parse files (js, jsx, scss, images, json...)
 - Build minified and uglified bundle for production
 
-There are lots of good tutorials, but we can always learn from the best. For example, the webpack config for the famous create-react-app coule be found [here](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/config/webpack.config.js).
+There are lots of good tutorials, but we can always learn from the best. For example, the webpack config for the famous create-react-app could be found [here](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/config/webpack.config.js).
 
 Here are some special techniques:
 
@@ -78,7 +78,7 @@ During continuous integration, the changes within a commit will be passed to ser
 
 ![](/images/workflow/workflow1.png)
 
-Continuous delivery goes one step further than continuous integration. After the build and automatic test, the code will be deployed to cdn so that the product owners can make manually tests on the recette environments. Here is the workflow of continuous delivery:
+Continuous delivery goes one step further than continuous integration. After the build and automatic test, the code will be deployed to cdn so that the product owners can make manually tests on the staging environments. Here is the workflow of continuous delivery:
 ![](/images/workflow/workflow2.png)
 
 In case of tools, nowadays gitlab and github have native CI/CD tool. There are also plenty of third-party services like [Codeship](https://codeship.com/). Docker is always preferred for preparing for linux environment.

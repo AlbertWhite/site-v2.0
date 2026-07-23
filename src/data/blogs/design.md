@@ -33,7 +33,7 @@ The difference of animation and transition is that with animation, we can create
 
 When we design for a whole website, it is important to consider the consistency between pages. In detail, we should consider:
 
-#### 2.1 Color Pallete.
+#### 2.1 Color Palette.
 
 The more color we use, the more complicated to handle it. Two main colors except black, white and grey can already work well. **Specific color should work as a specific role**, for example, light green always for the button, orange always for the border... It is also important to consider the color from the logo.
 
@@ -41,7 +41,7 @@ The more color we use, the more complicated to handle it. Two main colors except
 
 **Information has layers. Each layer of information should have typical style with a specific font-size, font-weight, color, opacity**.
 
-As for the font-family, the classic fonts like helvatica are safe but not original. If you want to give a new look to your web, give it a new and adapted font.
+As for the font-family, the classic fonts like Helvetica are safe but not original. If you want to give a new look to your web, give it a new and adapted font.
 
 #### 2.3 Style.
 
@@ -51,7 +51,7 @@ Like with colors, in one website, the more style we have, the more complicated t
 
 #### 2.4. Responsive.
 
-Responsive doesn't just mean put the same thing in one column. A better way is to think deeperly: can we change the way of navigation? Can we remove less content?
+Responsive doesn't just mean put the same thing in one column. A better way is to think deeply: can we change the way of navigation? Can we remove less content?
 
 #### 2.5 Pixel Perfect
 
@@ -59,7 +59,7 @@ Human eyes are really amazing, maybe you don't notice that something is not alig
 
 ### 3. Content is the king.
 
-Web design is not just putting text, images and animations together. The more important part is what and how to organize them together, and it requires tons of communication with the manager, with marketing in the team. Once in a interview, the interviewer gave me a very good question: **after you made the design, who valides it**?
+Web design is not just putting text, images and animations together. The more important part is what and how to organize them together, and it requires tons of communication with the manager, with marketing in the team. Once in a interview, the interviewer gave me a very good question: **after you made the design, who validates it**?
 
 Perhaps you have seen sites like this (yes I have been working like this): on the first section, an big images with big text, 'the world leading XXX'; on the second section, the title is : 'why choose us', and below it is a list of advantages; on the third section, the title is 'how it works', and then there is a long long text about how it works; on the fourth section, the title is 'our team', with the photos of CEO, CFO...
 
@@ -69,4 +69,4 @@ Let's get rid of all the information which doesn't count, and concentrate on the
 
 Web designers are not just designers, **they are also like consultants: they have knowledge, and the knowledge should be always used for serving client**. Good design is not just about technique, it is the collaboration between marking and programmers.
 
-Good sites don't need to be complicated, but they must be attracting and informations must be useful.
+Good sites don't need to be complicated, but they must be attracting and information must be useful.

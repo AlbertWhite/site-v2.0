@@ -11,15 +11,15 @@ This is a research project for discovering the possibility of tracking web perfo
 - Track Page Load Time and Transaction Time
 - Track User Event Response Time (For example, the time between clicking on the payment button until redirecting to the confirmation page)
 
-[Here](https://github.com/AlbertWhite/WebPerf-with-Google-Analytics) is the project built with Next.js. I have created several [pages](https://web-perf-with-google-analytics.now.sh/) to make test secenarios.
+[Here](https://github.com/AlbertWhite/WebPerf-with-Google-Analytics) is the project built with Next.js. I have created several [pages](https://web-perf-with-google-analytics.now.sh/) to make test scenarios.
 
 ### 1. Track Page Load Time
 
 #### Description
 
-Normally Google analytics is used to user related information and serves in marketing purposes, such as page views, user regions, user behavoirs. However, Google analytics can also be used to track page loading time, and other timing related metrics.
+Normally Google analytics is used to user related information and serves in marketing purposes, such as page views, user regions, user behaviors. However, Google analytics can also be used to track page loading time, and other timing related metrics.
 
-Average page loading time is one of the default tracking metrics in Google analytics (GA for the following content). It is in Behavoir > Site Speed > Page Timing.
+Average page loading time is one of the default tracking metrics in Google analytics (GA for the following content). It is in Behavior > Site Speed > Page Timing.
 
 For example, there is a huge loop on the about page, GA can tell us by its longer loading time.
 
@@ -38,8 +38,8 @@ react-ga library
 Technically, we need to:
 
 1. Set up a google analytics account. Here is the official tutorial from Google analytics academy.
-2. Put the tracking code and intializing script just after the opening <head> tag. If it is a react project, we can use the library [react-ga](https://github.com/react-ga/react-ga) to help with intializing GA and tracking.
-3. The intializing of google analytics should be done for every page, which means we can do it in Layout component or the Central Routing component. Here is the example how we are doing in this project:
+2. Put the tracking code and initializing script just after the opening <head> tag. If it is a react project, we can use the library [react-ga](https://github.com/react-ga/react-ga) to help with initializing GA and tracking.
+3. The initializing of google analytics should be done for every page, which means we can do it in Layout component or the Central Routing component. Here is the example how we are doing in this project:
    In [Layout Component](https://github.com/AlbertWhite/WebPerf-with-Google-Analytics/blob/master/components/MyLayout.js),
 
 ```js
@@ -83,9 +83,9 @@ export const logPageView = () => {
 
 There are points to be noticed:
 
-1. Remember to set siteSpeedSampleRate into 100 on intializing if there is not much traffic on the site If we don't set siteSpeedSampleRate to 100 (100%), maybe there will be no data on site loading time. Because by default, GA tracks only 10% or fewer traffic for site speed.
+1. Remember to set siteSpeedSampleRate into 100 on initializing if there is not much traffic on the site If we don't set siteSpeedSampleRate to 100 (100%), maybe there will be no data on site loading time. Because by default, GA tracks only 10% or fewer traffic for site speed.
 
-2. Remember to modify the range of time if you want to see today's traffic By default, the time range for reports (Audience, Acquisition, Behavoir) are until yesterday. We can modify the time range and set "Hourly" if we want to see today's traffic (useful for developing or debugging).
+2. Remember to modify the range of time if you want to see today's traffic By default, the time range for reports (Audience, Acquisition, Behavior) are until yesterday. We can modify the time range and set "Hourly" if we want to see today's traffic (useful for developing or debugging).
 
 ![](https://raw.githubusercontent.com/AlbertWhite/WebPerf-with-Google-Analytics/master/images/2.png)
 
@@ -230,6 +230,6 @@ Demo from https://github.com/AlbertWhite/next-learn-demo/tree/master/6-fetching-
 
 [google tag manager](https://analytics.google.com/analytics/academy/course/5/unit/1/lesson/2): maybe we don't need it. [gtag.js](https://developers.google.com/gtagjs) is enough.
 
-[Add secret in Now deployment for enviroment variables](https://zeit.co/docs/v2/build-step#using-environment-variables-and-secrets) Now secrets are lowercased.
+[Add secret in Now deployment for environment variables](https://zeit.co/docs/v2/build-step#using-environment-variables-and-secrets) Now secrets are lowercased.
 
 [Measure user timings with gtag.js](https://developers.google.com/analytics/devguides/collection/gtagjs/user-timings)

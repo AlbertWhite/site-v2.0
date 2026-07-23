@@ -20,7 +20,7 @@ How to improve web performance for Google (and also for our users) ? Like making
 
 Google also provides online tool and lighthouse tool in chrome. You can make a test with its online tool [here](https://web.dev/measure/).
 
-Google's performance metrics are human centralized. The metrics simulate **human perceived** time, for example: [LCP (Largest Contentful Paint)](https://web.dev/lcp/), [FCP (First Contentful Paint)](https://web.dev/fcp/) are human perceived time about **when content is rendered**, and [FIP (First Input Delay)](https://web.dev/fid/), [TTI (Time To Interactive)](https://web.dev/tti/) are human perceived time about **when interaction is possible**.
+Google's performance metrics are human centralized. The metrics simulate **human perceived** time, for example: [LCP (Largest Contentful Paint)](https://web.dev/lcp/), [FCP (First Contentful Paint)](https://web.dev/fcp/) are human perceived time about **when content is rendered**, and [FID (First Input Delay)](https://web.dev/fid/), [TTI (Time To Interactive)](https://web.dev/tti/) are human perceived time about **when interaction is possible**.
 
 ### Principles and Technical preparations
 
@@ -36,7 +36,7 @@ Lazyload shouldn't impact SEO components (internal links, JSONLD...).
 
 Even if we know all the principles and good practices, it may be still very difficult to find out real good solutions to improve web performance.
 
-Solutions should come from problems. If your main goal for this page is improving the LCP, maybe you should change the LCP object; if your main goal is to improve FIP and TTI, maybe you could delay some js execution. Generally, less bundle size and lazyload could improve nearly all the metrics.
+Solutions should come from problems. If your main goal for this page is improving the LCP, maybe you should change the LCP object; if your main goal is to improve FID and TTI, maybe you could delay some js execution. Generally, less bundle size and lazyload could improve nearly all the metrics.
 
 You need ideas, plenty of ideas, sometimes even out of the box to improve the metrics of your website.
 

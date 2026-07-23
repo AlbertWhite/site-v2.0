@@ -14,7 +14,7 @@ We would like isolate **dynamic** business logics from the "static" parts (metho
 
 As well, we would like to isolate business logics by **domain**. For example, 'Author' related logic and 'Book' related logic should not be written in the same file.
 
-In conclusion, with DDD, we can concentrate on the dynamic functional logic (business logic) by domain. Domain logic is the key to functional features (and might not be very possiblily replaced by AI because as human we need to finger out all the scenarios :D ).
+In conclusion, with DDD, we can concentrate on the dynamic functional logic (business logic) by domain. Domain logic is the key to functional features (and might not be very possibly replaced by AI because as human we need to finger out all the scenarios :D ).
 
 ### What are the Domain Driven Design layers
 
@@ -26,7 +26,7 @@ For DDD in a micro-service, there should be:
 
 The calling order should be from top to bottom (application layer calls domain layer, domain layer calls infrastructure layer), not the reversed way.
 
-However, when we really develope, I propose to develop from bottom to the top (first infrastructure layer, then domain layer) so we can test the business logic directly.
+However, when we really develop, I propose to develop from bottom to the top (first infrastructure layer, then domain layer) so we can test the business logic directly.
 
 ### Application layer
 

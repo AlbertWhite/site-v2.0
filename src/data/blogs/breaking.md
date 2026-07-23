@@ -17,7 +17,7 @@ However, when I started to work in the backend, I noticed that changes could be 
 
 - Frontend (web/app) fetches data via API. API retrieves data from the database. 
 - If an API changes (either response or payload), it may break the frontend, because the frontend still consumes the old API.
-- When the api is used by app, we should take extra attention because we cannot modify the already installed apps (unless we force all the users to update their apps). It means the api should be **retrocompatible** with old versions of apps, unless old versions of apps are all upgraded to the new version with the new API.
+- When the api is used by app, we should take extra attention because we cannot modify the already installed apps (unless we force all the users to update their apps). It means the api should be **backward-compatible** with old versions of apps, unless old versions of apps are all upgraded to the new version with the new API.
 
 Let's go deeper into the subject for API and Database.
 

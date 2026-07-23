@@ -14,7 +14,7 @@ Gulp is the task runner which supports live-loading. Is it possible to run Node 
 
 Well, if we want to use Gulp and Express together, the problem might come to our mind: we can use Express.js to build the server, but how to use Gulp to run it?
 
-Luckly, there is a gulp plugin exist: [gulp-express](https://www.npmjs.com/package/gulp-express).
+Luckily, there is a gulp plugin exist: [gulp-express](https://www.npmjs.com/package/gulp-express).
 
 You can easily use this plugin to run express server in the gulp file, and you can also use it to live reload your server and browser!
 

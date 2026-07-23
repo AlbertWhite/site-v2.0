@@ -10,7 +10,7 @@ It is my note about how to deploy node server to DigitalOcean.
 
 ### 1. Create a virtual server in DigitalOcean
 
-[DigitalOcean](https://www.digitalocean.com/) provides service for cloud computering, which means it provides unbuntu servers to let users host servers.
+[DigitalOcean](https://www.digitalocean.com/) provides service for cloud computing, which means it provides Ubuntu servers to let users host servers.
 
 ![](images/deploy/1.png)
 Each virtual server is called as **Droplets** in DigitalOcean. Creating a droplet means creating a virtual server in DigitalOcean.
@@ -25,11 +25,11 @@ After creating the droplets, we can start to use the ip address for this droplet
 
 The second step is to using SFTP (SSH File Transfer Protocol) to transfer server files in the virtual server.
 
-We can use command line, or use some tools, such as **CyperDuck** to finish the task.
+We can use command line, or use some tools, such as **Cyberduck** to finish the task.
 
-In CyperDuck, we need to select SFTP protocol, select the 22 as port number, and enter the ip address for the virtual server in DigitalServer. As for the username and password, we can use 'root' as the username, and password can be send by DigitalOcean with email. We can also create other users in the virtual server and use the other user name and password to connect to CyperDuck.
+In Cyberduck, we need to select SFTP protocol, select the 22 as port number, and enter the ip address for the virtual server in DigitalOcean. As for the username and password, we can use 'root' as the username, and password can be send by DigitalOcean with email. We can also create other users in the virtual server and use the other user name and password to connect to Cyberduck.
 
-After connecting with CyperDuck, we can put the files in /home directory.
+After connecting with Cyberduck, we can put the files in /home directory.
 
 ![](images/deploy/4.png)
 

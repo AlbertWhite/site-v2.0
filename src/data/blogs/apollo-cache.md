@@ -19,7 +19,7 @@ It's also possible to console.log the cache with `apolloClient.cache` on the ser
 
 ### What would be the possible solutions
 
-- Add id to the object, so Apollo could create the cache for this object properly to prevent from totally overwrittening the object.
+- Add id to the object, so Apollo could create the cache for this object properly to prevent from totally overwriting the object.
 
 - In typepolicy, [merge](https://www.apollographql.com/docs/react/caching/cache-field-behavior/#merging-arrays) the fields, so it will merge instead of overwriting.
 

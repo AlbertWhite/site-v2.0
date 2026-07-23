@@ -12,7 +12,7 @@ Improving web performance sounds easy, but it's a difficult subject because it's
 
 If we run a lighthouse test in the browser or a [pagespeed insight test](https://pagespeed.web.dev/), the ranked 1 or 2 causes for performance issues are either js bundle size, or DOM size if your website is using SSR.
 
-As for DOM size, I recommend that we could copy and paste the DOM (either from network pannel and choose "Doc" or "view page source") into a code editor, and analyze block by block.
+As for DOM size, I recommend that we could copy and paste the DOM (either from network panel and choose "Doc" or "view page source") into a code editor, and analyze block by block.
 
 For example, NextJS will inject a script called [**NEXT_DATA**](https://github.com/vercel/next.js/discussions/15117) with all the necessary data for SSR. It might not be direct if you check it in the Elements or Network panel, but if you copy all the DOM into the editor, you could find **it really takes much space**. That's why I recommend that it's better to copy and paste the DOM into the editor. In this way, it's easier to see the real impact of each script, and easier to find patterns in the data. The conclusion is always that maybe **you don't need that much data for SSR**.
 
@@ -20,7 +20,7 @@ Another example, a library for translations like react-intl could inject transla
 
 ### JS size
 
-Concerning JS size, it's less recommended to copy and paste the uglified and minified js file into editor not only because they are uglified or minified, but also if the JS are well splitted, it's not easy to collect them all to have a big map.
+Concerning JS size, it's less recommended to copy and paste the uglified and minified js file into editor not only because they are uglified or minified, but also if the JS are well split, it's not easy to collect them all to have a big map.
 
 That's why we should use the [bundle analyzer](https://www.npmjs.com/package/@next/bundle-analyzer). It provides the entire view.
 

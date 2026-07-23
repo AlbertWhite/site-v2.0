@@ -90,7 +90,7 @@ gulp.task("server", ["sass"], function() {
 
 As we know, some files are just for programming use, such as gulpfile.js, sass files, npm packages.. They are not for public use, and we need to get rid of them when we export the code for public use.
 
-We can establish a task called 'export' for this, and everytime we want to export the code, we can use this task.
+We can establish a task called 'export' for this, and every time we want to export the code, we can use this task.
 
 gulpfile.js
 
@@ -116,7 +116,7 @@ As we can see, the **src** and **pipe** functions could be used to move files wi
 
 ### Combine gulp and node server
 
-As we mentioned above, gulp is only for automating the workflow. The plugins are used for that, but what if we also want to use node to eastablish servers and use packages in node to accomplish the tasks with node?
+As we mentioned above, gulp is only for automating the workflow. The plugins are used for that, but what if we also want to use node to establish servers and use packages in node to accomplish the tasks with node?
 
 If we want to do this, the server by gulp is not enough, we still need express.js to create server.
 

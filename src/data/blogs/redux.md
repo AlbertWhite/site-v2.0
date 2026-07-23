@@ -6,17 +6,17 @@ star: 5
 keyword: "react"
 ---
 
-According to Gatsby, data is something outside of the component. React doesn't have its officiel way to fetch and manage data, and it only has its officiel way to pass data with props, HOC...
+According to Gatsby, data is something outside of the component. React doesn't have its official way to fetch and manage data, and it only has its official way to pass data with props, HOC...
 
 That's why there are libraries for support, for example, `redux` or `graphql` to help with organizing the data, `redux-saga` or `redux-thunk` to help with manage async actions with redux, `fetch` or `axios` to fetch data. 
 
-There are different patterns for fetching and managing data in React. Notamment, there are:
+There are different patterns for fetching and managing data in React. Notably, there are:
 
 #### 1. Redux + Redux Thunk
 
 Redux is used for organising data in the "Store". Store is like the database in frontend.
 
-Redux Thunk helps with use dispatch after a fetch. Techniquement, we can manage the async actions in the action creator.
+Redux Thunk helps with use dispatch after a fetch. Technically, we can manage the async actions in the action creator.
 
 ```js
 // action.js

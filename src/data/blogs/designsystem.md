@@ -124,7 +124,7 @@ The official tutorial of storybook is well written, and here is my [storybook co
 
 #### 7. Optional: Typescript
 
-We can also integrate typescript in Design system just by adding some extra config for webpack, and creating tsconfig.js for configurer typescript. The official documentation is well written, or you can check how it is done in the [demo](https://github.com/AlbertWhite/react-design-system-with-typescript-storybook)
+We can also integrate typescript in Design system just by adding some extra config for webpack, and creating tsconfig.js for configuring typescript. The official documentation is well written, or you can check how it is done in the [demo](https://github.com/AlbertWhite/react-design-system-with-typescript-storybook)
 
 #### 8. Optional: Styled System
 

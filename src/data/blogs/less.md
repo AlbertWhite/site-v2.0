@@ -6,7 +6,7 @@ star: 0
 keyword: "soft skills"
 ---
 
-I have been working on front-end development for more than 4 years, and I keep learning technical things (you can check my blogs as evidence), however, I found that it is not suffisant for my current role.
+I have been working on front-end development for more than 4 years, and I keep learning technical things (you can check my blogs as evidence), however, I found that it is not sufficient for my current role.
 
 I am working in [Thefork](https://www.linkedin.com/company/the-fork-a-tripadvisor-company/mycompany/), it is a very good company, and I am working with senior front-end developers. The more I worked with them, the more difference I found between us.
 

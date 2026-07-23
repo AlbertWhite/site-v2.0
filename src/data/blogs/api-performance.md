@@ -10,10 +10,10 @@ Recently I am working on a refactor of api. Doing the API in the right way might
 
 ### Difference between server side performance and web performance
 
-In my humbor opinion, first of all, when the performance regression is tiny bit, it's much more critical in the front-end than in the back-end, because:
+In my humble opinion, first of all, when the performance regression is tiny bit, it's much more critical in the front-end than in the back-end, because:
 
-- On clinet side, web page could be launched in tons of different devices in different environment; where server is always run on the (best) machines, so the impact of performance regression on the front-side is much bigger than the regression on the back-end side.
-- The CVR, transaction rate etc is measured in the front-end. We always want to relate the CVR with [core web vitals](https://web.dev/vitals/?gclid=Cj0KCQiA6fafBhC1ARIsAIJjL8ncg7n9F1GeMufGIlkHpwVsR2cFyYHys6o7ONom1NwmkfkXeEOBJfcaArDjEALw_wcB), but we rarely related the CVR api reponse time. 
+- On client side, web page could be launched in tons of different devices in different environment; where server is always run on the (best) machines, so the impact of performance regression on the front-side is much bigger than the regression on the back-end side.
+- The CVR, transaction rate etc is measured in the front-end. We always want to relate the CVR with [core web vitals](https://web.dev/vitals/?gclid=Cj0KCQiA6fafBhC1ARIsAIJjL8ncg7n9F1GeMufGIlkHpwVsR2cFyYHys6o7ONom1NwmkfkXeEOBJfcaArDjEALw_wcB), but we rarely related the CVR api response time. 
 
 Then, we seems to have more performance metrics in the front-end than in the backend. In the front-end, we have invented many metrics, while in the backend side, API response time is always the key metrics.
 

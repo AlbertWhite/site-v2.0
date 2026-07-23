@@ -82,7 +82,7 @@ A questionnaire about the agility in the development team.
 
 **3. How do you rate the degree of interaction in your team (0 - 10) ?**
 
-**4. Does the work rythme hold for long-term?**
+**4. Does the work rhythm hold for long-term?**
 
 #### Methodology
 
@@ -138,7 +138,7 @@ A questionnaire about the agility in the development team.
 
 1 - Yes, the improves are defined by the managers
 
-2 - Yesm the improvements are defined by all the team
+2 - Yes, the improvements are defined by all the team
 
 3 - The actions of improvement are done regularly
 

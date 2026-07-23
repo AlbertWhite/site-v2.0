@@ -44,6 +44,6 @@ However, there is a downside for this solution: we cannot test the **real** proc
 
 [PollyJS](https://github.com/Netflix/pollyjs) is a JS library from Netflix. It allows us to record and replay interactions of API by recoding http transactions (what we see in the network panel in chrome) into [HAR](<https://en.wikipedia.org/wiki/HAR_(file_format)>) (Http Archive Format) file.
 
-With Cypress, when we make the test locally, we can use the 'record' mode in PollyJS to record network interactions, before commiting our test, we change the mode from 'record' to 'replay' to let Cypress tests uses the HAR file for http requests in CI. In this way, **no real http interaction is done and the database is not polluted** in the Cypress test.
+With Cypress, when we make the test locally, we can use the 'record' mode in PollyJS to record network interactions, before committing our test, we change the mode from 'record' to 'replay' to let Cypress tests uses the HAR file for http requests in CI. In this way, **no real http interaction is done and the database is not polluted** in the Cypress test.
 
 In this article, I have talked about three ways to make cypress test without polluting the database: delete after create, mock API response, and record network interactions with PollyJS. Thanks for reading !

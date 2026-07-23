@@ -85,7 +85,7 @@ const useIsMobile() {
 
 useCallback is a special hook, it is not used for preventing from being called only once, but is used for creating a memoized callback which will be passed into the Child component and prevent from the Child component reloading only because of the callback function. In other words, if the callback is not being passed to the child component, then useCallback is useless.
 
-You can refer to this [article](/misunderstanding/) I have written to clairy the difference between `React.memo`, `useMemo` and `useCallback`.
+You can refer to this [article](/misunderstanding/) I have written to clarify the difference between `React.memo`, `useMemo` and `useCallback`.
 
 ## Level 2: Customized hook with compound native hooks
 

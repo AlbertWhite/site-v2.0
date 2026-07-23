@@ -33,7 +33,7 @@ All modules should be defined into one file with its injection. Please be aware 
 
 ### 2. IIFE: the better way to define directive, controller, and service
 
-Use IIFE (Immediately Invoked Funcion ExHighlightssion) while defining modules, creating controller, directive or service. As we know, all the controller, service and directive will be injected into index.html, use IIFE to **avoid variable collisions** and ensure variables are not global. [Here](https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md#style-y010) is how Johnpapa describes it.
+Use IIFE (Immediately Invoked Function Expression) while defining modules, creating controller, directive or service. As we know, all the controller, service and directive will be injected into index.html, use IIFE to **avoid variable collisions** and ensure variables are not global. [Here](https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md#style-y010) is how Johnpapa describes it.
 
 ```js
 //IIFE
@@ -108,7 +108,7 @@ A controller should only serves for a certain component. If there are common fun
 
 ### 6. Directive
 
-It is easy to write lots of things in one directive, but it is difficult to separate them afterwards, since the code and logic have been twisted together, so before writing code, it is good to seperate each directive.
+It is easy to write lots of things in one directive, but it is difficult to separate them afterwards, since the code and logic have been twisted together, so before writing code, it is good to separate each directive.
 
 We can manipulate DOM in a controller, for example, by using **angular.element(event.target)** , we can get the trigger element and after we can use jquery functions to manipulate. It is better to manipulate DOM in directive.
 

@@ -22,7 +22,7 @@ After that, you will get two files: .csr file and .key file, like the screenshot
 
 ### Step 2: Buy the ssl certificate in the hosting websites
 
-The second step is to buy the ssl certificate on the hosting website. You can buy it from website like Godaddy or create the ssl certificate files on our own.
+The second step is to buy the ssl certificate on the hosting website. You can buy it from website like GoDaddy or create the ssl certificate files on our own.
 
 Buying is not expensive. Mine is 10 euros for 2 years for a single website.
 

@@ -31,7 +31,7 @@ For example, as a B2C website, the objectives of data science team will be: disp
 
 Thus to me, data science team will never hire the same amount of people as engineering team (unless AI is able to code directly in the future), because data scientist is only to find **potential** opportunity. **Data science to engineering, is a bit like UX to UI designer**. It's a luxury for many companies.
 
-### Whether it worths to change the career path from fullstack developer to data scientist
+### Whether it's worth changing the career path from fullstack developer to data scientist
 
 It depends on your passion. If you are really passionate about AI: deep diving into the data and dare to learn countless new things, then it should be a good way to go.
 
@@ -43,7 +43,7 @@ Why ?
 
    As for coding language, there are python, and machine learning libraries.
 
-   As for tools, there are Jupyter, steamlit, snowflake, AWS, Kedro, Airflow to learn if you want to reach the industrial level.
+   As for tools, there are Jupyter, Streamlit, snowflake, AWS, Kedro, Airflow to learn if you want to reach the industrial level.
 
    The coding language and tools are 'learnable', but the real complicated part is the 'philosophy', or 'which algorithm / method to use when facing such data for such opportunity'. Those 'internal strength' is more difficult to learn than 'external strength'.
 
@@ -57,9 +57,9 @@ Web (frontend) developer and Backend developer roles are more easily to be merge
 
 If a frontend developer could learn SQL, Graphql, how rabbitmq works and Domain Driven Design, then he / she could already work for the backend, and then it's a problem of accumulating the experiences.
 
-However, the knowledge gap between a data scientist and a backend developer is so huge,not only they don't share the same language, but also they don't share the same workflow and tool. The only connection point between data scentist and backend developer is data: how to produce and use those data.
+However, the knowledge gap between a data scientist and a backend developer is so huge,not only they don't share the same language, but also they don't share the same workflow and tool. The only connection point between data scientist and backend developer is data: how to produce and use those data.
 
-Thus, in the future, as it is as for today, **there might be a tendance to hire more senior fullstack developer than only front/back developer, unless the profiles are really good to handle specific issues, but it's quite rare to have a role of 'data scentist full stack developer'**.
+Thus, in the future, as it is as for today, **there might be a tendency to hire more senior fullstack developer than only front/back developer, unless the profiles are really good to handle specific issues, but it's quite rare to have a role of 'data scientist full stack developer'**.
 
 ### The real impact of AI to our career: what should we do as fullstack developer
 

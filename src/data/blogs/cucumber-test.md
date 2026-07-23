@@ -8,7 +8,7 @@ keyword: "test"
 
 Periodically QA testing is a very important way to monitor the website's healthiness. It's one of the most efficient and the most rapid ways to report website errors.
 
-However, one pain point of periodically QA testing is that it only tests the a few user interations, for example, the booking flow. I would call this kind of QA testing as **"Vertical QA”**. It tests the website in depth within a few URLs, but it doesn't cover as many as urls possible, or what I would like to call, **"Horizontal QA”**. 
+However, one pain point of periodically QA testing is that it only tests the a few user interactions, for example, the booking flow. I would call this kind of QA testing as **"Vertical QA”**. It tests the website in depth within a few URLs, but it doesn't cover as many as urls possible, or what I would like to call, **"Horizontal QA”**. 
 
 In this article, I would like to introduce a light-weighted, product manager-friendly solution which is implemented by nodejs + [cucumber](https://cucumber.io/).
 

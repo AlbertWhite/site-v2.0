@@ -87,7 +87,7 @@ Then, we might want to consider:
 - ...
 ```
 
-Do you see ? There are so many things to consider when we shape our ideal technical solution, and each answer to the above question could hugely impact our final decision ! And this is the time to decide **what do we not want** too, it's even more imporant then what do we want.
+Do you see ? There are so many things to consider when we shape our ideal technical solution, and each answer to the above question could hugely impact our final decision ! And this is the time to decide **what do we not want** too, it's even more important then what do we want.
 
 ### 4. Work on the technical design record
 

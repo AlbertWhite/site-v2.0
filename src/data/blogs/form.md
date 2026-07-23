@@ -88,7 +88,7 @@ First of all, either with or without Material-UI, it is quite important to creat
 - Manage error message.
 - Adapt the component behaviors with the data from the form library.
 
-Besides, DOM element can be unstandsood as a Component. Why not create your own DOM component?
+Besides, DOM element can be understood as a Component. Why not create your own DOM component?
 
 Let's take a look at the example:
 
